@@ -12,31 +12,11 @@
     <script>
         (function (d) {
             var config = {
-                kitId: 'gzz7zdf',
+                kitId: 'khg7lii',
                 scriptTimeout: 3000,
                 async: true
             },
-                h = d.documentElement,
-                t = setTimeout(function () {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function () {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) { }
-            };
-            s.parentNode.insertBefore(tk, s)
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,33 +40,33 @@
                 <a href="#" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">会社概要</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
 
                 <a href="#" class="menu-link" id="jigyo-wrap">
                     <div class="menu-select">
                         <p class="menu-names">事業内容</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
                 <div id="hidden-menu">
                     <a href="#" class="menu-link" id="menu-kensetsu">
                         <div class="menu-select">
                             <p class="menu-names">建設業</p>
-                            <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                            <img src="./img/unbo-green.png" alt="" class="menu-icons">
                         </div>
                     </a>
                     <a href="#" class="menu-link" id="menu-unso">
                         <div class="menu-select">
                             <p class="menu-names">運送業</p>
-                            <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                            <img src="./img/unbo-green.png" alt="" class="menu-icons">
                         </div>
                     </a>
                     <a href="#" class="menu-link" id="menu-recycle">
                         <div class="menu-select">
                             <p class="menu-names">リサイクル業</p>
-                            <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                            <img src="./img/unbo-green.png" alt="" class="menu-icons">
                         </div>
                     </a>
                 </div>
@@ -102,47 +82,47 @@
                 <a href="#" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">企業沿革</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
                 <a href="#" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">施工実績</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
                 <a href="#" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">お知らせ</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
                 <a href="#" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">お問い合わせ</p>
-                        <img src="./img/unbo-white.png" alt="" class="menu-icons">
+                        <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
 
-            </div>
-
-            <div id="phone-num-wrap">
-                <p class="location-names">本社・北河原オフィス</p>
-                <a href="tel:+">
-                    <div class="img-phone-nums">
-                        <img src="./img/" alt="">
-                        <h3>072-783-4576</h3>
-                    </div>
-                </a>
-                <p class="location-names">リサイクルプラント</p>
-                <a href="tel:+">
-                    <div class="img-phone-nums">
-                        <img src="./img/" alt="">
-                        <h3>072-772-0287</h3>
-                    </div>
-                </a>
             </div>
         </nav>
+        <div id="phone-num-wrap">
+            <p class="location-names">本社・北河原オフィス</p>
+            <a href="tel:+0727834576">
+                <div class="img-phone-nums-wrap">
+                    <img src="./img/telephone-call.png" alt="">
+                    <h3>072-783-4576</h3>
+                </div>
+            </a>
+            <p class="location-names">リサイクルプラント</p>
+            <a href="tel:+0727720287">
+                <div class="img-phone-nums-wrap">
+                    <img src="./img/telephone-call.png" alt="">
+                    <h3>072-772-0287</h3>
+                </div>
+            </a>
+        </div>
+
     </div>
 
 </body>
