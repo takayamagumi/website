@@ -1,19 +1,139 @@
-    :root {
-        --main-bg-color: #3b7b58;
-      }
+                :root {
+                    --main-bg-color: #3b7b58;
 
-      *{
-    margin: 0;
-    padding: 0;
-    
-}
-nav {
-    background-color: var(--main-bg-color);
-}
+                }
 
-#logo-wrap img {
-    height: 40px;
-}
-p,h3 {
-    color: black;
-}
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                /* nav menu */
+
+                nav {
+                    background-color: var(--main-bg-color);
+                    width: 35vw;
+                    height: 70vh;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                #logo-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Kosugi Maru', sans-serif;
+                    color: white;
+                }
+
+                #logo-wrap>p {
+                    color: white;
+                    font-size: .6em;
+
+                }
+
+                #logo-wrap>h3 {
+                    color: white;
+                    padding: .2em;
+                }
+
+                #logo-wrap img {
+                    height: 40px;
+                    padding: .5em 0;
+                }
+
+                p,
+                h3 {
+                    color: black;
+                }
+
+                #menu-wrap {
+                    background-color: var(--main-bg-color);
+                    padding-top: 5vh;
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: .1rem;
+                }
+
+                .menu-link {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    max-width: 200px;
+                    margin: 3% 0 3% 10%;
+                }
+                .menu-names{
+                    color: white;
+                }
+                .menu-link:hover{
+                    background-color: white;
+                }
+                .menu-link:hover  .menu-names{
+                    color: var(--main-bg-color);
+                } 
+
+                .menu-select {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding: 0 10%;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                .menu-icons {
+                    height: 20px;
+                    padding-left: 10%;
+                }
+
+                #hidden-menu {
+                    padding-left: 10%;
+                    /* display  : none; */
+                }
+
+                #phone-num-wrap {
+                    background-color: gainsboro;
+                    height: 20vh;
+                    width: 35vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-weight: 900;
+                    font-style: normal;
+
+                }
+
+
+
+                .location-names {
+                    padding-left: 10%;
+                }
+
+                #phone-num-wrap a {
+                    text-decoration: none;
+                    align-items: center;
+                }
+
+                .img-phone-nums-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 10%;
+                    justify-content: start;
+                    align-items: center;
+
+                }
+
+                .img-phone-nums-wrap img {
+                    height: 25px;
+                }
+
+                .img-phone-nums-wrap h3 {
+                    line-height: 30px;
+                    padding-left: 5%;
+                    font-size: 1.5em;
+                    letter-spacing: .1rem;
+                }
