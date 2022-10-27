@@ -16,7 +16,7 @@
                     height: 70vh;
                     display: flex;
                     flex-direction: column;
-
+                    position: fixed;
                 }
 
                 #logo-wrap {
@@ -26,6 +26,7 @@
                     align-items: center;
                     font-family: 'Kosugi Maru', sans-serif;
                     color: white;
+
                 }
 
                 #logo-wrap>p {
@@ -65,15 +66,18 @@
                     max-width: 200px;
                     margin: 3% 0 3% 10%;
                 }
-                .menu-names{
+
+                .menu-names {
                     color: white;
                 }
-                .menu-link:hover{
+
+                .menu-link:hover {
                     background-color: white;
                 }
-                .menu-link:hover  .menu-names{
+
+                .menu-link:hover .menu-names {
                     color: var(--main-bg-color);
-                } 
+                }
 
                 .menu-select {
                     display: flex;
@@ -136,4 +140,35 @@
                     padding-left: 5%;
                     font-size: 1.5em;
                     letter-spacing: .1rem;
+                }
+
+
+                #lp-mainimg {
+                    /* background-image: url(./img/background-img.svg); */
+                    /* background-size: 100% auto; */
+                    width: 70vw;
+                    height: 70vh;
+                    background-color: paleturquoise;
+                    right: 0;
+                    /* overflow: hidden; */
+                    position: fixed;
+                    /* Set the navbar to fixed position */
+                    top: 0;
+                    /* Position the navbar at the top of the page */
+
+                }
+
+                #header-contact {
+                    background-color: white;
+                    height: 15vh;
+                    width: 100%;
+                    
+                }
+                #contact-btn {
+                    background-color: #3b7b58;
+                    width: 100px;
+                    margin-left: auto;
+                }
+                #contact-btn img {
+                    height: 30px;
                 }
