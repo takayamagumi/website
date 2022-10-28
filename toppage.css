@@ -16,7 +16,7 @@
                     height: 70vh;
                     display: flex;
                     flex-direction: column;
-
+                    position: fixed;
                 }
 
                 #logo-wrap {
@@ -26,6 +26,7 @@
                     align-items: center;
                     font-family: 'Kosugi Maru', sans-serif;
                     color: white;
+
                 }
 
                 #logo-wrap>p {
@@ -65,15 +66,18 @@
                     max-width: 200px;
                     margin: 3% 0 3% 10%;
                 }
-                .menu-names{
+
+                .menu-names {
                     color: white;
                 }
-                .menu-link:hover{
+
+                .menu-link:hover {
                     background-color: white;
                 }
-                .menu-link:hover  .menu-names{
+
+                .menu-link:hover .menu-names {
                     color: var(--main-bg-color);
-                } 
+                }
 
                 .menu-select {
                     display: flex;
@@ -136,4 +140,52 @@
                     padding-left: 5%;
                     font-size: 1.5em;
                     letter-spacing: .1rem;
+                }
+
+
+                #lp-main-container {
+                    /* background-color: cadetblue; */
+                    width: 70vw;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: auto;
+                    position: relative;
+                    
+                }
+
+                #header-contact {
+                    top: 0;
+                    right: 0;
+                    height: max-content;
+                    width: 70vw;
+                    position: fixed;
+                    /* background-color: aqua; */
+                }
+
+                #contact-btn {
+                    background-color: #3b7b58;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: auto;
+                }
+
+                #contact-btn img {
+                    height: 30px;
+                }
+
+
+                #lp-mainimg {
+                    width: 70vw;
+                    background-color: blueviolet;
+                    height: 60vh;
+                    background-image: url(./img/background-img.jpg);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    margin-top: 100px;
+                }
+
+                .test {
+                    background-color: antiquewhite;
+                    height: 300px;
                 }
