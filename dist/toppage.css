@@ -143,32 +143,49 @@
                 }
 
 
-                #lp-mainimg {
-                    /* background-image: url(./img/background-img.svg); */
-                    /* background-size: 100% auto; */
+                #lp-main-container {
+                    /* background-color: cadetblue; */
                     width: 70vw;
-                    height: 70vh;
-                    background-color: paleturquoise;
-                    right: 0;
-                    /* overflow: hidden; */
-                    position: fixed;
-                    /* Set the navbar to fixed position */
-                    top: 0;
-                    /* Position the navbar at the top of the page */
-
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: auto;
+                    position: relative;
+                    
                 }
 
                 #header-contact {
-                    background-color: white;
-                    height: 15vh;
-                    width: 100%;
-                    
+                    top: 0;
+                    right: 0;
+                    height: max-content;
+                    width: 70vw;
+                    position: fixed;
+                    /* background-color: aqua; */
                 }
+
                 #contact-btn {
                     background-color: #3b7b58;
                     width: 100px;
+                    height: 100px;
                     margin-left: auto;
                 }
+
                 #contact-btn img {
                     height: 30px;
+                }
+
+
+                #lp-mainimg {
+                    width: 70vw;
+                    background-color: blueviolet;
+                    height: 60vh;
+                    background-image: url(./img/background-img.jpg);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    margin-top: 100px;
+                }
+
+                .test {
+                    background-color: antiquewhite;
+                    height: 300px;
                 }
