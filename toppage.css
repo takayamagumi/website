@@ -4,7 +4,7 @@
                 }
 
                 * {
-                    margin: 0;
+                    margin : 0;
                     padding: 0;
                 }
 
@@ -12,36 +12,37 @@
 
                 nav {
                     background-color: var(--main-bg-color);
-                    width: 35vw;
-                    height: 70vh;
-                    display: flex;
-                    flex-direction: column;
-                    position: fixed;
+                    width           : 35vw;
+                    height          : 70vh;
+                    display         : flex;
+                    flex-direction  : column;
+                    position        : fixed;
                 }
 
                 #logo-wrap {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: 'Kosugi Maru', sans-serif;
-                    color: white;
-
+                    display            : flex;
+                    flex-direction     : column;
+                    justify-content    : center;
+                    align-items        : center;
+                    font-family        : 'Kosugi Maru', sans-serif;
+                    color              : white;
+                    /* background-color: darkslategray; */
+                    height             : 90px;
                 }
 
                 #logo-wrap>p {
-                    color: white;
-                    font-size: .6em;
+                    color    : white;
+                    font-size: .4em;
 
                 }
 
                 #logo-wrap>h3 {
-                    color: white;
-                    padding: .2em;
+                    color  : white;
+                    padding: .1em;
                 }
 
                 #logo-wrap img {
-                    height: 40px;
+                    height : 30px;
                     padding: .5em 0;
                 }
 
@@ -52,23 +53,24 @@
 
                 #menu-wrap {
                     background-color: var(--main-bg-color);
-                    padding-top: 5vh;
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-weight: 900;
-                    font-style: normal;
-                    letter-spacing: .1rem;
+                    padding-top     : 5vh;
+                    font-family     : toppan-bunkyu-midashi-min-st, serif;
+                    font-weight     : 900;
+                    font-style      : normal;
+                    letter-spacing  : .1rem;
                 }
 
                 .menu-link {
                     text-decoration: none;
-                    display: flex;
-                    flex-direction: row;
-                    max-width: 200px;
-                    margin: 3% 0 3% 10%;
+                    display        : flex;
+                    flex-direction : row;
+                    max-width      : 200px;
+                    margin         : 3% 0 3% 10%;
                 }
 
                 .menu-names {
-                    color: white;
+                    color    : white;
+                    font-size: .8em;
                 }
 
                 .menu-link:hover {
@@ -80,16 +82,16 @@
                 }
 
                 .menu-select {
-                    display: flex;
-                    flex-direction: row;
-                    width: 100%;
-                    padding: 0 10%;
+                    display        : flex;
+                    flex-direction : row;
+                    width          : 100%;
+                    padding        : 0 10%;
                     justify-content: start;
-                    align-items: center;
+                    align-items    : center;
                 }
 
                 .menu-icons {
-                    height: 20px;
+                    height      : 20px;
                     padding-left: 10%;
                 }
 
@@ -98,94 +100,99 @@
                     /* display  : none; */
                 }
 
+
+                /* wrap for locations and phone nums in nav */
                 #phone-num-wrap {
-                    background-color: gainsboro;
-                    height: 20vh;
-                    width: 35vw;
-                    display: flex;
-                    flex-direction: column;
+                    /* background-color: gainsboro; */
+                    height         : max-content;
+                    width          : 35vw;
+                    display        : flex;
+                    flex-direction : column;
                     justify-content: center;
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-weight: 900;
-                    font-style: normal;
-
+                    font-family    : toppan-bunkyu-midashi-min-st, serif;
+                    font-weight    : 900;
+                    font-style     : normal;
+                    padding-top    : 10px;
                 }
-
-
 
                 .location-names {
                     padding-left: 10%;
+                    font-size   : .7em;
                 }
 
                 #phone-num-wrap a {
                     text-decoration: none;
-                    align-items: center;
+                    align-items    : center;
                 }
 
                 .img-phone-nums-wrap {
-                    display: flex;
-                    flex-direction: row;
-                    padding-left: 10%;
+                    display        : flex;
+                    flex-direction : row;
+                    padding-left   : 10%;
                     justify-content: start;
-                    align-items: center;
+                    align-items    : center;
 
                 }
 
                 .img-phone-nums-wrap img {
-                    height: 25px;
+                    height: 20px;
                 }
 
                 .img-phone-nums-wrap h3 {
-                    line-height: 30px;
-                    padding-left: 5%;
-                    font-size: 1.5em;
+                    line-height   : 30px;
+                    padding-left  : 5%;
+                    font-size     : 1.1em;
                     letter-spacing: .1rem;
                 }
 
 
+                /* right side of screen from header to end */
+
                 #lp-main-container {
                     /* background-color: cadetblue; */
-                    width: 70vw;
-                    height: fit-content;
-                    display: flex;
+                    width         : 70vw;
+                    height        : fit-content;
+                    display       : flex;
                     flex-direction: column;
-                    margin-left: auto;
-                    position: relative;
-                    
+                    margin-left   : auto;
+                    position      : relative;
+
                 }
 
                 #header-contact {
-                    top: 0;
-                    right: 0;
-                    height: max-content;
-                    width: 70vw;
-                    position: fixed;
+                    top                : 0;
+                    right              : 0;
+                    height             : 90px;
+                    width              : 70vw;
+                    position           : fixed;
                     /* background-color: aqua; */
                 }
 
+                /* btn for contact page  */
                 #contact-btn {
                     background-color: #3b7b58;
-                    width: 100px;
-                    height: 100px;
-                    margin-left: auto;
+                    width           : 10vw;
+                    height          : 90px;
+                    margin-left     : auto;
                 }
 
                 #contact-btn img {
                     height: 30px;
                 }
 
-
+                /* main img for lp */
                 #lp-mainimg {
-                    width: 70vw;
-                    background-color: blueviolet;
-                    height: 60vh;
-                    background-image: url(./img/background-img.jpg);
-                    background-size: 100% auto;
+                    width            : 70vw;
+                    background-color : blueviolet;
+                    height           : 60vh;
+                    background-image : url(./img/background-img.jpg);
+                    background-size  : 100% auto;
                     background-repeat: no-repeat;
-                    margin-top: 100px;
+                    background-position: center;
+                    margin-top       : 90px;
                 }
 
                 .test {
                     background-color: antiquewhite;
-                    height: 300px;
+                    height          : 300px;
                 }
