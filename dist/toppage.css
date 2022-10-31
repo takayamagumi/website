@@ -21,19 +21,19 @@
                 }
 
                 #logo-wrap {
-                    display            : flex;
-                    flex-direction     : column;
-                    justify-content    : center;
-                    align-items        : center;
-                    font-family        : 'Kosugi Maru', sans-serif;
-                    color              : white;
-                    height             : 90px;
-                    width: 70%;
+                    display        : flex;
+                    flex-direction : column;
+                    justify-content: center;
+                    align-items    : center;
+                    font-family    : 'Kosugi Maru', sans-serif;
+                    color          : white;
+                    height         : 90px;
+                    width          : 70%;
                 }
 
                 #logo-wrap>p {
                     color    : white;
-                    font-size: .4em;
+                    font-size: .2em;
 
                 }
 
@@ -43,7 +43,7 @@
                 }
 
                 #logo-wrap img {
-                    width : 30px;
+                    width  : 30px;
                     padding: .5em 0;
                 }
 
@@ -53,12 +53,14 @@
                 }
 
                 #menu-wrap {
-                    background-color: var(--main-bg-color);
-                    padding-top     : 5vh;
+                    /* background-color: var(--main-bg-color); */
+                    /* height          : 100vh; */
+                    padding-top     : 10px;
                     font-family     : toppan-bunkyu-midashi-min-st, serif;
                     font-weight     : 900;
                     font-style      : normal;
                     letter-spacing  : .1rem;
+                    padding-top: 30px;
                 }
 
                 .menu-link {
@@ -66,7 +68,7 @@
                     display        : flex;
                     flex-direction : row;
                     max-width      : 180px;
-                    margin         : 3% 0 3% 10%;
+                    margin         : 2% 0 2% 7%;
                 }
 
                 .menu-names {
@@ -98,20 +100,24 @@
 
                 #hidden-menu {
                     padding-left: 10%;
-                    /* display  : none; */
+                    display     : none;
+
+
                 }
+
 
 
                 /* wrap for locations and phone nums in nav */
                 #phone-num-wrap {
+                    height          : max-content;
+                    width           : 35vw;
+                    display         : flex;
+                    flex-direction  : column;
+                    justify-content : center;
+                    background-color: white;
+                    position        : fixed;
+                    top             : 70vh;
 
-                    height            : max-content;
-                    width             : 35vw;
-                    display           : flex;
-                    flex-direction    : column;
-                    justify-content   : center;
-                    /* font-family    : 'Kosugi Maru', sans-serif; */
-                    padding-top       : 10px;
                 }
 
                 .location-names {
@@ -123,13 +129,13 @@
                 }
 
                 #phone-num-wrap a {
-                    text-decoration   : none;
-                    align-items       : center;
-                    font-family       : ta-marugo-gf-02, sans-serif;
-                    font-weight       : 500;
-                    font-style        : normal;
-                    font-size: 1.4em;
-                    letter-spacing: 2px; 
+                    text-decoration: none;
+                    align-items    : center;
+                    font-family    : ta-marugo-gf-02, sans-serif;
+                    font-weight    : 500;
+                    font-style     : normal;
+                    font-size      : 1.4em;
+                    letter-spacing : 2px;
                 }
 
                 .img-phone-nums-wrap {
@@ -156,7 +162,7 @@
 
                 #lp-main-container {
                     /* background-color: cadetblue; */
-                    width         :75vw;
+                    width         : 75vw;
                     height        : fit-content;
                     display       : flex;
                     flex-direction: column;
@@ -168,7 +174,7 @@
                 #header-contact {
                     top            : 0;
                     right          : 0;
-                    height         : 90px;
+                    height         : 70px;
                     width          : 75vw;
                     position       : fixed;
                     text-decoration: none;
@@ -182,7 +188,7 @@
                 #contact-btn {
                     background-color: var(--main-bg-color);
                     width           : 10vw;
-                    height          : 90px;
+                    height          : 70px;
                     margin-left     : auto;
                     display         : flex;
                     flex-direction  : column;
@@ -210,42 +216,50 @@
                 /* main img for lp */
                 #lp-mainimg {
                     width              : 75vw;
-                    height             : 70vh;
+                    height             : 80vh;
                     background-image   : url(./img/background-img.jpg);
                     background-size    : 100% auto;
                     background-repeat  : no-repeat;
                     background-position: center;
-                    margin-top         : 90px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;                                      
+                    margin-top         : 70px;
+                    display            : flex;
+                    flex-direction     : column;
+                    justify-content    : center;
                 }
 
                 .main-message-wrap {
                     background-color: white;
-                    display: flex;
-                    flex-direction: row;
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-weight: 900;
-                    font-style : normal;
-                    font-size  : 1.4em;
-                    width: max-content;
-                    letter-spacing: 3px; 
-                    margin-left: 50%;
-                    line-height: 35px;
-                    padding: 0 10px;
+                    display         : flex;
+                    flex-direction  : row;
+                    font-family     : toppan-bunkyu-midashi-min-st, serif;
+                    font-weight     : 900;
+                    font-style      : normal;
+                    font-size       : 1.4em;
+                    width           : max-content;
+                    letter-spacing  : 3px;
+                    margin-left     : 50%;
+                    line-height     : 35px;
+                    padding         : 0 10px;
                 }
+
                 .green-text {
-                    color: var(--main-bg-color);
-                    letter-spacing: 3px; 
+                    color         : var(--main-bg-color);
+                    letter-spacing: 3px;
                 }
+
                 #main-second-message-wrap {
                     margin-top: 8px;
                 }
+
                 .sub-message {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-style : normal;
                     font-size  : .5em;
                     line-height: 15px;
                     margin-left: 50%;
+                }
+
+                .test {
+                    background-color: aquamarine;
+                    height          : 400px;
                 }
