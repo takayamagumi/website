@@ -1,6 +1,7 @@
                 :root {
-                    --main-bg-color: #3b7b58;
-
+                    --main-bg-color    : #3b7b58;
+                    --light-green-color: #d8e5de;
+                    --test             : #49976c;
                 }
 
                 * {
@@ -26,8 +27,8 @@
                     align-items        : center;
                     font-family        : 'Kosugi Maru', sans-serif;
                     color              : white;
-                    /* background-color: darkslategray; */
                     height             : 90px;
+                    width: 70%;
                 }
 
                 #logo-wrap>p {
@@ -42,7 +43,7 @@
                 }
 
                 #logo-wrap img {
-                    height : 30px;
+                    width : 30px;
                     padding: .5em 0;
                 }
 
@@ -64,7 +65,7 @@
                     text-decoration: none;
                     display        : flex;
                     flex-direction : row;
-                    max-width      : 200px;
+                    max-width      : 180px;
                     margin         : 3% 0 3% 10%;
                 }
 
@@ -103,26 +104,32 @@
 
                 /* wrap for locations and phone nums in nav */
                 #phone-num-wrap {
-                    /* background-color: gainsboro; */
-                    height         : max-content;
-                    width          : 35vw;
-                    display        : flex;
-                    flex-direction : column;
-                    justify-content: center;
-                    font-family    : toppan-bunkyu-midashi-min-st, serif;
-                    font-weight    : 900;
-                    font-style     : normal;
-                    padding-top    : 10px;
+
+                    height            : max-content;
+                    width             : 35vw;
+                    display           : flex;
+                    flex-direction    : column;
+                    justify-content   : center;
+                    /* font-family    : 'Kosugi Maru', sans-serif; */
+                    padding-top       : 10px;
                 }
 
                 .location-names {
                     padding-left: 10%;
                     font-size   : .7em;
+                    font-family : toppan-bunkyu-midashi-min-st, serif;
+                    font-weight : 900;
+                    font-style  : normal;
                 }
 
                 #phone-num-wrap a {
-                    text-decoration: none;
-                    align-items    : center;
+                    text-decoration   : none;
+                    align-items       : center;
+                    font-family       : ta-marugo-gf-02, sans-serif;
+                    font-weight       : 500;
+                    font-style        : normal;
+                    font-size: 1.4em;
+                    letter-spacing: 2px; 
                 }
 
                 .img-phone-nums-wrap {
@@ -135,13 +142,12 @@
                 }
 
                 .img-phone-nums-wrap img {
-                    height: 20px;
+                    height: 25px;
                 }
 
-                .img-phone-nums-wrap h3 {
+                .img-phone-nums-wrap p {
                     line-height   : 30px;
                     padding-left  : 5%;
-                    font-size     : 1.1em;
                     letter-spacing: .1rem;
                 }
 
@@ -150,7 +156,7 @@
 
                 #lp-main-container {
                     /* background-color: cadetblue; */
-                    width         : 70vw;
+                    width         :75vw;
                     height        : fit-content;
                     display       : flex;
                     flex-direction: column;
@@ -160,20 +166,41 @@
                 }
 
                 #header-contact {
-                    top                : 0;
-                    right              : 0;
-                    height             : 90px;
-                    width              : 70vw;
-                    position           : fixed;
-                    /* background-color: aqua; */
+                    top            : 0;
+                    right          : 0;
+                    height         : 90px;
+                    width          : 75vw;
+                    position       : fixed;
+                    text-decoration: none;
+                }
+
+                #header-contact a {
+                    text-decoration: none;
                 }
 
                 /* btn for contact page  */
                 #contact-btn {
-                    background-color: #3b7b58;
+                    background-color: var(--main-bg-color);
                     width           : 10vw;
                     height          : 90px;
                     margin-left     : auto;
+                    display         : flex;
+                    flex-direction  : column;
+                    align-items     : center;
+                    justify-content : center;
+                }
+
+                #contact-btn:hover {
+                    background-color: #4fa476;
+                }
+
+                #contact-btn p {
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-weight: 900;
+                    font-style : normal;
+                    font-size  : .8em;
+                    color      : white;
+
                 }
 
                 #contact-btn img {
@@ -182,17 +209,43 @@
 
                 /* main img for lp */
                 #lp-mainimg {
-                    width            : 70vw;
-                    background-color : blueviolet;
-                    height           : 60vh;
-                    background-image : url(./img/background-img.jpg);
-                    background-size  : 100% auto;
-                    background-repeat: no-repeat;
+                    width              : 75vw;
+                    height             : 70vh;
+                    background-image   : url(./img/background-img.jpg);
+                    background-size    : 100% auto;
+                    background-repeat  : no-repeat;
                     background-position: center;
-                    margin-top       : 90px;
+                    margin-top         : 90px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;                                      
                 }
 
-                .test {
-                    background-color: antiquewhite;
-                    height          : 300px;
+                .main-message-wrap {
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-weight: 900;
+                    font-style : normal;
+                    font-size  : 1.4em;
+                    width: max-content;
+                    letter-spacing: 3px; 
+                    margin-left: 50%;
+                    line-height: 35px;
+                    padding: 0 10px;
+                }
+                .green-text {
+                    color: var(--main-bg-color);
+                    letter-spacing: 3px; 
+                }
+                #main-second-message-wrap {
+                    margin-top: 8px;
+                }
+                .sub-message {
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-style : normal;
+                    font-size  : .5em;
+                    line-height: 15px;
+                    margin-left: 50%;
                 }
