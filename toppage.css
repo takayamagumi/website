@@ -1,49 +1,75 @@
                 :root {
-                    --main-bg-color    : #3b7b58;
+                    --main-bg-color: #3b7b58;
                     --light-green-color: #d8e5de;
-                    --test             : #49976c;
+                    --light-gray-color: #ebebeb;
+                }
+
+                @font-face {
+                    font-family: dolceVita;
+                    src: url(font/Dolce\ Vita.ttf);
+                }
+
+                @font-face {
+                    font-family: dolceVita-bold;
+                    src: url(font/Dolce\ Vita\ Heavy\ Bold.ttf);
                 }
 
                 * {
-                    margin : 0;
+                    margin: 0;
                     padding: 0;
+                }
+
+
+                #menu-wrap, .location-names, #contact-btn p, .main-message-wrap, .sub-message, .title-jpn, #service-message-wrap, .box-title-btn-wrap a ,.box-title{
+                    font-family: toppan-bunkyu-midashi-min-st, serif;
+                    font-weight: 900;
+                    font-style: normal;
+                }
+
+                #logo-wrap {
+                    font-family: 'Kosugi Maru', sans-serif;
+                }
+
+                #phone-num-wrap a {
+                    font-family: ta-marugo-gf-02, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
                 }
 
                 /* nav menu */
 
                 nav {
                     background-color: var(--main-bg-color);
-                    width           : 35vw;
-                    height          : 70vh;
-                    display         : flex;
-                    flex-direction  : column;
-                    position        : fixed;
+                    width: 35vw;
+                    height: 70vh;
+                    display: flex;
+                    flex-direction: column;
+                    position: fixed;
                 }
 
                 #logo-wrap {
-                    display            : flex;
-                    flex-direction     : column;
-                    justify-content    : center;
-                    align-items        : center;
-                    font-family        : 'Kosugi Maru', sans-serif;
-                    color              : white;
-                    height             : 90px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    height: 90px;
                     width: 70%;
                 }
 
                 #logo-wrap>p {
-                    color    : white;
-                    font-size: .4em;
+                    color: white;
+                    font-size: .2em;
 
                 }
 
                 #logo-wrap>h3 {
-                    color  : white;
+                    color: white;
                     padding: .1em;
                 }
 
                 #logo-wrap img {
-                    width : 30px;
+                    width: 30px;
                     padding: .5em 0;
                 }
 
@@ -53,24 +79,21 @@
                 }
 
                 #menu-wrap {
-                    background-color: var(--main-bg-color);
-                    padding-top     : 5vh;
-                    font-family     : toppan-bunkyu-midashi-min-st, serif;
-                    font-weight     : 900;
-                    font-style      : normal;
-                    letter-spacing  : .1rem;
+                    padding-top: 10px;
+                    letter-spacing: .1rem;
+                    padding-top: 30px;
                 }
 
                 .menu-link {
                     text-decoration: none;
-                    display        : flex;
-                    flex-direction : row;
-                    max-width      : 180px;
-                    margin         : 3% 0 3% 10%;
+                    display: flex;
+                    flex-direction: row;
+                    max-width: 180px;
+                    margin: 2% 0 2% 7%;
                 }
 
                 .menu-names {
-                    color    : white;
+                    color: white;
                     font-size: .8em;
                 }
 
@@ -83,61 +106,59 @@
                 }
 
                 .menu-select {
-                    display        : flex;
-                    flex-direction : row;
-                    width          : 100%;
-                    padding        : 0 10%;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding: 0 10%;
                     justify-content: start;
-                    align-items    : center;
+                    align-items: center;
                 }
 
                 .menu-icons {
-                    height      : 20px;
+                    height: 20px;
                     padding-left: 10%;
                 }
 
                 #hidden-menu {
                     padding-left: 10%;
-                    /* display  : none; */
+                    display: none;
+
+
                 }
+
 
 
                 /* wrap for locations and phone nums in nav */
                 #phone-num-wrap {
+                    height: max-content;
+                    width: 35vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: white;
+                    position: fixed;
+                    top: 70vh;
 
-                    height            : max-content;
-                    width             : 35vw;
-                    display           : flex;
-                    flex-direction    : column;
-                    justify-content   : center;
-                    /* font-family    : 'Kosugi Maru', sans-serif; */
-                    padding-top       : 10px;
                 }
 
                 .location-names {
                     padding-left: 10%;
-                    font-size   : .7em;
-                    font-family : toppan-bunkyu-midashi-min-st, serif;
-                    font-weight : 900;
-                    font-style  : normal;
+                    font-size: .7em;
                 }
 
                 #phone-num-wrap a {
-                    text-decoration   : none;
-                    align-items       : center;
-                    font-family       : ta-marugo-gf-02, sans-serif;
-                    font-weight       : 500;
-                    font-style        : normal;
+                    text-decoration: none;
+                    align-items: center;
                     font-size: 1.4em;
-                    letter-spacing: 2px; 
+                    letter-spacing: 2px;
                 }
 
                 .img-phone-nums-wrap {
-                    display        : flex;
-                    flex-direction : row;
-                    padding-left   : 10%;
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 10%;
                     justify-content: start;
-                    align-items    : center;
+                    align-items: center;
 
                 }
 
@@ -146,8 +167,8 @@
                 }
 
                 .img-phone-nums-wrap p {
-                    line-height   : 30px;
-                    padding-left  : 5%;
+                    line-height: 30px;
+                    padding-left: 5%;
                     letter-spacing: .1rem;
                 }
 
@@ -155,22 +176,20 @@
                 /* right side of screen from header to end */
 
                 #lp-main-container {
-                    /* background-color: cadetblue; */
-                    width         :75vw;
-                    height        : fit-content;
-                    display       : flex;
+                    width: 75vw;
+                    display: flex;
                     flex-direction: column;
-                    margin-left   : auto;
-                    position      : relative;
-
+                    margin-left: auto;
+                    position: relative;
+                    /* background-color: white; */
                 }
 
                 #header-contact {
-                    top            : 0;
-                    right          : 0;
-                    height         : 90px;
-                    width          : 75vw;
-                    position       : fixed;
+                    top: 0;
+                    right: 0;
+                    height: 70px;
+                    width: 75vw;
+                    position: fixed;
                     text-decoration: none;
                 }
 
@@ -181,13 +200,13 @@
                 /* btn for contact page  */
                 #contact-btn {
                     background-color: var(--main-bg-color);
-                    width           : 10vw;
-                    height          : 90px;
-                    margin-left     : auto;
-                    display         : flex;
-                    flex-direction  : column;
-                    align-items     : center;
-                    justify-content : center;
+                    width: 10vw;
+                    height: 70px;
+                    margin-left: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 #contact-btn:hover {
@@ -195,11 +214,9 @@
                 }
 
                 #contact-btn p {
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-weight: 900;
-                    font-style : normal;
-                    font-size  : .8em;
-                    color      : white;
+
+                    font-size: .8em;
+                    color: white;
 
                 }
 
@@ -209,43 +226,148 @@
 
                 /* main img for lp */
                 #lp-mainimg {
-                    width              : 75vw;
-                    height             : 70vh;
-                    background-image   : url(./img/background-img.jpg);
-                    background-size    : 100% auto;
-                    background-repeat  : no-repeat;
+                    width: 75vw;
+                    height: 80vh;
+                    background-image: url(./img/background-img.jpg);
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
                     background-position: center;
-                    margin-top         : 90px;
+                    margin-top: 70px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;                                      
+                    justify-content: center;
                 }
 
                 .main-message-wrap {
                     background-color: white;
                     display: flex;
                     flex-direction: row;
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-weight: 900;
-                    font-style : normal;
-                    font-size  : 1.4em;
+                    font-size: 1.4em;
                     width: max-content;
-                    letter-spacing: 3px; 
+                    letter-spacing: 3px;
                     margin-left: 50%;
                     line-height: 35px;
                     padding: 0 10px;
                 }
+
                 .green-text {
                     color: var(--main-bg-color);
-                    letter-spacing: 3px; 
+                    letter-spacing: 3px;
                 }
+
                 #main-second-message-wrap {
                     margin-top: 8px;
                 }
+
                 .sub-message {
-                    font-family: toppan-bunkyu-midashi-min-st, serif;
-                    font-style : normal;
-                    font-size  : .5em;
+                    font-size: .5em;
                     line-height: 15px;
                     margin-left: 50%;
+                }
+
+                .test {
+                    background-color: rgba(0, 0, 255, .4);
+                    height: 400px;
+                }
+
+
+                /* service container */
+                #service-container {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: var(--light-gray-color);
+
+                    /* justify-content: center; */
+                    align-items: center;
+                    padding-bottom: 50px;
+                }
+
+                .space {
+                    height: 10vh;
+                    background-color: white;
+                }
+
+                .bg-text-left {
+                    color: white;
+                    font-family: dolceVita;
+                    font-size: 10em;
+                    /* letter-spacing: .1em; */
+                    line-height: 130px;
+                    margin-right: auto;
+                    /* position: relative; */
+                }
+
+                .title-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    padding-top: 60px;
+                }
+
+                .title-eng {
+                    font-family: dolceVita;
+                    font-size: 2.8em;
+                    color: var(--main-bg-color);
+                }
+
+                .title-jpn {
+                    font-size: 1.5em;
+                    line-height: 10px;
+                }
+
+                #service-message-wrap {
+                    width: 70%;
+                    font-size: .8em;
+                    padding: 30px 0;
+                }
+
+                /* service boxes */
+                #service-boxes-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .box-wrap {
+                    background-color: var(--main-bg-color);
+                    width: 18vw;
+                    padding-bottom: 7px;
+                }
+
+                .box-img {
+                    height: 30vh;
+                    background-color: gray;
+                }
+
+                .box-title-btn-wrap {
+                    background-color: white;
+                    /* height: 80px; */
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .box-title {
+                    font-size: 1.5em;
+                    padding: 10px 0;
+                }
+
+                .box-title-btn-wrap a {
+                    text-decoration: none;
+                    color: var(--main-bg-color);
+                    border: var(--main-bg-color) solid 2px;
+                    padding: 2px 20px;
+                    margin-bottom: 15px;
+                    font-size: .7em;
+                }
+                .box-title-btn-wrap a:hover {
+                    border: white solid 2px;
+                    color: white;
+                    background-color: var(--main-bg-color);
                 }
