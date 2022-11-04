@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="toppage.css">
     <script defer src="./main.js"></script>
+    <script defer src="./news.js"></script>
 
 
     <script>
@@ -148,7 +149,7 @@
         <div class="space"></div>
         <div id="service-container">
 
-            <p class="bg-text-left">SERVICE</p>
+            <p class="bg-text" id="bg-text-left">SERVICE</p>
             <div class="title-wrap">
                 <p class="title-eng">SERVICE</p>
                 <p class="title-jpn">事業内容</p>
@@ -166,14 +167,14 @@
                     </div>
                 </div>
                 <div class="box-wrap">
-                    <div class="box-img" id="box-img-kensetsu"></div>
+                    <div class="box-img" id="box-img-unso"></div>
                     <div class="box-title-btn-wrap">
                         <p class="box-title">運送</p>
                         <a href="#">詳細　▶</a>
                     </div>
                 </div>
                 <div class="box-wrap">
-                    <div class="box-img" id="box-img-kensetsu"></div>
+                    <div class="box-img" id="box-img-recycle"></div>
                     <div class="box-title-btn-wrap">
                         <p class="box-title">リサイクル</p>
                         <a href="#">詳細　▶</a>
@@ -183,15 +184,26 @@
 
 
         </div>
-        <div class="test">
-            test1
+        <div id="news-container">
+            <p class="bg-text" id="bg-text-right">NEWS</p>
+            <div class="title-wrap">
+                <p class="title-eng">NEWS</p>
+                <p class="title-jpn">お知らせ</p>
+            </div>
+            <div id="news-content-wrap">
+
+            </div>
+            <a id="btn-news" href="#">
+                <img src="./img/unbo-white.png" alt="">
+                <p>MORE　▶</p>
+            </a>
         </div>
         <div class="test">
             test2
         </div>
     </div>
 
-
+    <script src="./newskey.js"></script>
 </body>
 
 </html>

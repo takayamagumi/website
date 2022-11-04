@@ -20,7 +20,7 @@
                 }
 
 
-                #menu-wrap, .location-names, #contact-btn p, .main-message-wrap, .sub-message, .title-jpn, #service-message-wrap, .box-title-btn-wrap a ,.box-title{
+                #menu-wrap, .location-names, #contact-btn p, .main-message-wrap, .sub-message, .title-jpn, #service-message-wrap, .box-title-btn-wrap a, .box-title, .createDivForListWrap {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style: normal;
@@ -279,7 +279,7 @@
 
                     /* justify-content: center; */
                     align-items: center;
-                    padding-bottom: 50px;
+                    padding-bottom: 80px;
                 }
 
                 .space {
@@ -287,14 +287,16 @@
                     background-color: white;
                 }
 
-                .bg-text-left {
-                    color: white;
+                .bg-text {
                     font-family: dolceVita;
                     font-size: 10em;
-                    /* letter-spacing: .1em; */
                     line-height: 130px;
+
+                }
+
+                #bg-text-left {
                     margin-right: auto;
-                    /* position: relative; */
+                    color: white;
                 }
 
                 .title-wrap {
@@ -326,7 +328,6 @@
                 /* service boxes */
                 #service-boxes-wrap {
                     display: flex;
-                    flex-direction: row;
                     width: 100%;
                     justify-content: space-around;
                     align-items: center;
@@ -334,13 +335,31 @@
 
                 .box-wrap {
                     background-color: var(--main-bg-color);
-                    width: 18vw;
+                    width: 19vw;
                     padding-bottom: 7px;
                 }
 
                 .box-img {
                     height: 30vh;
-                    background-color: gray;
+                    background-color: black;
+                }
+
+                #box-img-kensetsu {
+                    background-image: url(./img/genba.jpg);
+                    background-size: 130% auto;
+                    background-position: center;
+                }
+
+                #box-img-unso {
+                    background-image: url(./img/unso-dampcar.jpg);
+                    background-size: auto 130%;
+                    background-position: right center;
+                }
+
+                #box-img-recycle {
+                    background-image: url(./img/recycle.JPG);
+                    background-size: 120% auto;
+                    background-position: top center;
                 }
 
                 .box-title-btn-wrap {
@@ -366,8 +385,101 @@
                     margin-bottom: 15px;
                     font-size: .7em;
                 }
+
                 .box-title-btn-wrap a:hover {
                     border: white solid 2px;
                     color: white;
                     background-color: var(--main-bg-color);
+                }
+
+                /* news container */
+                #news-container {
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 50px 0;
+                }
+
+                #bg-text-right {
+                    color: var(--light-gray-color);
+                    margin-left: auto;
+                }
+
+                #news-content-wrap {
+                    background-color: var(--light-green-color);
+                    width: 60vw;
+                    /* height: 100px; */
+                    margin-top: 5%;
+                }
+
+                #btn-news {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--main-bg-color);
+                    width: 120px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    margin-left: 50%;
+
+                }
+
+                #btn-news:hover {
+                    background-color: #4fa476;
+                }
+
+                #btn-news img {
+                    height: 20px;
+                    padding-right: 15px;
+                }
+
+                #btn-news>p {
+                    color: white;
+                }
+
+
+                /* news list coming from api */
+                .createDivForListWrap {
+                    background-color: var(--light-green-color);
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+
+                .createDivForListWrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-left: 20%;
+                }
+
+                .createPForTime {
+                    padding: 10px 20px;
+                }
+
+                .createDivForNew {
+                    background-color: var(--main-bg-color);
+                    color: white;
+                    width: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10%;
+                    line-height: 20px;
+                    font-size: .7em;
+                }
+
+                .createDivForEmpty {
+                    color: var(--light-green-color);
+                    width:90px;
+                    margin-left: 10%;
+                }
+
+                .createaFortitleOfArticle {
+                    margin-left: 10%;
+                    color: black;
                 }
