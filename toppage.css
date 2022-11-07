@@ -353,19 +353,22 @@
                 }
 
                 #box-img-kensetsu {
-                    background-image   : url(./img/genba.jpg);
-                    background-size    : 130% auto;
+                    background-image   : url(./img/genba.jpg) ;
+                    background-repeat: no-repeat;
+                    background-size    : 130% auto ;
                     background-position: center;
                 }
 
                 #box-img-unso {
                     background-image   : url(./img/unso-dampcar.jpg);
+                    background-repeat: no-repeat;
                     background-size    : auto 130%;
                     background-position: right center;
                 }
 
                 #box-img-recycle {
                     background-image   : url(./img/recycle.JPG);
+                    background-repeat: no-repeat;
                     background-size    : 120% auto;
                     background-position: top center;
                 }
