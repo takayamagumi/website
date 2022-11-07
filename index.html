@@ -38,7 +38,7 @@
                 <p class="logo-info">産業廃棄物処理業・再生砕石製造販売</p>
             </div>
             <div id="menu-wrap">
-                <a href="#" class="menu-link">
+                <a href="overview.html" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">会社概要</p>
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
@@ -47,8 +47,9 @@
 
                 <a href="#" class="menu-link" id="jigyo-wrap" onclick='jigyonaiyoMenuTrigger()'>
                     <div class="menu-select">
-                        <p class="menu-names">事業内容</p>
+                        <p class="menu-names" id="jigyonaiyo-btn">事業内容</p>
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
+                        <p class="notready">準備中</p>
                     </div>
                 </a>
                 <div id="hidden-menu" style="display: none;">
@@ -56,18 +57,21 @@
                         <div class="menu-select">
                             <p class="menu-names">建設業</p>
                             <img src="./img/unbo-green.png" alt="" class="menu-icons">
+                            <p class="notready">準備中</p>
                         </div>
                     </a>
                     <a href="#" class="menu-link" id="menu-unso">
                         <div class="menu-select">
                             <p class="menu-names">運送業</p>
                             <img src="./img/unbo-green.png" alt="" class="menu-icons">
+                            <p class="notready">準備中</p>
                         </div>
                     </a>
                     <a href="#" class="menu-link" id="menu-recycle">
                         <div class="menu-select">
                             <p class="menu-names">リサイクル業</p>
                             <img src="./img/unbo-green.png" alt="" class="menu-icons">
+                            <p class="notready">準備中</p>
                         </div>
                     </a>
                 </div>
@@ -80,7 +84,7 @@
 
 
 
-                <a href="#" class="menu-link">
+                <a href="history.html" class="menu-link">
                     <div class="menu-select">
                         <p class="menu-names">企業沿革</p>
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
@@ -90,6 +94,7 @@
                     <div class="menu-select">
                         <p class="menu-names">施工実績</p>
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
+                        <p class="notready">準備中</p>
                     </div>
                 </a>
                 <a href="https://takayamagumi.blogspot.com/" class="menu-link">
@@ -98,9 +103,9 @@
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
-                <a href="contact-form.html" class="menu-link">
+                <a href="recruit.html" class="menu-link">
                     <div class="menu-select">
-                        <p class="menu-names">お問い合わせ</p>
+                        <p class="menu-names">採用情報</p>
                         <img src="./img/unbo-green.png" alt="" class="menu-icons">
                     </div>
                 </a>
@@ -123,9 +128,15 @@
             </div>
         </nav>
 
-
-
     </div>
+
+
+    <div id="mobile-container">
+        
+    </div>
+
+
+
     <div id="lp-main-container">
         <div id="header-contact">
             <a href="contact-form.html" id="contact-btn">
@@ -163,21 +174,30 @@
                     <div class="box-img" id="box-img-kensetsu"></div>
                     <div class="box-title-btn-wrap">
                         <p class="box-title">建設</p>
-                        <a href="#" class="shosai-btn">詳細　▶</a>
+                        <a href="#" class="shosai-btn">
+                            <!-- 詳細　▶ -->
+                            準備中
+                        </a>
                     </div>
                 </div>
                 <div class="box-wrap">
                     <div class="box-img" id="box-img-unso"></div>
                     <div class="box-title-btn-wrap">
                         <p class="box-title">運送</p>
-                        <a href="#" class="shosai-btn">詳細　▶</a>
+                        <a href="#" class="shosai-btn">
+                            <!-- 詳細　▶ -->
+                            準備中
+                        </a>
                     </div>
                 </div>
                 <div class="box-wrap">
                     <div class="box-img" id="box-img-recycle"></div>
                     <div class="box-title-btn-wrap">
                         <p class="box-title">リサイクル</p>
-                        <a href="#" class="shosai-btn">詳細　▶</a>
+                        <a href="#" class="shosai-btn">
+                            <!-- 詳細　▶ -->
+                            準備中
+                        </a>
                     </div>
                 </div>
             </div>
@@ -207,11 +227,13 @@
             </div>
             <div class="recruit-wrap">
                 <img src="./img/img-helmet.jpg" alt="">
-                <div class="recruit-rightbox">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias reiciendis at ullam quisquam
-                        facilis temporibus illo soluta quia voluptatem quis, ea sint, placeat vero nisi explicabo? Quos
-                        dicta maxime accusamus!</p>
-                    <a href="#" class="shosai-btn">詳細　▶</a>
+                <div id="recruit-rightbox">
+                    <p>　一緒に働く仲間を募集しています。様々な仕事に関わってもらえるよう、弊社は資格習得支援に力を入れています。採用情報や応募方法などはこちらからご覧になれます。</p>
+                    <a href="#" class="shosai-btn" id="btn-recruit">
+                        <!-- 詳細　▶ -->
+                        準備中
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -231,18 +253,18 @@
                         <p>株式会社髙山組</p>
                     </div>
                     <div id="footer-menu-wrap">
-                        <a href="http://" class="footer-menu">会社概要</a>
+                        <a href="overview.html" class="footer-menu">会社概要</a>
                         <div id="footer-jigyo-wrap">
-                            <a href="http://" class="footer-menu">事業内容</a>
+                            <a href="#" class="footer-menu">事業内容</a>
                             <div id="footer-jigyo-sub-wrap">
-                                <a href="http://" class="footer-menu">建設業</a>
-                                <a href="http://" class="footer-menu">運送業</a>
-                                <a href="http://" class="footer-menu">リサイクル業</a>
+                                <a href="#" class="footer-menu">建設業</a>
+                                <a href="#" class="footer-menu">運送業</a>
+                                <a href="#" class="footer-menu">リサイクル業</a>
                             </div>
                         </div>
-                        <a href="http://" class="footer-menu">企業沿革</a>
+                        <a href="history.html" class="footer-menu">企業沿革</a>
                         <a href="https://takayamagumi.blogspot.com/" class="footer-menu">お知らせ</a>
-                        <a href="http://" class="footer-menu">採用情報</a>
+                        <a href="recruit.html" class="footer-menu">採用情報</a>
                         <a href="contact-form.html" class="footer-menu">お問い合わせ</a>
 
                     </div>

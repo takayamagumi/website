@@ -29,14 +29,24 @@
                 #service-message-wrap,
                 .box-title-btn-wrap a,
                 .box-title,
-                .createDivForListWrap ,.footer-menu{
+                .createDivForListWrap,
+                #btn-news>p,
+                .footer-menu,
+                #btn-recruit,
+                #recruit-rightbox p {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style : normal;
                 }
 
-                #logo-wrap ,#footer-logo-wrap p ,.address-wrap p ,#licencedWrap p{
-                    font-family: 'Kosugi Maru', sans-serif;
+                #logo-wrap,
+                #footer-logo-wrap p,
+                .address-wrap p,
+                #licencedWrap p {
+                    font-family   : 'Kosugi Maru', sans-serif;
+                    /* font-family: fot-seurat-pron, sans-serif; */
+                    font-weight   : 600;
+                    font-style    : normal;
                 }
 
                 #phone-num-wrap a {
@@ -97,7 +107,7 @@
                     text-decoration: none;
                     display        : flex;
                     flex-direction : row;
-                    max-width      : 180px;
+                    max-width      : 220px;
                     margin         : 2% 0 2% 7%;
                 }
 
@@ -131,9 +141,22 @@
                 #hidden-menu {
                     padding-left: 10%;
                     display     : none;
-
-
                 }
+
+                .notready {
+                    color       : var(--main-bg-color);
+                    font-size   : .7em;
+                    padding-left: 5px;
+                }
+
+
+
+                /* mobile nav */
+
+
+ 
+
+
 
 
 
@@ -353,22 +376,22 @@
                 }
 
                 #box-img-kensetsu {
-                    background-image   : url(./img/genba.jpg) ;
-                    background-repeat: no-repeat;
-                    background-size    : 130% auto ;
+                    background-image   : url(./img/genba.jpg);
+                    background-repeat  : no-repeat;
+                    background-size    : 130% auto;
                     background-position: center;
                 }
 
                 #box-img-unso {
                     background-image   : url(./img/unso-dampcar.jpg);
-                    background-repeat: no-repeat;
+                    background-repeat  : no-repeat;
                     background-size    : auto 130%;
                     background-position: right center;
                 }
 
                 #box-img-recycle {
                     background-image   : url(./img/recycle.JPG);
-                    background-repeat: no-repeat;
+                    background-repeat  : no-repeat;
                     background-size    : 120% auto;
                     background-position: top center;
                 }
@@ -402,6 +425,8 @@
                     color           : white;
                     background-color: var(--main-bg-color);
                 }
+
+
 
                 /* news container */
                 #news-container {
@@ -451,7 +476,8 @@
                 }
 
                 #btn-news>p {
-                    color: white;
+                    color    : white;
+                    font-size: .8em;
                 }
 
 
@@ -522,11 +548,20 @@
                     width : 40%;
                 }
 
-                .recruit-rightbox {
+                #recruit-rightbox {
                     width         : 40%;
                     display       : flex;
                     flex-direction: column;
                     align-items   : center;
+                }
+
+                #recruit-rightbox p {
+                    font-size: .7em;
+                }
+
+                #btn-recruit {
+                    padding   : 5px 20px;
+                    margin-top: 10%;
                 }
 
                 /* footer */
@@ -536,7 +571,7 @@
                     align-items     : center;
                     justify-content : space-evenly;
                     background-color: white;
-                    
+
                 }
 
                 #footer-img-wrap img {
@@ -547,7 +582,7 @@
                     background-color: var(--main-bg-color);
                     display         : flex;
                     flex-direction  : column;
-                    padding-bottom: 50px;
+                    padding-bottom  : 50px;
                 }
 
                 #footer-top {
@@ -556,12 +591,12 @@
                 }
 
                 #footer-logo-wrap {
-                    display           : flex;
-                    flex-direction    : row;
-                    justify-content   : center;
-                    width             : 25%;
-                    padding-left: 20px;
-                    padding-top       : 50px;
+                    display        : flex;
+                    flex-direction : row;
+                    justify-content: center;
+                    width          : 25%;
+                    padding-left   : 20px;
+                    padding-top    : 50px;
                 }
 
                 #footer-logo-wrap p {
@@ -612,9 +647,9 @@
                 }
 
                 #footer-bottom {
-                    display       : flex;
-                    flex-direction: row;
-                    align-items: flex-start;
+                    display        : flex;
+                    flex-direction : row;
+                    align-items    : flex-start;
                     justify-content: space-evenly;
                 }
 
@@ -624,30 +659,33 @@
                 }
 
                 .address-wrap p {
-                    color: white;
+                    color    : white;
                     font-size: .8em;
-                    padding: 1px 0;
+                    padding  : 1px 0;
                 }
 
                 .addressName-wrap {
                     display       : flex;
                     flex-direction: row;
-                    align-items: center;
+                    align-items   : center;
                 }
 
                 .addressName-wrap img {
-                    height: 15px;
+                    height       : 15px;
                     padding-right: 5px;
                 }
-                .addressName-wrap p{
+
+                .addressName-wrap p {
                     font-size: .9em;
                 }
+
                 #licencedWrap {
                     background-color: var(--main-bg-color);
-                    display       : flex;
-                    align-items: center;
-                    justify-content: center;
+                    display         : flex;
+                    align-items     : center;
+                    justify-content : center;
                 }
-                #licencedWrap p{
+
+                #licencedWrap p {
                     color: white;
                 }
