@@ -24,14 +24,18 @@ let navIconOpen = document.getElementById('nav-icon-open')
 let navIconClosed = document.getElementById('nav-icon-closed')
 
 
-
-// if (navIconOpen.className ="open") {
-//   alert('open')
-// } else {
-//   alert('closed')
-// }
 navIcon.addEventListener('click', ()=>
   navIcon.classList.toggle('open')
 )
+navIcon.addEventListener('click', function(){
+  if(navIcon.className === '') {
+    navIconOpen.style.display = 'flex'
+    navIconClosed.style.display = 'none'
+}else {
+  navIconOpen.style.display = 'none'
+  navIconClosed.style.display = 'flex'
+}
+});
+
 
 
