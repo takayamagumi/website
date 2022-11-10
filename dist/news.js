@@ -48,13 +48,19 @@ function get_result() {
                 let createDivForListWrap = document.createElement('div');
                 createDivForListWrap.classList.add("createDivForListWrap");
 
+                // wrap for date and new
+                let createDivForDateLabelWrap = document.createElement('div');
+                createDivForDateLabelWrap.classList.add("createDivForDateLabelWrap");
+
+
+
                 // wrap for published date
                 let createPForYear = document.createElement('p')
                 createPForYear.classList.add("createPForTime");
                 let publishedDateArrTextnode = document.createTextNode(date)
                 createPForYear.appendChild(publishedDateArrTextnode)
-                createDivForListWrap.appendChild(createPForYear)
 
+                createDivForDateLabelWrap.appendChild(createPForYear)
 
                 // label for new
                 const currentTime = Date.now()
@@ -66,14 +72,19 @@ function get_result() {
                     createdivForNew.classList.add("createDivForNew");
                     let NewTextnode = document.createTextNode('NEW')
                     createdivForNew.appendChild(NewTextnode)
-                    createDivForListWrap.appendChild(createdivForNew)
+                    createDivForDateLabelWrap.appendChild(createdivForNew)
+                    createDivForListWrap.appendChild(createDivForDateLabelWrap)
                 } else {
-                    let createdivForNew = document.createElement('div')
-                    createdivForNew.classList.add("createDivForEmpty");
-                    let NewTextnode = document.createTextNode('old')
-                    createdivForNew.appendChild(NewTextnode)
-                    createDivForListWrap.appendChild(createdivForNew)
+                    let createdivForOld = document.createElement('div')
+                    createdivForOld.classList.add("createDivForEmpty");
+                    let oldTextnode = document.createTextNode('old')
+                    createdivForOld.appendChild(oldTextnode)
+                    createDivForDateLabelWrap.appendChild(createdivForOld)
+                    createDivForListWrap.appendChild(createDivForDateLabelWrap)
                 }
+
+                
+
 
                 // wrap for title Of Article
                 console.log(titleOfArticle)
