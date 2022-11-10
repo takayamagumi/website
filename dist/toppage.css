@@ -168,6 +168,10 @@
 
 
                 /* mobile nav */
+                #mobile-container {
+                    width: 100vw;
+                }
+
                 #mobile-nav {
                     background-color: var(--main-bg-color);
                     display: flex;
@@ -482,6 +486,7 @@
                         width: 100vw;
                     }
 
+
                     #lp-mainimg {
                         margin-top: 0;
                         background-size: auto 100%;
@@ -759,10 +764,11 @@
                 }
 
                 @media (max-width: 990px) {
-                    .createDivForNew ,.createDivForEmpty{
+                    .createDivForNew, .createDivForEmpty {
                         width: 70px;
                         font-size: .6em;
                     }
+
                     .createaFortitleOfArticle {
                         font-size: .8em;
                     }
