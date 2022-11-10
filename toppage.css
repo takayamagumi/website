@@ -153,9 +153,18 @@
                     #lp-container, #lp-main-container, #header-contact {
                         display: none;
                     }
-
                 }
 
+                @media (max-width: 990px) {
+                    .menu-link {
+                        max-width: 150px;
+                        margin: 2% 0 2% 5%;
+                    }
+
+                    .menu-names {
+                        font-size: .7em;
+                    }
+                }
 
 
                 /* mobile nav */
@@ -299,7 +308,12 @@
                     left: 50%;
                 }
 
+                @media (min-width: 750px) {
+                    #mobile-nav, #nav-icon {
+                        display: none;
+                    }
 
+                }
 
 
 
@@ -347,9 +361,19 @@
                 .img-phone-nums-wrap p {
                     line-height: 30px;
                     padding-left: 5%;
-                    letter-spacing: .1rem;
+                    letter-spacing: .1em;
                 }
 
+                @media (max-width: 990px) {
+                    .img-phone-nums-wrap img {
+                        height: 20px;
+                    }
+
+                    #phone-num-wrap a {
+                        font-size: 1.2em;
+                        letter-spacing: 1em;
+                    }
+                }
 
                 /* right side of screen from header to end */
 
@@ -447,9 +471,10 @@
                     margin-left: 50%;
                 }
 
-                .test {
-                    background-color: rgba(0, 0, 255, .4);
-                    height: 400px;
+                @media (max-width: 990px) {
+                    .main-message-wrap, .sub-message {
+                        margin-left: 40%;
+                    }
                 }
 
                 @media (max-width: 750px) {
@@ -459,7 +484,6 @@
 
                     #lp-mainimg {
                         margin-top: 0;
-                        background-color: aqua;
                         background-size: auto 100%;
                         align-items: center;
                     }
@@ -582,15 +606,28 @@
                     text-decoration: none;
                     color: var(--main-bg-color);
                     border: var(--main-bg-color) solid 2px;
-                    padding: 2px 20px;
+                    padding: 3px 15px;
                     margin-bottom: 15px;
-                    font-size: .7em;
+                    font-size: .9em;
+                    width: 100px;
+                    text-align: center;
                 }
 
                 .shosai-btn:hover {
                     border: white solid 2px;
                     color: white;
                     background-color: var(--main-bg-color);
+                }
+
+                @media (max-width: 990px) {
+                    .box-wrap {
+                        width: 22vw;
+                        padding-bottom: 5px;
+                    }
+
+                    .box-img {
+                        height: 25vh;
+                    }
                 }
 
                 @media (max-width: 750px) {
@@ -605,6 +642,13 @@
 
                     .box-wrap {
                         width: 70vw;
+                    }
+
+                    .shosai-btn {
+                        padding: 2px 10px;
+                        margin-bottom: 15px;
+                        font-size: .7em;
+                        width: 80px;
                     }
 
                 }
@@ -681,6 +725,12 @@
                     margin-left: 10%;
                 }
 
+                .createDivForDateLabelWrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+
                 .createPForTime {
                     padding: 10px 20px;
                 }
@@ -704,24 +754,55 @@
                 }
 
                 .createaFortitleOfArticle {
-                    margin-left: 5%;
                     color: black;
+                    margin-left: 5%;
+                }
+
+                @media (max-width: 990px) {
+                    .createDivForNew ,.createDivForEmpty{
+                        width: 70px;
+                        font-size: .6em;
+                    }
+                    .createaFortitleOfArticle {
+                        font-size: .8em;
+                    }
                 }
 
                 @media (max-width: 750px) {
+
+                    #btn-news {
+                        width: 100px;
+                    }
+
+                    #btn-news img {
+                        height: 15px;
+                        padding-right: 10px;
+                    }
+
+                    #btn-news>p {
+                        font-size: .7em;
+                    }
+
                     #news-content-wrap {
                         width: 80vw;
                     }
 
                     .createDivForListWrap {
                         flex-direction: column;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: flex-start;
                         margin-left: 0;
+                        padding-bottom: 30px;
+                    }
+
+                    .createDivForDateLabelWrap {
+                        width: 100%;
+                        justify-content: space-evenly;
                     }
 
                     .createaFortitleOfArticle {
-                        margin-left: 0;
+                        margin: 0 auto;
+                        font-size: .9em;
                     }
                 }
 
@@ -911,6 +992,20 @@
                     color: white;
                 }
 
+                @media (max-width: 990px) {
+                    #footer-logo-wrap p {
+                        font-size: .8em
+                    }
+
+                    #footer-logo {
+                        height: 20px;
+                        width: 20px;
+                    }
+
+                    .address-wrap p {
+                        font-size: .6em;
+                    }
+                }
 
                 @media (max-width: 750px) {
 
@@ -945,6 +1040,7 @@
                     #footer-bottom {
                         flex-direction: column;
                     }
+
                     #footer-bottom {
                         display: flex;
                         row-gap: 50px;
