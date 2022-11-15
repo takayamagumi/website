@@ -491,6 +491,7 @@
                         margin-top: 0;
                         background-size: auto 100%;
                         align-items: center;
+                        width: 100vw;
                     }
 
                     .main-message-wrap, .sub-message {
@@ -643,6 +644,11 @@
 
                     .box-img {
                         height: 25vh;
+                    }
+
+                    .bg-text {
+
+                        font-size: 7em;
                     }
 
                     .box-wrap {
@@ -992,6 +998,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding: 5px 0;
                 }
 
                 #licencedWrap p {
@@ -1009,7 +1016,7 @@
                     }
 
                     .address-wrap p {
-                        font-size: .6em;
+                        font-size: .9em;
                     }
                 }
 
