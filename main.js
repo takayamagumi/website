@@ -1,18 +1,24 @@
 let hiddenMenuDiv = document.getElementById("hidden-menu")
 function jigyonaiyoMenuTrigger() {
-
-
   if (hiddenMenuDiv.style.display === "block") {
     hiddenMenuDiv.style.display = "none"
-
   } else {
     hiddenMenuDiv.style.display = "block"
-
   }
 
 
 }
 
+let hiddenMenuDivMobile = document.getElementById("hidden-menu-mobile")
+function jigyonaiyoMenuTriggerMobile(){
+  if (hiddenMenuDivMobile.style.display === "block") {
+    hiddenMenuDivMobile.style.display = "none"
+  } else {
+    hiddenMenuDivMobile.style.display = "block"
+  }
+
+
+}
 
 
 

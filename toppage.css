@@ -33,7 +33,7 @@
                 #btn-news>p,
                 .footer-menu,
                 #btn-recruit,
-                #recruit-rightbox p {
+                #recruit-rightbox p, .mobile-menu-names {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style: normal;
@@ -42,7 +42,7 @@
                 #logo-wrap,
                 #footer-logo-wrap p,
                 .address-wrap p,
-                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text {
+                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text,.call-btn {
                     font-family: 'Kosugi Maru', sans-serif;
                     /* font-family: fot-seurat-pron, sans-serif; */
                     font-weight: 600;
@@ -319,9 +319,98 @@
 
                 }
 
+/* mobile menu wrap */
+#mobile-menu-container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mobile-menu-wrap{
+width: 100%;
+padding: 20px 0;
+}
+
+.mobile-menu-link{
+    background-color: white;
+    text-decoration: none;
+}
+.mobile-menu-link{
+    color: var(--main-bg-color);
+    background-color: white;
+}
+
+.mobile-menu-names {
+    color: white;
+    font-size: .7em;
+}
+#mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
+    padding-left: 10%;
+}
+/* #mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
+    padding-left: 10%;
+    background-color: white;
+}
+#mobile-menu-kensetsu> div >p, #mobile-menu-unso> div>p, #mobile-menu-recycle > div>p{
+color: #3b7b58;
+} */
+/* #mobile-menu-kensetsu> div:hover, #mobile-menu-unso> div:hover, #mobile-menu-recycle > div:hover{
+background-color: var(--light-green-color);
+} */
+.mobile-menu-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.mobile-menu-select img{
+    height: 15px;
+}
+.mobile-menu-select:hover{
+    background-color: white;
+}
+.mobile-menu-select:hover  .mobile-menu-names{
+    color: var(--main-bg-color);
+}
 
 
 
+/* btns for call in mobile menu */
+#call-btns-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+padding-bottom: 40px;
+}
+.call-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+border-radius: 40px;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+.call-btn > img{
+    height: 25px;
+}
+.call-btn-text-wrap  {
+    display: flex;
+flex-direction: column;
+    align-items: center;
+}
+.call-btn-text-wrap p {
+    font-size: .6em;
+    color: var(--main-bg-color);
+    padding-left: 5px;
+    
+}
+.mobile-phonenums {
+    letter-spacing: 2px;
+    font-size: .7em;
+}
 
 
                 /* wrap for locations and phone nums in nav */
