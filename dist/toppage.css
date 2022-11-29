@@ -117,7 +117,7 @@
 
                 .menu-names {
                     color: white;
-                    font-size: .8em;
+                    font-size:1em;
                 }
 
                 .menu-link:hover {
@@ -400,6 +400,7 @@ background-color: var(--light-green-color);
                     align-items: center;
                     justify-content: center;
                     padding-bottom: 40px;
+
                 }
 
                 .call-btn {
@@ -438,14 +439,14 @@ background-color: var(--light-green-color);
 
                 /* go to top */
                 #goToTopBtn {
-                    display: none;                
+                    display: none;
                     position: fixed;
                     bottom: 15px;
                     right: 15px;
                     z-index: 99;
                     border: none;
                     outline: none;
-                    background-color: rgba(59, 123, 88, .6);                   
+                    background-color: rgba(59, 123, 88, .6);
                     color: white;
                     cursor: pointer;
                     padding: 10px;
@@ -454,17 +455,20 @@ background-color: var(--light-green-color);
                     -moz-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
                     -webkit-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
                     -ms-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
-                    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.45);                 
+                    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.45);
                 }
+
                 #gototopWrap {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                 }
-                #gototopWrap > img{
+
+                #gototopWrap>img {
                     width: 20px;
                 }
+
                 #goToTopBtn:hover {
                     background-color: var(--main-bg-color);
                     /* Add a dark-grey background on hover */
@@ -480,19 +484,17 @@ background-color: var(--light-green-color);
                     background-color: white;
                     position: fixed;
                     top: 70vh;
-
+                    padding-top: 1em;
                 }
 
                 .location-names {
                     padding-left: 10%;
-                    font-size: .7em;
+                    font-size: .8em;
                 }
 
                 #phone-num-wrap a {
                     text-decoration: none;
                     align-items: center;
-                    font-size: 1.4em;
-                    letter-spacing: 2px;
                 }
 
                 .img-phone-nums-wrap {
@@ -511,7 +513,8 @@ background-color: var(--light-green-color);
                 .img-phone-nums-wrap p {
                     line-height: 30px;
                     padding-left: 5%;
-                    letter-spacing: .1em;
+                    letter-spacing: 1px;
+                    font-size: 1.2em;
                 }
 
                 @media (max-width: 990px) {
@@ -570,7 +573,7 @@ background-color: var(--light-green-color);
 
                 #contact-btn p {
 
-                    font-size: .8em;
+                    font-size: .9em;
                     color: white;
 
                 }
@@ -598,12 +601,12 @@ background-color: var(--light-green-color);
                     background-color: white;
                     display: flex;
                     flex-direction: row;
-                    font-size: 1.4em;
+                    font-size: 1.8em;
                     width: max-content;
                     letter-spacing: 3px;
                     margin-left: 50%;
-                    line-height: 35px;
-                    padding: 0 10px;
+                    line-height: 45px;
+                    padding: 0 15px;
                 }
 
                 .green-text {
@@ -612,13 +615,15 @@ background-color: var(--light-green-color);
                 }
 
                 #main-second-message-wrap {
-                    margin-top: 8px;
+                    margin-top: .5em;
+                    margin-bottom: .5em;
                 }
 
                 .sub-message {
-                    font-size: .5em;
+                    font-size: .7em;
                     line-height: 15px;
                     margin-left: 50%;
+                    padding-top: 2px;
                 }
 
                 @media (max-width: 990px) {
