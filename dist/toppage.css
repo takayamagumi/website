@@ -364,16 +364,7 @@
                     padding-left: 10%;
                 }
 
-                /* #mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
-    padding-left: 10%;
-    background-color: white;
-}
-#mobile-menu-kensetsu> div >p, #mobile-menu-unso> div>p, #mobile-menu-recycle > div>p{
-color: #3b7b58;
-} */
-                /* #mobile-menu-kensetsu> div:hover, #mobile-menu-unso> div:hover, #mobile-menu-recycle > div:hover{
-background-color: var(--light-green-color);
-} */
+                
                 .mobile-menu-select {
                     display: flex;
                     justify-content: space-evenly;
@@ -438,7 +429,16 @@ background-color: var(--light-green-color);
                     letter-spacing: 2px;
                     font-size: .7em;
                 }
-
+                @media (max-width: 320px) {
+                    .call-btn>img {
+                        height: 20px;
+                    }
+                    .call-btn-text-wrap p {
+                        font-size: .5em;
+                        padding-left: 3px;
+    
+                    }
+                }
                 /* go to top */
                 #goToTopBtn {
                     display: none;
@@ -645,7 +645,6 @@ background-color: var(--light-green-color);
                         background-size: auto 100%;
                         align-items: center;
                         width: 100vw;
-
                         top: 8vh;
                         z-index: 0;
                     }
@@ -665,8 +664,36 @@ background-color: var(--light-green-color);
                         font-size: .5em;
                     }
                 }
+                @media (max-width: 360px) {
+                    .main-message-wrap {
+                        background-color: white;
+                        display: flex;
+                        flex-direction: row;
+                        font-size: 1.2em;
+                        width: max-content;
+                        letter-spacing: 3px;
+                        line-height: 30px;
+                        padding: 0 10px;
+                    }
+                    .sub-message {
+                        font-size: .5em;
+                    }
+                }
+                @media (max-width: 320px) {
+                    .main-message-wrap {
 
+                        font-size: 1em;
+                      
+                        letter-spacing: 1px;
+                        line-height: 30px;
+                        padding: 0 10px;
+                    }
+                    .sub-message {
+                        font-size: .4em;
+                        padding-top: 1px;
+                    }
 
+                }
 
                 /* service container */
                 #service-container {
@@ -831,7 +858,13 @@ background-color: var(--light-green-color);
 
                 }
 
+                @media (max-width: 360px) {
 
+                    .bg-text {
+                        font-size: 6em;
+                    }
+
+                }
 
                 /* news container */
                 #news-container {
