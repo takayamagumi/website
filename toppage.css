@@ -4,6 +4,10 @@
                     --light-gray-color: #ebebeb;
                 }
 
+                html {
+                    scroll-behavior: smooth;
+                }
+
                 @font-face {
                     font-family: dolceVita;
                     src: url(font/Dolce\ Vita.ttf);
@@ -42,7 +46,7 @@
                 #logo-wrap,
                 #footer-logo-wrap p,
                 .address-wrap p,
-                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text,.call-btn {
+                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi {
                     font-family: 'Kosugi Maru', sans-serif;
                     /* font-family: fot-seurat-pron, sans-serif; */
                     font-weight: 600;
@@ -113,7 +117,7 @@
 
                 .menu-names {
                     color: white;
-                    font-size: .8em;
+                    font-size:1em;
                 }
 
                 .menu-link:hover {
@@ -180,7 +184,9 @@
                     justify-content: center;
                     height: 8vh;
                     width: 100vw;
-
+                    position: fixed;
+                    top: 0;
+                    z-index: 3;
                 }
 
                 #mobile-logo-wrap {
@@ -319,104 +325,154 @@
 
                 }
 
-/* mobile menu wrap */
-#mobile-menu-container {
-    width: 100%;
-    background-color: rgba(59, 123, 88, .9);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 8vh;
-    z-index: 1;
-}
-#mobile-menu-wrap{
+                /* mobile menu wrap */
+                #mobile-menu-container {
+                    width: 100%;
+                    background-color: rgba(59, 123, 88, .95);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    top: 8vh;
+                    z-index: 1;
+                }
 
-padding: 20px 0;
-}
+                #mobile-menu-wrap {
 
-.mobile-menu-link{
-    background-color: white;
-    text-decoration: none;
-}
-.mobile-menu-link{
-    color: var(--main-bg-color);
-    background-color: white;
-}
+                    padding: 20px 0;
+                }
 
-.mobile-menu-names {
-    color: white;
-    font-size: .9em;
-}
-#mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
-    padding-left: 10%;
-}
-/* #mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
+                .mobile-menu-link {
+                    background-color: white;
+                    text-decoration: none;
+                }
+
+                .mobile-menu-link {
+                    color: var(--main-bg-color);
+                    background-color: white;
+                }
+
+                .mobile-menu-names {
+                    color: white;
+                    font-size: .9em;
+                }
+
+                #mobile-menu-kensetsu>div, #mobile-menu-unso>div, #mobile-menu-recycle>div {
+                    padding-left: 10%;
+                }
+
+                /* #mobile-menu-kensetsu> div, #mobile-menu-unso> div, #mobile-menu-recycle > div{
     padding-left: 10%;
     background-color: white;
 }
 #mobile-menu-kensetsu> div >p, #mobile-menu-unso> div>p, #mobile-menu-recycle > div>p{
 color: #3b7b58;
 } */
-/* #mobile-menu-kensetsu> div:hover, #mobile-menu-unso> div:hover, #mobile-menu-recycle > div:hover{
+                /* #mobile-menu-kensetsu> div:hover, #mobile-menu-unso> div:hover, #mobile-menu-recycle > div:hover{
 background-color: var(--light-green-color);
 } */
-.mobile-menu-select{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 0;
-}
-.mobile-menu-select img{
-    height: 15px;
-}
-.mobile-menu-select:hover{
-    background-color: white;
-}
-.mobile-menu-select:hover  .mobile-menu-names{
-    color: var(--main-bg-color);
-}
+                .mobile-menu-select {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 10px 0;
+                }
+
+                .mobile-menu-select img {
+                    height: 15px;
+                }
+
+                .mobile-menu-select:hover {
+                    background-color: white;
+                }
+
+                .mobile-menu-select:hover .mobile-menu-names {
+                    color: var(--main-bg-color);
+                }
 
 
 
-/* btns for call in mobile menu */
-#call-btns-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-padding-bottom: 40px;
-}
-.call-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-border-radius: 40px;
-    background-color: white;
-    padding: 5px 10px;
-    margin: 0 8px;
-    text-decoration: none;
-}
-.call-btn > img{
-    height: 25px;
-}
-.call-btn-text-wrap  {
-    display: flex;
-flex-direction: column;
-    align-items: center;
-}
-.call-btn-text-wrap p {
-    font-size: .6em;
-    color: var(--main-bg-color);
-    padding-left: 5px;
-    
-}
-.mobile-phonenums {
-    letter-spacing: 2px;
-    font-size: .7em;
-}
+                /* btns for call in mobile menu */
+                #call-btns-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 40px;
 
+                }
+
+                .call-btn {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-radius: 40px;
+                    background-color: white;
+                    padding: 5px 10px;
+                    margin: 0 8px;
+                    text-decoration: none;
+                    height: 40px;
+                }
+
+                .call-btn>img {
+                    height: 25px;
+                }
+
+                .call-btn-text-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .call-btn-text-wrap p {
+                    font-size: .6em;
+                    color: var(--main-bg-color);
+                    padding-left: 5px;
+
+                }
+
+                .mobile-phonenums {
+                    letter-spacing: 2px;
+                    font-size: .7em;
+                }
+
+                /* go to top */
+                #goToTopBtn {
+                    display: none;
+                    position: fixed;
+                    bottom: 15px;
+                    right: 15px;
+                    z-index: 99;
+                    border: none;
+                    outline: none;
+                    background-color: rgba(59, 123, 88, .6);
+                    color: white;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 50%;
+                    font-size: .7em;
+                    -moz-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
+                    -webkit-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
+                    -ms-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
+                    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.45);
+                }
+
+                #gototopWrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                #gototopWrap>img {
+                    width: 20px;
+                }
+
+                #goToTopBtn:hover {
+                    background-color: var(--main-bg-color);
+                    /* Add a dark-grey background on hover */
+                }
 
                 /* wrap for locations and phone nums in nav */
                 #phone-num-wrap {
@@ -428,19 +484,17 @@ flex-direction: column;
                     background-color: white;
                     position: fixed;
                     top: 70vh;
-
+                    padding-top: 1em;
                 }
 
                 .location-names {
                     padding-left: 10%;
-                    font-size: .7em;
+                    font-size: .8em;
                 }
 
                 #phone-num-wrap a {
                     text-decoration: none;
                     align-items: center;
-                    font-size: 1.4em;
-                    letter-spacing: 2px;
                 }
 
                 .img-phone-nums-wrap {
@@ -459,7 +513,8 @@ flex-direction: column;
                 .img-phone-nums-wrap p {
                     line-height: 30px;
                     padding-left: 5%;
-                    letter-spacing: .1em;
+                    letter-spacing: 1px;
+                    font-size: 1.2em;
                 }
 
                 @media (max-width: 990px) {
@@ -518,7 +573,7 @@ flex-direction: column;
 
                 #contact-btn p {
 
-                    font-size: .8em;
+                    font-size: .9em;
                     color: white;
 
                 }
@@ -546,12 +601,12 @@ flex-direction: column;
                     background-color: white;
                     display: flex;
                     flex-direction: row;
-                    font-size: 1.4em;
+                    font-size: 1.8em;
                     width: max-content;
                     letter-spacing: 3px;
                     margin-left: 50%;
-                    line-height: 35px;
-                    padding: 0 10px;
+                    line-height: 45px;
+                    padding: 0 15px;
                 }
 
                 .green-text {
@@ -560,13 +615,15 @@ flex-direction: column;
                 }
 
                 #main-second-message-wrap {
-                    margin-top: 8px;
+                    margin-top: .5em;
+                    margin-bottom: .5em;
                 }
 
                 .sub-message {
-                    font-size: .5em;
+                    font-size: .7em;
                     line-height: 15px;
                     margin-left: 50%;
+                    padding-top: 2px;
                 }
 
                 @media (max-width: 990px) {
@@ -1065,6 +1122,12 @@ flex-direction: column;
                     justify-content: space-evenly;
                 }
 
+                #footer-shozaichi {
+                    color: white;
+                    text-align: center;
+                    padding: 40px;
+                }
+
                 .address-wrap {
                     display: flex;
                     flex-direction: column;
@@ -1125,12 +1188,21 @@ flex-direction: column;
                         padding: 30px 0 0 0;
                     }
 
+                    #footer-logo-wrap p {
+                        font-size: 1.3em;
+                    }
+
                     #footer-menu-wrap {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         justify-content: space-evenly;
-                        align-items: flex-start;
+                        align-items: center;
                         width: 90vw;
+                        padding-top: 30px;
+                    }
+
+                    #footer-menu-wrap a, #footer-jigyo-wrap a {
+                        font-size: .9em;
                     }
 
                     #footer-jigyo-wrap {
@@ -1145,7 +1217,15 @@ flex-direction: column;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        padding-bottom: 30px;
+                    }
 
+                    #white-line {
+                        padding: 30px auto;
+                    }
+
+                    #footer-shozaichi {
+                        padding-top: 40px;
                     }
 
                     #footer-bottom {
@@ -1157,6 +1237,6 @@ flex-direction: column;
                         row-gap: 50px;
                         width: fit-content;
                         margin: 0 auto;
-                        padding-top: 50px;
+                        padding: 10px;
                     }
                 }
