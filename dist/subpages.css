@@ -1,0 +1,13 @@
+#lp-mainimg {
+    width: 75vw;
+    height: 80vh;
+    background-image: url(./img/background-img.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
