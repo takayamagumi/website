@@ -1,13 +1,75 @@
-#lp-mainimg {
+table {
+    font-family: toppan-bunkyu-midashi-min-st, serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#footer-shozaichi {
+    font-family: 'Kosugi Maru', sans-serif;
+    /* font-family: fot-seurat-pron, sans-serif; */
+    font-weight: 600;
+    font-style: normal;
+}
+
+#phone-num-wrap a {
+    font-family: ta-marugo-gf-02, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.main-context-container {
     width: 75vw;
-    height: 80vh;
-    background-image: url(./img/background-img.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: max-content;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
+}
+#overview-top-img {
+    height: 45vh;
+    background-image: url(./img/office-white.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.subpage-title-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.subpage-title-wrap-eng {
+    display: flex;
+    flex-direction: row;
+    font-family: dolceVita;
+    font-size: 4em;
+    line-height: 60px;
+}
+#subpage-title-nospace {
+    margin-left: -10px;
+}
+#title-jpn-overview {
+    font-size: 1.2em;
+    
+}
+tr:first-of-type {
+    border-bottom: 2px solid black;
 
+  }
+table {
+    border-collapse: collapse;
+    font-size: .8em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    width: 85%;
+}
+th:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: dolceVita;
+    font-size: 2em;
 }
