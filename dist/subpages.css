@@ -44,7 +44,7 @@ table {
     display: flex;
     flex-direction: row;
     font-family: dolceVita;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 60px;
 }
 #subpage-title-nospace {
@@ -72,4 +72,29 @@ th:first-of-type {
     align-items: flex-end;
     font-family: dolceVita;
     font-size: 2em;
+}
+th:nth-child(1) { 
+    width:150px;  
+text-align: center;
+display: flex;
+}
+th:nth-child(2) { 
+    width: 100px; 
+    text-align: center;
+}
+th:nth-child(3) { 
+    text-align: start;
+    width: 100px; 
+    }
+td:nth-child(1) { 
+    width: 150px;  
+    text-align: center;
+}
+td:nth-child(2) { 
+    width: 100px; 
+    text-align: center;
+}
+td:nth-child(3) { 
+text-align: start;
+width: 100px; 
 }
