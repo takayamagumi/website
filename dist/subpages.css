@@ -28,6 +28,7 @@ table {
     justify-content: center;
     background-color: white;
 }
+
 #overview-top-img {
     height: 45vh;
     background-image: url(./img/office-white.jpg);
@@ -35,11 +36,13 @@ table {
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
 .subpage-title-wrap {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
+
 .subpage-title-wrap-eng {
     display: flex;
     flex-direction: row;
@@ -47,17 +50,21 @@ table {
     font-size: 5em;
     line-height: 60px;
 }
+
 #subpage-title-nospace {
     margin-left: -10px;
 }
+
 #title-jpn-overview {
     font-size: 1.2em;
-    
+
 }
+
 tr:first-of-type {
     border-bottom: 2px solid black;
 
-  }
+}
+
 table {
     border-collapse: collapse;
     font-size: .8em;
@@ -66,6 +73,7 @@ table {
     background-color: bisque;
     width: 85%;
 }
+
 th:first-of-type {
     display: flex;
     flex-direction: row;
@@ -73,28 +81,43 @@ th:first-of-type {
     font-family: dolceVita;
     font-size: 2em;
 }
-th:nth-child(1) { 
-    width:150px;  
-text-align: center;
-display: flex;
-}
-th:nth-child(2) { 
-    width: 100px; 
+
+th:nth-child(1) {
+    width: min-content;
     text-align: center;
+    background-color: yellow;
 }
-th:nth-child(3) { 
+
+th:nth-child(2) {
+    width: min-content;
+    text-align: center;
+    background-color: aqua;
+}
+
+th:nth-child(3) {
     text-align: start;
-    width: 100px; 
-    }
-td:nth-child(1) { 
-    width: 150px;  
-    text-align: center;
+    width: 60%;
+    background-color: palevioletred;
 }
-td:nth-child(2) { 
-    width: 100px; 
-    text-align: center;
+
+td:nth-child(1) {
+    width: min-content;
+    text-align: start;
+    background-color: yellow;
 }
-td:nth-child(3) { 
-text-align: start;
-width: 100px; 
+
+td:nth-child(2) {
+    width: min-content;
+    text-align: start;
+    background-color: aqua;
+}
+
+td:nth-child(3) {
+    text-align: start;
+    width: auto;
+    background-color: palevioletred;
+}
+
+td:nth-child(4) {
+    background-color: blue;
 }
