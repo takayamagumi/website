@@ -55,12 +55,15 @@
     font-size: 5em;
     line-height: 60px;
 }
+
 #table-title-eng-space {
     margin-left: -10px;
 }
-.subpage-title-wrap-eng p:first-of-type, .subpage-title-wrap-eng p:nth-child(3), .subpage-title-wrap-eng p:nth-child(4){
+
+.subpage-title-wrap-eng p:first-of-type, .subpage-title-wrap-eng p:nth-child(3), .subpage-title-wrap-eng p:nth-child(4) {
     color: var(--dark-gray-color);
 }
+
 #title-jpn-overview {
     font-size: 1.1em;
     color: var(--dark-gray-color);
@@ -100,9 +103,11 @@
 .overview-table-main-wrap {
     width: 80%;
 }
+
 #table-firstrow-wrap {
     padding-top: 1.8em;
 }
+
 .table-row-wrap {
     display: flex;
     flex-direction: row;
@@ -117,27 +122,113 @@
 .table-item-name {
     width: 30%;
 }
+
 #website-link {
     color: var(--dark-gray-color);
 }
+
 #table-row-wrap-last {
     border-bottom: none;
 }
+
 .table-col-item-name-wrap {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
+
 #overview-access-wrap {
     padding-top: 100px;
 }
+
 #note-office {
     font-size: .7em;
 }
 
 iframe {
-    width: 600px;
-    height: 400px;
+    width: 70%;
+    height: 300px;
     margin-top: 60px;
     margin-left: 30%;
+}
+
+
+@media (max-width: 990px) {
+    iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 790px) {
+    iframe {
+        height: 150px;
+    }
+
+    .subpage-title-wrap-eng {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-context-container {
+        width: 100vw;
+        margin-top: 8vh;
+    }
+
+    #overview-top-img {
+        height: 40vh;
+        background-size: 100% auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 580px) {
+    .table-row-wrap {
+        padding: .9em 0;
+        font-size: .7em;
+    }
+
+    .table-item-name {
+        width: 40%;
+    }
+
+    .table-col-item-name-wrap {
+        width: 40%;
+    }
+
+    iframe {
+        height: 150px;
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 490px) {
+    .subpage-title-wrap-eng {
+        font-size: 3em;
+    }
+
+    .table-row-wrap {
+        padding: .9em 0;
+        font-size: .5em;
+    }
+
+    iframe {
+        height: 150px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 450px) {
+
+    #overview-top-img {
+        height: 35vh;
+}
+}
+@media (max-width: 380px) {
+
+    #overview-top-img {
+        height: 30vh;
+}
 }
