@@ -230,7 +230,6 @@ iframe {
 
     .table-item-name {
         width: 35%;
-        background-color: yellow;
     }
 
     .table-col-item-name-wrap {
@@ -279,7 +278,7 @@ iframe {
     
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .table-row-wrap {
         font-size: .7em;
     }
