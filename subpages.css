@@ -229,11 +229,12 @@ iframe {
     }
 
     .table-item-name {
-        width: 40%;
+        width: 35%;
     }
 
     .table-col-item-name-wrap {
-        width: 40%;
+        width: 35%;
+        
     }
 
     .adress-col-wrap {
@@ -277,7 +278,7 @@ iframe {
     
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .table-row-wrap {
         font-size: .7em;
     }
