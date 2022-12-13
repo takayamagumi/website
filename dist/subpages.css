@@ -190,11 +190,13 @@ iframe {
     }
 
     .table-item-name {
-        width: 40%;
+        width: 35%;
+        background-color: yellow;
     }
 
     .table-col-item-name-wrap {
-        width: 40%;
+        width: 35%;
+        
     }
 
     iframe {
