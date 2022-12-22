@@ -105,7 +105,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: dolceVita;
+
     font-size: 2em;
 }
 
@@ -326,9 +326,13 @@ iframe {
 }
 
 /* history */
-/* #history-wrap {
-    background-color: gray;
-} */
+
+#history-wrap {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #history-title-wrap {
     justify-content: center;
@@ -338,11 +342,31 @@ iframe {
 #history-main-bar {
     background-color: var(--light-green-color);
     width: 50px;
-    height: 90vh;
-    right: 50%;
+    height: 80%;
+    top: 15%;
     position: absolute;
     z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.history-item-both-wrap {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    /* background-color: yellow; */
+}
+
+
+.history-img {
+    /* background-color: aquamarine; */
+    width: 50%;
+    height: 150px;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .history-item-wrap {
     display: flex;
@@ -350,7 +374,6 @@ iframe {
     align-items: center;
     justify-content: space-between;
     width: max-content;
-    /* background-color: antiquewhite; */
 }
 
 .item-line {
@@ -359,28 +382,12 @@ iframe {
     height: 5px;
 }
 
-#history-item-right {
-    justify-content: flex-start;
-    margin-left: 48%;
-    z-index: 2;
-    position: relative;
-    width: 50%;
-}
 
-#history-item-left {
-    justify-content: flex-end;
-    z-index: 2;
-    position: relative;
-    margin-left: -3%;
-    width: 50%;
-}
 
-#history-item-right .item-year {
-    padding: 0 20px;
-}
-
-#history-item-left .item-year {
-    padding: 0 20px;
+.month-item-wrap {
+    display: flex;
+    flex-direction: column;
+    font-family: dolceVita;
 }
 
 .item-year {
@@ -388,9 +395,68 @@ iframe {
     font-family: dolceVita;
 }
 
-.month-item-wrap {
+.history-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+#history-list-right {
+    /* background-color: beige; */
+}
+
+#history-list-left {
+    /* background-color: blue; */
+    justify-content: end;
+}
+
+
+
+#history-img-left1 {
+    background-image: url(./img/genba.jpg);
+    justify-content: center;
+    z-index: 2;
+}
+
+#history-img-right1 {
+    background-image: url(./img/genba.jpg);
+    justify-content: center;
+    z-index: 2;
+}
+
+#history-img-left2 {
+    background-image: url(./img/recycle.jpg);
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.monthes-wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.monthes-wrap>.month-item-wrap {
+    /* background-color: brown; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+
+#history-list-left>.month-item-wrap, #history-list-left>.monthes-wrap {
+    /* background-color: palegoldenrod; */
+    padding-right: 2em;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#history-list-right>.month-item-wrap {
+    /* background-color: yellowgreen; */
+    padding-left: 2em;
+}
+
+#month-item-sp {
+    padding-left: 2em;
 }
