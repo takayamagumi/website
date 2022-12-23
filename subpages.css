@@ -388,11 +388,18 @@ iframe {
     display: flex;
     flex-direction: column;
     font-family: dolceVita;
+    font-size: .7em;
+}
+.item-month{
+    line-height: 1em;
+    font-size: 1.8em;
+    background-color: antiquewhite;
 }
 
 .item-year {
-    font-size: 3.5em;
+    font-size: 3.8em;
     font-family: dolceVita;
+
 }
 
 .history-list {
@@ -402,9 +409,9 @@ iframe {
     width: 50%;
 }
 
-#history-list-right {
-    /* background-color: beige; */
-}
+/* #history-list-right {
+    background-color: beige;
+} */
 
 #history-list-left {
     /* background-color: blue; */
