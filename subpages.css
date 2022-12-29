@@ -1,67 +1,67 @@
 :root {
-    --main-bg-color: #3b7b58;
-    --dark-gray-color: #4c4c4c;
+    --main-bg-color    : #3b7b58;
+    --dark-gray-color  : #4c4c4c;
     --light-green-color: #d8e5de;
-    --light-gray-color: #ebebeb;
+    --light-gray-color : #ebebeb;
 }
 
 @font-face {
     font-family: dolceVita;
-    src: url(font/Dolce\ Vita.ttf);
+    src        : url(font/Dolce\ Vita.ttf);
 }
 
 .table-title-jpn,
 .table-row-wrap {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
-    font-style: normal;
+    font-style : normal;
 }
 
 #footer-shozaichi {
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family   : 'Kosugi Maru', sans-serif;
     /* font-family: fot-seurat-pron, sans-serif; */
-    font-weight: 600;
-    font-style: normal;
+    font-weight   : 600;
+    font-style    : normal;
 }
 
 #phone-num-wrap a {
     font-family: ta-marugo-gf-02, sans-serif;
     font-weight: 500;
-    font-style: normal;
+    font-style : normal;
 }
 
 
 
 .main-context-container {
-    width: 75vw;
-    height: max-content;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width           : 75vw;
+    height          : max-content;
+    margin-top      : 70px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
     background-color: white;
 }
 
 #overview-top-img {
-    height: 45vh;
-    background-image: url(./img/office-white.jpg);
-    background-size: 100% auto;
+    height             : 45vh;
+    background-image   : url(./img/office-white.jpg);
+    background-size    : 100% auto;
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
 }
 
 .subpage-title-wrap {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    padding: 40px;
+    padding       : 40px;
 }
 
 .subpage-title-wrap-eng {
-    display: flex;
+    display       : flex;
     flex-direction: row;
-    font-family: dolceVita;
-    font-size: 5em;
-    line-height: 60px;
+    font-family   : dolceVita;
+    font-size     : 5em;
+    line-height   : 60px;
 }
 
 #table-title-eng-space {
@@ -70,7 +70,8 @@
 
 .subpage-title-wrap-eng p:first-of-type,
 .subpage-title-wrap-eng p:nth-child(3),
-.subpage-title-wrap-eng p:nth-child(4), .subpage-title-wrap-eng p:nth-child(5) {
+.subpage-title-wrap-eng p:nth-child(4),
+.subpage-title-wrap-eng p:nth-child(5) {
     color: var(--dark-gray-color);
 }
 
@@ -80,31 +81,31 @@
 
 #title-jpn-overview {
     font-size: 1.1em;
-    color: var(--dark-gray-color);
+    color    : var(--dark-gray-color);
 }
 
 #overview-wrap {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+    align-items    : center;
+    padding-top    : 60px;
 }
 
 .overview-table-title {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
+    width          : 90%;
+    display        : flex;
+    flex-direction : row;
     justify-content: start;
-    align-items: center;
-    border-bottom: 3px solid var(--dark-gray-color);
+    align-items    : center;
+    border-bottom  : 3px solid var(--dark-gray-color);
 }
 
 .table-title-eng-wrap {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 
     font-size: 2em;
 }
@@ -123,14 +124,14 @@
 }
 
 .table-row-wrap {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     justify-content: start;
-    align-items: flex-start;
-    padding: .9em 0;
-    font-size: .8em;
-    border-bottom: 1px solid var(--dark-gray-color);
-    width: 100%;
+    align-items    : flex-start;
+    padding        : .9em 0;
+    font-size      : .8em;
+    border-bottom  : 1px solid var(--dark-gray-color);
+    width          : 100%;
 }
 
 .table-item-name {
@@ -146,14 +147,14 @@
 }
 
 .table-col-item-name-wrap {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    width: 30%;
+    width         : 30%;
 }
 
 .adress-col-wrap {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     justify-content: space-between;
 }
 
@@ -162,15 +163,15 @@
 }
 
 #note-office-wrap {
-    font-size: .7em;
-    display: flex;
+    font-size     : .7em;
+    display       : flex;
     flex-direction: row;
 }
 
 iframe {
-    width: 70%;
-    height: 300px;
-    margin-top: 60px;
+    width      : 70%;
+    height     : 300px;
+    margin-top : 60px;
     margin-left: 30%;
 }
 
@@ -192,20 +193,20 @@ iframe {
     }
 
     iframe {
-        height: 150px;
-        width: 100%;
+        height     : 150px;
+        width      : 100%;
         margin-left: 0%;
     }
 }
 
 @media (max-width: 750px) {
     .main-context-container {
-        width: 100vw;
+        width     : 100vw;
         margin-top: 8vh;
     }
 
     #overview-top-img {
-        height: 40vh;
+        height         : 40vh;
         background-size: 100% auto;
     }
 
@@ -221,7 +222,7 @@ iframe {
     }
 
     .table-row-wrap {
-        padding: .9em 0;
+        padding  : .9em 0;
         font-size: .8em;
     }
 
@@ -251,13 +252,13 @@ iframe {
     }
 
     .adress-col-wrap {
-        display: flex;
+        display       : flex;
         flex-direction: column;
     }
 
     iframe {
         height: 150px;
-        width: 100%;
+        width : 100%;
     }
 
 }
@@ -268,20 +269,20 @@ iframe {
     }
 
     .table-row-wrap {
-        padding: .9em 0;
+        padding  : .9em 0;
         font-size: .8em;
     }
 
     iframe {
-        height: 150px;
-        width: 100%;
+        height     : 150px;
+        width      : 100%;
         margin-left: 0;
     }
 }
 
 @media (max-width: 450px) {
     #note-office-wrap {
-        font-size: .5em;
+        font-size     : .5em;
         flex-direction: column;
     }
 
@@ -329,134 +330,202 @@ iframe {
 
 #history-wrap {
     /* background-color: gray; */
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
 }
 
 #history-title-wrap {
     justify-content: center;
-    align-items: center;
+    align-items    : center;
+    margin: 80px 0;
+}
+.bg-imgs {
+    height: 150px;
+    position: absolute;
+}
+
+#bg-takayamagumi-logo {
+    position: absolute;
+    top: 5%;
+    height: 200px;
+}
+#umbo {
+    top: 30%;
+    right: -1%;
+    height: 100px;
+}
+#bulldorzer {
+    top: 45%;
+    right: -1%;
+    height: 120px;
+}
+#dampcar {
+    top: 55%;
+    height: 120px;
 }
 
 #history-main-bar {
     background-color: var(--light-green-color);
-    width: 50px;
-    height: 80%;
-    top: 15%;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
+    width           : 50px;
+    height          : 60%;
+    top             : 15%;
+    position        : absolute;
+    z-index         : 1;
+    left            : 50%;
+    transform       : translateX(-50%);
 }
 
-.history-item-both-wrap {
-    display: flex;
+.history-item-row-wrap {
+    display       : flex;
     flex-direction: row;
-    z-index: 2;
-    /* background-color: yellow; */
+    z-index       : 2;
 }
 
 
 .history-img {
-    /* background-color: aquamarine; */
-    width: 50%;
-    height: 150px;
-    background-size: auto 120%;
-    background-repeat: no-repeat;
+    margin             : auto;
+    width              : 50%;
+    height             : 150px;
+    background-size    : auto 120%;
+    background-repeat  : no-repeat;
     background-position: center;
 }
 
 
-.history-item-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.history-item {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
     justify-content: space-between;
-    width: max-content;
+    width          : max-content;
+    height         : 180px;
+    width          : 100%;
+}
+
+#history-item-top {
+    align-items: flex-start;
+}
+
+#history-item-center {
+    align-items: center;
+}
+
+#history-item-bottom {
+    align-items: flex-end;
+}
+
+
+.history-item-content {
+
+    width         : 100%;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+}
+
+#history-item-content-left {
+    justify-content: end;
+/* background-color: yellow; */
 }
 
 .item-line {
     background-color: var(--main-bg-color);
-    width: 100px;
-    height: 5px;
+    width           : 80px;
+    height          : 3px;
+    margin: 0 10px;
 }
 
 
 
 .month-item-wrap {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    font-family: dolceVita;
-    font-size: .7em;
+    font-family   : dolceVita;
+    font-size     : .7em;
 }
-.item-month{
-    line-height: 1em;
-    font-size: 1.8em;
-    background-color: antiquewhite;
+
+
+#month-item-wrap-left {
+    padding-right: 2em;
+}
+
+#month-item-wrap-left>.item-month {
+    margin-left: auto;
+}
+
+.item-month {
+    line-height     : 1em;
+    font-size       : 1.8em;
+    width           : max-content;
+}
+#item-month-sp {
+    padding-top: 1.5em;
+}
+#content-left {
+    margin-left: auto;
 }
 
 .item-year {
-    font-size: 3.8em;
+    font-size  : 3.8em;
     font-family: dolceVita;
 
 }
 
 .history-list {
-    display: flex;
+    display       : flex;
     flex-direction: row;
-    align-items: center;
-    width: 50%;
+    align-items   : center;
+    width         : 50%;
 }
-
-/* #history-list-right {
-    background-color: beige;
-} */
-
-#history-list-left {
-    /* background-color: blue; */
-    justify-content: end;
-}
-
 
 
 #history-img-left1 {
     background-image: url(./img/genba.jpg);
-    justify-content: center;
-    z-index: 2;
+    justify-content : center;
+    z-index         : 2;
 }
 
 #history-img-right1 {
     background-image: url(./img/genba.jpg);
-    justify-content: center;
-    z-index: 2;
+    justify-content : center;
+    z-index         : 2;
 }
 
 #history-img-left2 {
     background-image: url(./img/recycle.jpg);
-    justify-content: center;
-    z-index: 2;
+    justify-content : center;
+    z-index         : 2;
+}
 
+#history-img-right2 {
+    background-image: url(./img/genba.jpg);
+    justify-content : center;
+    z-index         : 2;
 }
 
 .monthes-wrap {
-    display: flex;
+    display       : flex;
     flex-direction: column;
+    padding-right : 2em;
+    padding-top: 1.5em;
+    /* background-color: aqua; */
 }
 
 .monthes-wrap>.month-item-wrap {
     /* background-color: brown; */
-    display: flex;
-    align-items: flex-end;
+    display        : flex;
+    align-items    : flex-end;
     justify-content: end;
 }
 
 
-#history-list-left>.month-item-wrap, #history-list-left>.monthes-wrap {
+#history-list-left>.month-item-wrap,
+#history-list-left>.monthes-wrap {
     /* background-color: palegoldenrod; */
     padding-right: 2em;
-    align-items: flex-end;
-    width: 100%;
+    align-items  : flex-end;
+    width        : 100%;
 }
 
 #history-list-right>.month-item-wrap {
