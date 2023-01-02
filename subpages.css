@@ -327,9 +327,12 @@ iframe {
 }
 
 /* history */
+#overview-main-context-container {
+    box-shadow: -2px -2px 7px -1px #4c4c4c4a;
+}
 
 #history-wrap {
-    /* background-color: gray; */
+
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -338,30 +341,35 @@ iframe {
 #history-title-wrap {
     justify-content: center;
     align-items    : center;
-    margin: 80px 0;
+    margin         : 80px 0;
+    z-index        : 10;
 }
+
 .bg-imgs {
-    height: 150px;
+    height  : 150px;
     position: absolute;
 }
 
 #bg-takayamagumi-logo {
     position: absolute;
-    top: 5%;
-    height: 200px;
+    top     : 5%;
+    height  : 200px;
 }
+
 #umbo {
-    top: 30%;
-    right: -1%;
+    top   : 30%;
+    right : 0%;
     height: 100px;
 }
+
 #bulldorzer {
-    top: 45%;
-    right: -1%;
+    top   : 45%;
+    right : 0%;
     height: 120px;
 }
+
 #dampcar {
-    top: 55%;
+    top   : 60%;
     height: 120px;
 }
 
@@ -417,7 +425,6 @@ iframe {
 
 
 .history-item-content {
-
     width         : 100%;
     display       : flex;
     flex-direction: row;
@@ -426,14 +433,13 @@ iframe {
 
 #history-item-content-left {
     justify-content: end;
-/* background-color: yellow; */
 }
 
 .item-line {
     background-color: var(--main-bg-color);
     width           : 80px;
     height          : 3px;
-    margin: 0 10px;
+    margin          : 0 10px;
 }
 
 
@@ -442,7 +448,7 @@ iframe {
     display       : flex;
     flex-direction: column;
     font-family   : dolceVita;
-    font-size     : .7em;
+    font-size     : .9em;
 }
 
 
@@ -455,13 +461,15 @@ iframe {
 }
 
 .item-month {
-    line-height     : 1em;
-    font-size       : 1.8em;
-    width           : max-content;
+    line-height: 1em;
+    font-size  : 1.8em;
+    width      : max-content;
 }
+
 #item-month-sp {
     padding-top: 1.5em;
 }
+
 #content-left {
     margin-left: auto;
 }
@@ -469,7 +477,6 @@ iframe {
 .item-year {
     font-size  : 3.8em;
     font-family: dolceVita;
-
 }
 
 .history-list {
@@ -508,12 +515,10 @@ iframe {
     display       : flex;
     flex-direction: column;
     padding-right : 2em;
-    padding-top: 1.5em;
-    /* background-color: aqua; */
+    /* padding-top   : 1.5em; */
 }
 
 .monthes-wrap>.month-item-wrap {
-    /* background-color: brown; */
     display        : flex;
     align-items    : flex-end;
     justify-content: end;
@@ -522,17 +527,188 @@ iframe {
 
 #history-list-left>.month-item-wrap,
 #history-list-left>.monthes-wrap {
-    /* background-color: palegoldenrod; */
     padding-right: 2em;
     align-items  : flex-end;
     width        : 100%;
 }
 
 #history-list-right>.month-item-wrap {
-    /* background-color: yellowgreen; */
     padding-left: 2em;
 }
 
 #month-item-sp {
     padding-left: 2em;
 }
+
+#wrap-text-right {
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-end;
+}
+
+.wrap-text {
+    display       : flex;
+    flex-direction: row;
+}
+.wrap-item-reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:palegoldenrod;
+}
+.wrap-item-no-reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqua;
+}
+.wrap-item-reverse  > .month-item-wrap{
+    background-color: palegreen;
+    padding-top: 3em;
+    }
+.wrap-item-no-reverse > .month-item-wrap{
+background-color: blue;
+padding-top: 3em;
+}
+.wrap-item-reverse >.monthes-wrap {
+    background-color: gold;
+    padding-top: 3em;
+}
+.wrap-item-no-reverse >.monthes-wrap {
+    background-color: yellowgreen;
+    padding-top: 3em;
+}
+
+@media (max-width: 1000px) {
+    #history-title-wrap {
+        margin: 50px 0;
+    }
+
+    #bg-takayamagumi-logo {
+        height: 150px;
+    }
+
+    .month-item-wrap {
+        font-size: .7em;
+    }
+
+    #history-title-wrap-eng {
+        font-size: 3em;
+    }
+
+    .item-line {
+        background-color: var(--main-bg-color);
+        width           : 60px;
+        height          : 3px;
+        margin          : 0 6px;
+    }
+}
+
+@media (max-width: 970px) {
+    .month-item-wrap {
+        font-size: .7em;
+    }
+
+    .monthes-wrap {
+        padding-right: 1em;
+    }
+
+    .history-item {
+        height: 150px;
+    }
+
+    .history-img {
+        width : 80%;
+        height: 130px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .wrap-text,
+    #wrap-text-right {
+        flex-direction: column;
+    }
+
+    .month-item-wrap {
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .monthes-wrap,
+    #month-item-wrap-left {
+        padding-right: .7em;
+    }
+
+    #month-item-sp {
+        padding-left: .7em;
+    }
+
+    .item-year {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 770px) {
+    .month-item-wrap {
+        font-size: .5em;
+    }
+
+    .item-year {
+        font-size: 2.5em;
+    }
+
+
+    .history-item {
+        height: 120px;
+    }
+    #bg-takayamagumi-logo {
+        height  : 120px;
+    }
+    
+    #umbo {
+        height: 70px;
+    }
+    
+    #bulldorzer {
+        height: 80px;
+    }
+    
+    #dampcar {
+        height: 80px;
+    }
+    #history-main-bar {
+        width           : 40px;
+        height          : 55%;
+        top             : 15%;
+        position        : absolute;
+        z-index         : 1;
+    }
+
+}
+@media (max-width: 750px) {
+    #history-main-bar {
+        height          : 40%;
+        top             : 12%;
+    }
+    #umbo {
+        top   : 15%;
+    }
+    
+    #bulldorzer {
+        top   : 30%;
+    }
+    
+    #dampcar {
+        top   : 40%;
+    }
+    }
+    @media (max-width: 540px) {
+        .history-img {
+            width : 80%;
+            height: 100px;
+        }
+        }
