@@ -30,13 +30,16 @@ let mobileMenuContainer = document.getElementById('mobile-menu-container')
 
 navIcon.addEventListener('click', ()=>
   navIcon.classList.toggle('open')
+  
 )
 navIcon.addEventListener('click', function(){
+  // alert('test')
   if(navIcon.className === '') {
     navIconOpen.style.display = 'flex'
     navIconClosed.style.display = 'none'
     mobileMenuContainer.style.display = 'none'
 }else {
+  // alert('test')
   navIconOpen.style.display = 'none'
   navIconClosed.style.display = 'flex'
   mobileMenuContainer.style.display = 'block'
