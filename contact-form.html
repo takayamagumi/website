@@ -263,7 +263,7 @@
                 <p>お問い合わせ</p>
             </a>
         </div>
-        <div id="overview-main-context-container" class="main-context-container">
+        <div id="contact-main-context-container" class="main-context-container">
 
             <div class="path-links-wrap">
                 <a href="#index">HOME</a>
@@ -293,20 +293,20 @@
                                 <p>お問い合わせ内容</p>
                                 <div class="required">必須</div>
                             </div>
-                            <div class="contact-form-input">
-                                <div class="contact-form-checkbox">
-                                    <input type="checkbox" id="scales" name="scales" checked>
-                                    <label for="scales">採用情報</label>
+                            <div class="contact-form-checkbox" id="contact-checkbox-wrap-purpose">
+                                <div class="contact-form-checkbox" id="contact-checkbox-recruit">
+                                    <input type="checkbox" id="recruit" name="recruit">
+                                    <label for="recruit">採用情報</label>
                                 </div>
 
-                                <div class="contact-form-checkbox">
-                                    <input type="checkbox" id="horns" name="horns">
-                                    <label for="horns">お仕事の依頼</label>
+                                <div class="contact-form-checkbox" id="contact-checkbox-work">
+                                    <input type="checkbox" id="work" name="work">
+                                    <label for="work">お仕事の依頼</label>
                                 </div>
 
-                                <div class="contact-form-checkbox">
-                                    <input type="checkbox" id="horns" name="horns">
-                                    <label for="horns">その他</label>
+                                <div class="contact-form-checkbox" id="contact-checkbox-other">
+                                    <input type="checkbox" id="other" name="other">
+                                    <label for="other">その他</label>
                                 </div>
                             </div>
                         </div>
@@ -338,7 +338,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                                <input type="text" id="name" name="name" required placeholder="(例)高山　太郎" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -348,7 +348,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                                <input type="text" id="name" name="name" required placeholder="(例)タカヤマ　タロウ" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -358,7 +358,8 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                                <input type="text" id="name" name="name" required
+                                    placeholder="(例)takayama@takayamagumi.com" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -368,30 +369,22 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                                <input type="text" id="name" name="name" required placeholder="(例)0120-123-4567"
+                                    size="10">
                             </div>
                         </div>
-                        <div class="contact-form-input-item">
-                            <div class="contact-form-label">
-                                <p>お問い合わせ内容</p>
-                                <div class="required">必須</div>
-                            </div>
 
-                            <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-                            </div>
-                        </div>
-                        <div class="contact-form-input-item">
-                            <div class="contact-form-label">
+                        <div class="contact-form-input-item" id="contact-form-content-wrap">
+                            <div class="contact-form-label" id="contact-form-label-content">
                                 <p>お問い合わせ内容</p>
                                 <div class="required">必須</div>
                             </div>
                             <div class="contact-form-input" id="contact-form-content-input">
-                                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                                <textarea name="name" required cols="5" rows="20"></textarea>
 
                                 <div id="contact-content-checkbox-wrap">
-                                    <div class="contact-form-checkbox">
-                                        <input type="checkbox" id="horns" name="horns">
+                                    <div id="contact-checkbox-policy">
+                                        <input type="checkbox" id="checkbox-policy" class="checkboxes" name="horns">
                                         <label for="horns"></label>
                                     </div>
                                     <a href="#">プライバシーポリシー</a>に同意する。
@@ -401,26 +394,28 @@
                         </div>
 
                     </div>
-                    <button>確認画面へ</button>
+                    <button id="contact-btn-toconfirm">確認画面へ</button>
                 </div>
             </div>
-            <div id="contact-call-wrap">
+            <div id="contact-call-container">
                 <p>電話によるお問い合わせ</p>
-                <div id="contact-call-location">
-                    <p>本社・北河原オフィス</p>
-                    <p>リサイクルプラント</p>
-                </div>
-                <div id="contact-call-num-wrap">
-                    <div class="contact-call-num">
-                        <img src="./img/telephone-call.png" alt="">
-                        <a href="tel:+0727834576">072-783-4576</a>
+                <div id="contact-call-wrap">
+                    <div id="contact-call-location">
+                        <p>本社・北河原オフィス</p>
+                        <p>リサイクルプラント</p>
                     </div>
-                    <div class="contact-call-num">
-                        <img src="./img/telephone-call.png" alt="">
-                        <a href="tel:+0727720287">072-772-0287</a>
+                    <div id="contact-call-num-wrap">
+                        <div class="contact-call-num">
+                            <img src="./img/telephone-call.png" alt="">
+                            <a href="tel:+0727834576">072-783-4576</a>
+                        </div>
+                        <div class="contact-call-num">
+                            <img src="./img/telephone-call.png" alt="">
+                            <a href="tel:+0727720287">072-772-0287</a>
+                        </div>
                     </div>
+                    <div id="concact-call-time">受付時間：平日9:00～17:00</div>
                 </div>
-                <div id="concact-call-time">受付時間：平日9:00～17:00</div>
             </div>
         </div>
 
