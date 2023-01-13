@@ -11,7 +11,7 @@
 }
 
 .table-title-jpn,
-.table-row-wrap, #contact-form-message-wrap, #contact-main-container,#contact-call-container {
+.table-row-wrap, #contact-form-message-wrap, #contact-main-container,#contact-call-container ,#contact-btn-toconfirm{
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -1052,8 +1052,19 @@ textarea {
 
 #contact-btn-toconfirm {
     background-color: white;
-    width: 200px;
+    color: var(--main-bg-color);
+    margin-top: 5%;
+    width: 250px;
     height: 50px;
+    font-size: 1em;
+    letter-spacing: .2em;
+    border-radius: 2%;
+    border: 3px solid var(--main-bg-color);
+}
+#contact-btn-toconfirm:hover {
+    background-color: var(--main-bg-color);
+    border: 3px solid white;
+    color: white;
 }
 
 #contact-call-container {
@@ -1062,17 +1073,39 @@ textarea {
     display: flex;
     flex-direction: column;
     margin: 10% auto 5% auto;
+    padding: 50px 0;
 }
 #contact-call-container > p{
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 20px;
 }
 #contact-call-wrap  {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
 }
 #contact-call-wrap img {
-    height: 50px;
+    height: 40px;
+    padding-right: 1em;
+}
+#contact-call-location p{
+    line-height: 70px;
+}
+.contact-call-num {
+    /* background-color: #4c4c4c;  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.contact-call-num a{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
 }

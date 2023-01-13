@@ -318,7 +318,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" placeholder="(例)株式会社〇〇〇" size="10">
+                                <input type="text" id="companyName" name="name" placeholder="(例)株式会社〇〇〇" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -328,7 +328,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" placeholder="(例)カブシキガイシャ〇〇〇" size="10">
+                                <input type="text" id="companyNameFurigana" name="name" placeholder="(例)カブシキガイシャ〇〇〇" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -348,7 +348,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required placeholder="(例)タカヤマ　タロウ" size="10">
+                                <input type="text" id="nameFurigana" name="name" required placeholder="(例)タカヤマ　タロウ" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -358,7 +358,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required
+                                <input type="text" id="emailAdress" name="name" required
                                     placeholder="(例)takayama@takayamagumi.com" size="10">
                             </div>
                         </div>
@@ -369,7 +369,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required placeholder="(例)0120-123-4567"
+                                <input type="text" id="phoneNumber" name="name" required placeholder="(例)0120-123-4567"
                                     size="10">
                             </div>
                         </div>
@@ -380,7 +380,7 @@
                                 <div class="required">必須</div>
                             </div>
                             <div class="contact-form-input" id="contact-form-content-input">
-                                <textarea name="name" required cols="5" rows="20"></textarea>
+                                <textarea name="name" id="content-text" required cols="5" rows="20"></textarea>
 
                                 <div id="contact-content-checkbox-wrap">
                                     <div id="contact-checkbox-policy">
@@ -394,7 +394,7 @@
                         </div>
 
                     </div>
-                    <button type="submit" id="contact-btn-toconfirm">確認画面へ</button>
+                    <button type="submit" id="contact-btn-toconfirm" onclick="goToConfirm()">確認画面へ</button>
 
                 </div>
             </div>
