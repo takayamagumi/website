@@ -9,5 +9,5 @@ function goToConfirm() {
     let emailAdressvalue = document.getElementById('emailAdress').value
     let phoneNumbervalue = document.getElementById('phoneNumber').value
     let contentTextvalue = document.getElementById('content-text').value
-    // alert(companyNamevalue)
+    alert(companyNamevalue)
 }

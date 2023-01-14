@@ -288,12 +288,12 @@
                     <p>メールお問い合わせフォーム</p>
                     <div id="contact-form-input-wrap">
 
-                        <div class="contact-form-input-item">
+                        <div class="contact-form-input-item" id="contact-purpose-wrap">
                             <div class="contact-form-label">
                                 <p>お問い合わせ内容</p>
                                 <div class="required">必須</div>
                             </div>
-                            <div class="contact-form-checkbox" id="contact-checkbox-wrap-purpose">
+                            <div id="contact-checkbox-wrap-purpose">
                                 <div class="contact-form-checkbox" id="contact-checkbox-recruit">
                                     <input type="checkbox" id="recruit" name="recruit">
                                     <label for="recruit">採用情報</label>
@@ -328,7 +328,8 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="companyNameFurigana" name="name" placeholder="(例)カブシキガイシャ〇〇〇" size="10">
+                                <input type="text" id="companyNameFurigana" name="name" placeholder="(例)カブシキガイシャ〇〇〇"
+                                    size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -348,7 +349,8 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="nameFurigana" name="name" required placeholder="(例)タカヤマ　タロウ" size="10">
+                                <input type="text" id="nameFurigana" name="name" required placeholder="(例)タカヤマ　タロウ"
+                                    size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -358,7 +360,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="emailAdress" name="name" required
+                                <input type="email" pattern=".+@globex\.com" id="emailAdress" name="name" required
                                     placeholder="(例)takayama@takayamagumi.com" size="10">
                             </div>
                         </div>
@@ -369,7 +371,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="phoneNumber" name="name" required placeholder="(例)0120-123-4567"
+                                <input type="tel" id="phoneNumber" name="name" required placeholder="(例)0120-123-4567"
                                     size="10">
                             </div>
                         </div>
@@ -397,114 +399,132 @@
                     <button type="submit" id="contact-btn-toconfirm" onclick="goToConfirm()">確認画面へ</button>
 
                 </div>
-            </div>
-            <div id="contact-call-container">
-                <p>電話によるお問い合わせ</p>
-                <div id="contact-call-wrap">
-                    <div id="contact-call-location">
-                        <p>本社・北河原オフィス</p>
-                        <p>リサイクルプラント</p>
-                    </div>
-                    <div id="contact-call-num-wrap">
-                        <div class="contact-call-num">
-                            <img src="./img/telephone-call.png" alt="">
-                            <a href="tel:+0727834576">072-783-4576</a>
+
+                <div id="contact-call-container">
+                    <p>電話によるお問い合わせ</p>
+                    <div id="contact-call-wrap">
+                        <div id="contact-call-location">
+                            <p>本社・北河原オフィス</p>
+                            <p>リサイクルプラント</p>
                         </div>
-                        <div class="contact-call-num">
-                            <img src="./img/telephone-call.png" alt="">
-                            <a href="tel:+0727720287">072-772-0287</a>
-                        </div>
-                    </div>
-                    <div id="concact-call-time">受付時間：平日9:00～17:00</div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="space"></div>
-        <footer id="history-footer">
-            <div id="footer-img-wrap">
-                <img src="./img/dumpcar-gray.png" alt="">
-                <img src="./img/factory_icon-gray.svg" alt="">
-                <img src="./img/dumpcar-gray.svg" alt="">
-                <img src="./img/unbo-gray.svg" alt="">
-                <img src="./img/bulldorzer-gray.svg" alt="">
-            </div>
-            <div id="footer-wrap">
-                <div id="footer-top">
-                    <div id="footer-logo-wrap">
-                        <img id="footer-logo" src="./img/takayamagumi-logo-green-white2022.png" alt="">
-                        <p>株式会社髙山組</p>
-                    </div>
-                    <div id="footer-menu-wrap">
-                        <a href="overview.html" class="footer-menu">会社概要</a>
-                        <div id="footer-jigyo-wrap">
-                            <a href="#" class="footer-menu">事業内容</a>
-                            <div id="footer-jigyo-sub-wrap">
-                                <a href="#" class="footer-menu">建設業</a>
-                                <a href="#" class="footer-menu">運送業</a>
-                                <a href="#" class="footer-menu">リサイクル業</a>
+                        <div id="contact-call-num-wrap">
+                            <div class="contact-call-num">
+                                <img src="./img/telephone-call.png" alt="">
+                                <a href="tel:+0727834576">072-783-4576</a>
+                            </div>
+                            <div class="contact-call-num">
+                                <img src="./img/telephone-call.png" alt="">
+                                <a href="tel:+0727720287">072-772-0287</a>
                             </div>
                         </div>
-                        <a href="history.html" class="footer-menu">企業沿革</a>
-                        <a href="https://takayamagumi.blogspot.com/" class="footer-menu">お知らせ</a>
-                        <a href="#" class="footer-menu">採用情報</a>
-                        <a href="contact-form.html" class="footer-menu">お問い合わせ</a>
+                        <div id="concact-call-time">受付時間：平日9:00～17:00</div>
+                    </div>
+                    <div id="contact-call-wrap-mobile">
+                        <div id="honsha-wrap">
+                            <p>本社・北河原オフィス</p>
+                            <div class="contact-call-num-mobile">
+                                <img src="./img/telephone-call.png" alt="">
+                                <a href="tel:+0727834576">072-783-4576</a>
+                            </div>
+                        </div>
+                        <div id="recycle-plant-wrap">
+                            <p>リサイクルプラント</p>
+                            <div class="contact-call-num-mobile">
+                                <img src="./img/telephone-call.png" alt="">
+                                <a href="tel:+0727720287">072-772-0287</a>
+                            </div>
+                        </div>
+                        <div id="concact-call-time-mobile">受付時間：平日9:00～17:00</div>
+                    </div>
 
-                    </div>
-                </div>
-                <div id="white-line"></div>
-                <p id="footer-shozaichi">所在地</p>
-                <div id="footer-bottom">
-                    <div class="address-wrap">
-                        <div class="addressName-wrap">
-                            <img src="./img/location_icon-white.svg" alt="">
-                            <p>本社</p>
-                        </div>
-                        <p>〒664-0007</p>
-                        <p>兵庫県伊丹市北野2丁目112番地</p>
-                        <p>TEL　072-783-4576</p>
-                        <p>FAX　072-783-4577</p>
-                    </div>
-                    <div class="address-wrap">
-                        <div class="addressName-wrap">
-                            <img src="./img/location_icon-white.svg" alt="">
-                            <p>北河原オフィス社</p>
-                        </div>
-                        <p>〒664-0837</p>
-                        <p>兵庫県伊丹市北河原4丁目3番4号</p>
-                        <p>TEL　072-783-4576</p>
-                        <p>FAX　072-783-4577</p>
-                    </div>
-                    <div class="address-wrap">
-                        <div class="addressName-wrap">
-                            <img src="./img/location_icon-white.svg" alt="">
-                            <p>リサイクル・プラント</p>
-                        </div>
-                        <p>〒664-0837</p>
-                        <p>兵庫県伊丹市北河原4丁目3番11号</p>
-                        <p>TEL　072-783-0287</p>
-                        <p>FAX　072-777-7194</p>
-                    </div>
                 </div>
             </div>
-            <button onclick="goToTop()" id="goToTopBtn" title="Go to top">
-                <div id="gototopWrap">
-                    <img src="./img/arrowhead-up.svg" alt="goToTopArrow">
-                    TOPへ戻る
-                    <img src="./img/unbo-white.png" alt="">
+
+
+
+
+            <div class="space"></div>
+            <footer id="history-footer">
+                <div id="footer-img-wrap">
+                    <img src="./img/dumpcar-gray.png" alt="">
+                    <img src="./img/factory_icon-gray.svg" alt="">
+                    <img src="./img/dumpcar-gray.svg" alt="">
+                    <img src="./img/unbo-gray.svg" alt="">
+                    <img src="./img/bulldorzer-gray.svg" alt="">
                 </div>
+                <div id="footer-wrap">
+                    <div id="footer-top">
+                        <div id="footer-logo-wrap">
+                            <img id="footer-logo" src="./img/takayamagumi-logo-green-white2022.png" alt="">
+                            <p>株式会社髙山組</p>
+                        </div>
+                        <div id="footer-menu-wrap">
+                            <a href="overview.html" class="footer-menu">会社概要</a>
+                            <div id="footer-jigyo-wrap">
+                                <a href="#" class="footer-menu">事業内容</a>
+                                <div id="footer-jigyo-sub-wrap">
+                                    <a href="#" class="footer-menu">建設業</a>
+                                    <a href="#" class="footer-menu">運送業</a>
+                                    <a href="#" class="footer-menu">リサイクル業</a>
+                                </div>
+                            </div>
+                            <a href="history.html" class="footer-menu">企業沿革</a>
+                            <a href="https://takayamagumi.blogspot.com/" class="footer-menu">お知らせ</a>
+                            <a href="#" class="footer-menu">採用情報</a>
+                            <a href="contact-form.html" class="footer-menu">お問い合わせ</a>
 
-            </button>
-            <div id="licencedWrap">
-                <p>@2022 TAKAYAMAGUMI Co.,Ltd.</p>
-            </div>
-        </footer>
-    </div>
+                        </div>
+                    </div>
+                    <div id="white-line"></div>
+                    <p id="footer-shozaichi">所在地</p>
+                    <div id="footer-bottom">
+                        <div class="address-wrap">
+                            <div class="addressName-wrap">
+                                <img src="./img/location_icon-white.svg" alt="">
+                                <p>本社</p>
+                            </div>
+                            <p>〒664-0007</p>
+                            <p>兵庫県伊丹市北野2丁目112番地</p>
+                            <p>TEL　072-783-4576</p>
+                            <p>FAX　072-783-4577</p>
+                        </div>
+                        <div class="address-wrap">
+                            <div class="addressName-wrap">
+                                <img src="./img/location_icon-white.svg" alt="">
+                                <p>北河原オフィス社</p>
+                            </div>
+                            <p>〒664-0837</p>
+                            <p>兵庫県伊丹市北河原4丁目3番4号</p>
+                            <p>TEL　072-783-4576</p>
+                            <p>FAX　072-783-4577</p>
+                        </div>
+                        <div class="address-wrap">
+                            <div class="addressName-wrap">
+                                <img src="./img/location_icon-white.svg" alt="">
+                                <p>リサイクル・プラント</p>
+                            </div>
+                            <p>〒664-0837</p>
+                            <p>兵庫県伊丹市北河原4丁目3番11号</p>
+                            <p>TEL　072-783-0287</p>
+                            <p>FAX　072-777-7194</p>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="goToTop()" id="goToTopBtn" title="Go to top">
+                    <div id="gototopWrap">
+                        <img src="./img/arrowhead-up.svg" alt="goToTopArrow">
+                        TOPへ戻る
+                        <img src="./img/unbo-white.png" alt="">
+                    </div>
 
-    <script src="./keys.js"></script>
+                </button>
+                <div id="licencedWrap">
+                    <p>@2022 TAKAYAMAGUMI Co.,Ltd.</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./keys.js"></script>
 </body>
 
 </html>
