@@ -9,7 +9,7 @@ function get_result() {
         })
         .then(function (data) {
             const bloggerdata = data.items;
-            console.log(bloggerdata)
+            // console.log(bloggerdata)
             let AmountOfArticle = bloggerdata.length
             let titleOfArticle;
             let dateOfArticle;
@@ -19,7 +19,7 @@ function get_result() {
                 dateOfArticle = bloggerdata[i].published;
                 blogUrl = bloggerdata[i].url
                 getDates(dateOfArticle)
-                console.log(blogUrl)
+                // console.log(blogUrl)
             }
 
             let createDivForWrap = document.createElement('div');
@@ -35,7 +35,7 @@ function get_result() {
 
                 publishedDateArr.push(year, month, date)
                 let publishedDateArrComma = publishedDateArr.join('.')
-                console.log(publishedDateArrComma)
+                // console.log(publishedDateArrComma)
                 appendDateNew(publishedDateArrComma, titleOfArticle)
             }
 
@@ -87,7 +87,7 @@ function get_result() {
 
 
                 // wrap for title Of Article
-                console.log(titleOfArticle)
+                // console.log(titleOfArticle)
                 let createaFortitleOfArticle = document.createElement('a')
                 createaFortitleOfArticle.classList.add("createaFortitleOfArticle");
                 createaFortitleOfArticle.href = blogUrl
@@ -100,7 +100,7 @@ function get_result() {
 
                 let newsContentWrap = document.getElementById('news-content-wrap')
                 newsContentWrap.appendChild(createDivForListWrap)
-                console.log(date)
+                // console.log(date)
 
 
             }
