@@ -24,11 +24,18 @@ function goToConfirm() {
     let contentTextvalue = document.getElementById('content-text').value
 
     arr.push(companyNamevalue, companyNameFuriganavalue, namevalue, nameFuriganavalue, emailAdressvalue, phoneNumbervalue, contentTextvalue)
-    console.log(arr)
+    // console.log(arr)
+let labelsArr = ["お問い合わせ内容","会社名","会社名(フリガナ)","お名前","お名前(フリガナ)","メールアドレス","電話番号","お問い合わせ内容"]
+let test = []
+for (let i = 0; i < labelsArr.length; i++) {
+    let item = []
+    item.push(labelsArr[i])
+    item.push(arr[i])
+test.push(item)
+}
 
-
-
-    return arr;
+console.log(test)
+    return test;
 
 
 }
