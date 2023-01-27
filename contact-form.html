@@ -7,6 +7,7 @@
 <script defer src="./news.js"></script>
 <script defer src="./contact.js"></script>
 
+
 <script>
     (function (d) {
         var config = {
@@ -284,7 +285,10 @@
             </div>
 
             <div id="contact-main-container">
-                <div id="contact-form-wrap">
+                <form id="contact-form-wrap" action="https://getform.io/f/bddfecc5-5983-4d97-b151-622631d533d4" method="POST">
+
+
+
                     <p>メールお問い合わせフォーム</p>
                     <div id="contact-form-input-wrap">
 
@@ -295,18 +299,18 @@
                             </div>
                             <div id="contact-checkbox-wrap-purpose">
                                 <div class="contact-form-checkbox" id="contact-checkbox-recruit">
-                                    <input type="checkbox" id="recruit" name="recruit">
-                                    <label for="recruit">採用情報</label>
+                                    <input type="checkbox" id="recruit" name="採用情報" class="checkboxes-purpose">
+                                    <label for="recruit" class="labelsForPurpose">採用情報</label>
                                 </div>
 
                                 <div class="contact-form-checkbox" id="contact-checkbox-work">
-                                    <input type="checkbox" id="work" name="work">
-                                    <label for="work">お仕事の依頼</label>
+                                    <input type="checkbox" id="work" name="お仕事のご依頼" class="checkboxes-purpose">
+                                    <label for="work" class="labelsForPurpose">お仕事の依頼</label>
                                 </div>
 
                                 <div class="contact-form-checkbox" id="contact-checkbox-other">
-                                    <input type="checkbox" id="other" name="other">
-                                    <label for="other">その他</label>
+                                    <input type="checkbox" id="other" name="その他" class="checkboxes-purpose">
+                                    <label for="other" class="labelsForPurpose">その他</label>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +322,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="companyName" name="name" placeholder="(例)株式会社〇〇〇" size="10">
+                                <input type="text" id="companyName" name="会社名" placeholder="(例)株式会社〇〇〇" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -328,7 +332,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="companyNameFurigana" name="name" placeholder="(例)カブシキガイシャ〇〇〇"
+                                <input type="text" id="companyNameFurigana" name="会社名(フリガナ)" placeholder="(例)カブシキガイシャ〇〇〇"
                                     size="10">
                             </div>
                         </div>
@@ -339,7 +343,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="name" name="name" required placeholder="(例)高山　太郎" size="10">
+                                <input type="text" id="name" name="お名前" required placeholder="(例)高山　太郎" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -349,7 +353,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="nameFurigana" name="name" required placeholder="(例)タカヤマ　タロウ"
+                                <input type="text" id="nameFurigana" name="名前(フリガナ)" required placeholder="(例)タカヤマ　タロウ"
                                     size="10">
                             </div>
                         </div>
@@ -360,7 +364,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="email" pattern=".+@globex\.com" id="emailAdress" name="name" required
+                                <input type="email" id="emailAdress" name="メールアドレス" required
                                     placeholder="(例)takayama@takayamagumi.com" size="10">
                             </div>
                         </div>
@@ -371,7 +375,7 @@
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="tel" id="phoneNumber" name="name" required placeholder="(例)0120-123-4567"
+                                <input type="tel" id="phoneNumber" name="電話番号" required placeholder="(例)0120-123-4567"
                                     size="10">
                             </div>
                         </div>
@@ -382,7 +386,7 @@
                                 <div class="required">必須</div>
                             </div>
                             <div class="contact-form-input" id="contact-form-content-input">
-                                <textarea name="name" id="content-text" required cols="5" rows="20"></textarea>
+                                <textarea name="内容" id="content-text" required cols="5" rows="20"></textarea>
 
                                 <div id="contact-content-checkbox-wrap">
                                     <div id="contact-checkbox-policy">
@@ -396,9 +400,9 @@
                         </div>
 
                     </div>
-                    <button type="submit" id="contact-btn-toconfirm" onclick="goToConfirm()">確認画面へ</button>
+                    <button type="submit" id="contact-btn-tosend">送信</button>
 
-                </div>
+                </form>
 
                 <div id="contact-call-container">
                     <p>電話によるお問い合わせ</p>
@@ -434,7 +438,7 @@
                                 <img src="./img/telephone-call-white.png" alt="">
                                 <div class="contact-call-num-mobile">
                                     <p>リサイクルプラント</p>
-                                    <p  class="contact-call-num-p">072-772-0287</p>
+                                    <p class="contact-call-num-p">072-772-0287</p>
                                 </div>
                             </a>
                         </div>
