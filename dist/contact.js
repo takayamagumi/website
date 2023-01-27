@@ -1,4 +1,11 @@
-let contactBtnToconfirm = document.getElementById('contact-btn-toconfirm')
+
+let contactBtnToconfirm = document.getElementById('contact-btn-tosend')
+
+
+
+
+
+
 
 function goToConfirm() {
 
@@ -36,6 +43,5 @@ test.push(item)
 
 console.log(test)
     return test;
-
-
 }
+

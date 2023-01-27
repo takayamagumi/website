@@ -1069,7 +1069,7 @@ textarea {
     justify-content: center;
 }
 
-#contact-btn-toconfirm {
+#contact-btn-tosend {
     background-color: white;
     color: var(--main-bg-color);
     margin-top: 5%;
@@ -1081,7 +1081,7 @@ textarea {
     border: 3px solid var(--main-bg-color);
 }
 
-#contact-btn-toconfirm:hover {
+#contact-btn-tosend:hover {
     background-color: var(--main-bg-color);
     border: 3px solid white;
     color: white;
