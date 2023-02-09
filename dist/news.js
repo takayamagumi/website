@@ -84,8 +84,6 @@ function get_result() {
                 }
 
                 
-
-
                 // wrap for title Of Article
                 // console.log(titleOfArticle)
                 let createaFortitleOfArticle = document.createElement('a')
@@ -95,13 +93,9 @@ function get_result() {
                 createaFortitleOfArticle.appendChild(titleOfArticleTextnode)
                 createDivForListWrap.appendChild(createaFortitleOfArticle)
 
-
-
-
                 let newsContentWrap = document.getElementById('news-content-wrap')
                 newsContentWrap.appendChild(createDivForListWrap)
                 // console.log(date)
-
 
             }
             // console.log(bloggerdata[1].title)

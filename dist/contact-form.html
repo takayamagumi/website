@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="toppage.css">
 <link rel="stylesheet" href="./subpages.css">
 <script defer src="./main.js"></script>
-<script defer src="./news.js"></script>
+<!-- <script src="./news.js"></script> -->
 <script defer src="./contact.js"></script>
 
 
@@ -285,16 +285,20 @@
             </div>
 
             <div id="contact-main-container">
-                <!-- <form id="contact-form-wrap" action="https://getform.io/f/bddfecc5-5983-4d97-b151-622631d533d4" method="POST"> -->
-                    <form id="contact-form-wrap">
-                    
-                        <!-- action="https://getform.io/f/d1abc66d-e8b9-4289-b491-cfcf2e77682a" method="POST" -->
+                
+                <form action="https://getform.io/f/0fcfd163-e403-459e-9e02-387228348f4b" method="POST"
+                    id="contact-form-wrap">
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+
                     <p>メールお問い合わせフォーム</p>
+
+                    <div id="error-container" style="display:none">入力エラー内容</div>
+
                     <div id="contact-form-input-wrap">
 
                         <div class="contact-form-input-item" id="contact-purpose-wrap">
                             <div class="contact-form-label">
-                                <p>お問い合わせ内容</p>
+                                <p>お問い合わせ種別</p>
                                 <div class="required">必須</div>
                             </div>
                             <div id="contact-checkbox-wrap-purpose">
@@ -313,12 +317,13 @@
                                     <label for="other" class="labelsForPurpose">その他</label>
                                 </div>
                             </div>
+
                         </div>
 
-                        <!-- <div class="contact-form-input-item">
+                        <div class="contact-form-input-item">
                             <div class="contact-form-label">
                                 <p>会社名</p>
-                    
+
                             </div>
 
                             <div class="contact-form-input">
@@ -328,12 +333,12 @@
                         <div class="contact-form-input-item">
                             <div class="contact-form-label">
                                 <p>会社名(フリガナ)</p>
-        
+
                             </div>
 
                             <div class="contact-form-input">
-                                <input type="text" id="companyNameFurigana" name="会社名(フリガナ)" placeholder="(例)カブシキガイシャ〇〇〇"
-                                    size="10">
+                                <input type="text" id="companyNameFurigana" name="会社名(フリガナ)"
+                                    placeholder="(例)カブシキガイシャ〇〇〇" size="10">
                             </div>
                         </div>
                         <div class="contact-form-input-item">
@@ -378,31 +383,30 @@
                                 <input type="tel" id="phoneNumber" name="電話番号" required placeholder="(例)0120-123-4567"
                                     size="11">
                             </div>
-                        </div> -->
+                        </div>
 
                         <div class="contact-form-input-item" id="contact-form-content-wrap">
                             <div class="contact-form-label" id="contact-form-label-content">
-                                <p>お問い合わせ内容</p>
+                                <p>内容・ご相談等</p>
                                 <div class="required">必須</div>
                             </div>
-                            <!-- <div class="contact-form-input" id="contact-form-content-input">
-                                <textarea name="内容" id="content-text" required cols="5" rows="20"></textarea> -->
+                            <div class="contact-form-input" id="contact-form-content-input">
+                                <textarea name="内容" id="content-text" required cols="5" rows="20"></textarea>
 
-                                <!-- <div id="contact-content-checkbox-wrap">
+                                <div id="contact-content-checkbox-wrap">
                                     <div id="contact-checkbox-policy">
-                                        <input type="checkbox" required id="checkbox-policy" class="checkboxes" name="プライバシーポリシー">
+                                        <input type="checkbox" required id="checkbox-policy" class="checkboxes"
+                                            name="プライバシーポリシー">
                                         <label for="プライバシーポリシー" id="mylabel"></label>
                                     </div>
                                     <a href="#">プライバシーポリシー</a>に同意する。
-                                </div> -->
+                                </div>
 
-                            <!-- </div> -->
+                            </div>
                         </div>
-
                     </div>
-                    <button type="button" id="contact-btn-tosend" onclick="goToConfirm()">送信</button>
-
-                </form>
+                    <button type="submit" id="contact-btn-tosend">送信</button>
+                </form> 
 
                 <div id="contact-call-container">
                     <p>電話によるお問い合わせ</p>
