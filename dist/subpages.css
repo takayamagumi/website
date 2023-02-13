@@ -21,7 +21,7 @@
     font-style: normal;
 }
 
-#footer-shozaichi {
+#footer-shozaichi, .text-gettingready {
     font-family: 'Kosugi Maru', sans-serif;
     /* font-family: fot-seurat-pron, sans-serif; */
     font-weight: 600;
@@ -1436,4 +1436,27 @@ textarea {
         display: none;
     }
 
+}
+
+
+
+/* jigyo naiyo */
+
+.gettingready-wrap {
+    background-color: white;
+
+}
+.icons-wrap {
+        display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+.gettingready-wrap img{
+    height: 80px;
+}
+.text-gettingready {
+text-align: center;
+font-size: 2em;
 }
