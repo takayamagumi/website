@@ -50,7 +50,10 @@ function goToConfirm() {
     let checked = contactCheckboxWrapPurpose.querySelectorAll('input[type="checkbox"]:checked')
 
     if (checked.length >= 1) {
-        // console.log('yes', checked)
+        document.getElementById('checkbox-policy').style.outline = "";
+        document.getElementById('recruit').style.outline = "";
+        document.getElementById('work').style.outline ="";
+        document.getElementById('other').style.outline = "";
     } else {
         let errorContainer = document.getElementById('error-container')
         errorContainer.style.display = "";
@@ -64,7 +67,7 @@ function goToConfirm() {
     }
 
     // requred input if not filled
-    let requredLabelsArr = ["お名前", "お名前(フリガナ)", "メールアドレス", "電話番号", "お問い合わせ内容"]
+    let requredLabelsArr = ["お名前", "お名前(フリガナ)", "メールアドレス", "電話番号", "内容・ご相談等"]
 
     let nameInput = document.getElementById('name')
     let nameFuriganaInput = document.getElementById('nameFurigana')
@@ -98,6 +101,8 @@ function goToConfirm() {
 
             requredInput[r].style.outline = "solid 2px red";
 
+        }else {
+            requredInput[r].style.outline = "";
         }
 
     }
@@ -113,7 +118,8 @@ function goToConfirm() {
         checkboxesPrivacyPolicyMessage.appendChild(checkboxesPrivacyPolicyMessageText)
         errorContainer.appendChild(checkboxesPrivacyPolicyMessage)
         document.getElementById('checkbox-policy').style.outline = "solid 2px red";
-
+    } else {
+        document.getElementById('checkbox-policy').style.outline = "";
     }
 
 }
