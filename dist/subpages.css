@@ -28,6 +28,7 @@
     font-style: normal;
 }
 
+
 #phone-num-wrap a, .contact-call-num-p {
     font-family: ta-marugo-gf-02, sans-serif;
     font-weight: 500;
@@ -1026,6 +1027,7 @@ input[type="checkbox"] {
     outline: none;
     margin-right: .5em;
 }
+
 /* #checkbox-policy {
     outline: 2px solid #F00;
 } */
@@ -1441,22 +1443,85 @@ textarea {
 
 
 /* jigyo naiyo */
+#construction-main-container {
+    height: max-content;
+}
 
 .gettingready-wrap {
     background-color: white;
-
 }
+
 .icons-wrap {
-        display: flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
     position: relative;
+    z-index: 2;
+
 }
-.gettingready-wrap img{
+
+.icons-wrap >img {
     height: 80px;
 }
+
 .text-gettingready {
-text-align: center;
-font-size: 2em;
+    text-align: center;
+    font-size: 3em;
+    z-index: 3;
+}
+@media (max-width: 1100px) {
+    .icons-wrap >img {
+        height: 60px;
+    }
+}
+@media (max-width: 800px) {
+    .icons-wrap {
+        height: 80px;    
+    }
+}
+@media (max-width: 700px) {
+    .icons-wrap {
+        height: 70px;    
+    }
+    .icons-wrap >img {
+        height: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .icons-wrap {
+        height: 70px;    
+    }
+    .icons-wrap >img {
+        height: 50px;
+    }
+    .text-gettingready {
+        font-size: 2em;
+    }
+}
+@media (max-width: 400px) {
+
+    .icons-wrap {
+        height: 70px;    
+    }
+    .icons-wrap >img {
+        height: 40px;
+    }
+}
+@media (max-width: 350px) {
+
+    .icons-wrap {
+        height: 60px;    
+    }
+    .icons-wrap >img {
+        height: 30px;
+    }
+}
+@media (max-width: 300px) {
+    .icons-wrap {
+        height: 60px;    
+    }
+    .icons-wrap >img {
+        height: 30px;
+    }
 }
