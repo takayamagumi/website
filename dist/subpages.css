@@ -953,6 +953,7 @@ iframe {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+
 }
 
 #contact-form-wrap>p {
@@ -1039,9 +1040,9 @@ input[type="checkbox"] {
 }
 
 #contact-form-content-wrap {
-    height: 300px;
     justify-content: flex-start;
     margin-top: 25px;
+    height: fit-content;
 }
 
 #contact-form-label-content {
@@ -1051,6 +1052,8 @@ input[type="checkbox"] {
 #contact-form-content-input {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: start;
+    height: fit-content;
 }
 
 textarea {
@@ -1064,7 +1067,10 @@ textarea {
     align-items: center;
 
 }
+#contact-content-checkbox-wrap a{
+color: black;
 
+}
 #contact-checkbox-policy {
     height: 40px;
     display: flex;
@@ -1083,6 +1089,7 @@ textarea {
     letter-spacing: .2em;
     border-radius: 2%;
     border: 3px solid var(--main-bg-color);
+    
 }
 
 #contact-btn-tosend:hover {
