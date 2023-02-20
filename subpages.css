@@ -15,7 +15,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-toconfirm {
+#contact-btn-tosend {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -953,6 +953,7 @@ iframe {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+
 }
 
 #contact-form-wrap>p {
@@ -1039,9 +1040,9 @@ input[type="checkbox"] {
 }
 
 #contact-form-content-wrap {
-    height: 300px;
     justify-content: flex-start;
     margin-top: 25px;
+    height: fit-content;
 }
 
 #contact-form-label-content {
@@ -1051,6 +1052,8 @@ input[type="checkbox"] {
 #contact-form-content-input {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: start;
+    height: fit-content;
 }
 
 textarea {
@@ -1062,6 +1065,11 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+}
+
+#contact-content-checkbox-wrap a {
+    color: black;
 
 }
 
@@ -1083,6 +1091,7 @@ textarea {
     letter-spacing: .2em;
     border-radius: 2%;
     border: 3px solid var(--main-bg-color);
+
 }
 
 #contact-btn-tosend:hover {
@@ -1386,6 +1395,50 @@ textarea {
         font-size: .7em;
     }
 
+
+    @media (max-width: 410px) {
+        #contact-form-message-wrap {
+            font-size: .6em;
+        }
+    }
+    @media (max-width: 400px) {
+        .required {
+            left: 50%;
+        }
+        .contact-form-label {
+            width: 100%;
+        }
+        #contact-call-container>p, #contact-form-wrap>p {
+            font-size: 1.2em;
+        }
+
+        .contact-call-btn 
+        {
+            padding: 5px 10px;
+        }
+        .contact-call-btn>a>img {
+            height: 30px;
+        }
+        .contact-call-num-mobile>p {
+            font-size: .9em;
+        }
+    }
+    @media (max-width: 355px) {
+        .required {
+            left: 60%;
+        }
+
+        .contact-form-label>p, label {
+            font-size: .9em;
+        }
+        #contact-form-message-wrap {
+            font-size: .5em;
+        }
+        
+        #contact-call-container>p, #contact-form-wrap>p {
+            font-size: 1em;
+        }
+    }
     /* contact call mobile */
     #contact-call-wrap-mobile {
         display: flex;
@@ -1430,10 +1483,13 @@ textarea {
         margin: 1em 0;
     }
 
-    .contact-call-btn:hover {
-        background-color: white;
+    /* .contact-call-btn:hover {
+        background-color: var(--light-green-color);
     }
-
+    .contact-call-btn:hover +
+     .contact-call-btn > p {
+        color: var(--main-bg-color);
+    } */
     #contact-call-wrap {
         display: none;
     }
@@ -1461,7 +1517,7 @@ textarea {
 
 }
 
-.icons-wrap >img {
+.icons-wrap>img {
     height: 80px;
 }
 
@@ -1470,58 +1526,71 @@ textarea {
     font-size: 3em;
     z-index: 3;
 }
+
 @media (max-width: 1100px) {
-    .icons-wrap >img {
+    .icons-wrap>img {
         height: 60px;
     }
 }
+
 @media (max-width: 800px) {
     .icons-wrap {
-        height: 80px;    
+        height: 80px;
     }
 }
+
 @media (max-width: 700px) {
     .icons-wrap {
-        height: 70px;    
+        height: 70px;
     }
-    .icons-wrap >img {
+
+    .icons-wrap>img {
         height: 50px;
     }
 }
+
 @media (max-width: 500px) {
     .icons-wrap {
-        height: 70px;    
+        height: 70px;
     }
-    .icons-wrap >img {
+
+    .icons-wrap>img {
         height: 50px;
     }
+
     .text-gettingready {
         font-size: 2em;
     }
 }
+
 @media (max-width: 400px) {
 
     .icons-wrap {
-        height: 70px;    
+        height: 70px;
     }
-    .icons-wrap >img {
+
+    .icons-wrap>img {
         height: 40px;
     }
 }
+
 @media (max-width: 350px) {
 
     .icons-wrap {
-        height: 60px;    
+        height: 60px;
     }
-    .icons-wrap >img {
+
+    .icons-wrap>img {
         height: 30px;
     }
 }
+
 @media (max-width: 300px) {
     .icons-wrap {
-        height: 60px;    
+        height: 60px;
     }
-    .icons-wrap >img {
+
+    .icons-wrap>img {
         height: 30px;
     }
 }

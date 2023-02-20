@@ -169,7 +169,8 @@
                     </div>
                 </a>
 
-                <a href="#service-container" class="mobile-menu-link" id="jigyo-wrap" onclick='jigyonaiyoMenuTriggerMobile()'>
+                <a href="#service-container" class="mobile-menu-link" id="jigyo-wrap"
+                    onclick='jigyonaiyoMenuTriggerMobile()'>
                     <div class="mobile-menu-select">
                         <p class="mobile-menu-names" id="jigyonaiyo-btn" id="mobile-menu-link">事業内容</p>
                         <img src="./img/unbo-green90.svg" alt="" class=menu-icons-mobile">
@@ -285,9 +286,9 @@
             </div>
 
             <div id="contact-main-container">
-                <form  action="https://getform.io/f/d1abc66d-e8b9-4289-b491-cfcf2e77682a" method="POST"
+                <form action="https://getform.io/f/d1abc66d-e8b9-4289-b491-cfcf2e77682a" method="POST"
                     id="contact-form-wrap">
-                <!-- <form action="https://getform.io/f/05bf4a35-503f-41f6-ab02-284674d3b16e" method="POST"
+                    <!-- <form action="https://getform.io/f/05bf4a35-503f-41f6-ab02-284674d3b16e" method="POST"
                     id="contact-form-wrap"> -->
                     <input type="hidden" name="_gotcha" style="display:none !important">
 
@@ -400,14 +401,22 @@
                                             name="プライバシーポリシー">
                                         <label for="プライバシーポリシー" id="mylabel"></label>
                                     </div>
-                                    <a href="#">プライバシーポリシー</a>に同意する。
+                                    <a href="./privacyPolicy.pdf" target="_blank">プライバシーポリシー</a>に同意する。
                                 </div>
-
+                                <div id="contact-content-checkbox-wrap">
+                                    <div id="contact-checkbox-antieigyo">
+                                        <input type="checkbox" required id="checkbox-antieigyo" class="checkboxes"
+                                            name="営業対策">
+                                        <label for="営業対策" id="mylabel"></label>
+                                    </div>
+                                    営業目的の問い合わせではありません。
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <button type="submit" id="contact-btn-tosend">送信</button>
-                </form> 
+                </form>
 
                 <div id="contact-call-container">
                     <p>電話によるお問い合わせ</p>

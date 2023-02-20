@@ -3,15 +3,18 @@ let contactBtnToconfirm = document.getElementById('contact-btn-tosend')
 
 contactBtnToconfirm.addEventListener('click', function () {
 
+    // if (window.confirm('この内容で送信しますがよろしいでしょうか？')) {
+    //     return goToConfirm();
+    // } else {
+    //     return false;
+    // }
     goToConfirm()
-
 }, false);
 
 
 
 function goToConfirm() {
-    // alert('tes')
-    // console.log('tes')
+
     let labels = document.getElementsByClassName('labelsForPurpose');
     let inputs = document.getElementsByClassName('checkboxes-purpose'),
         selectedCheckboxes = [];
@@ -52,7 +55,7 @@ function goToConfirm() {
     if (checked.length >= 1) {
         document.getElementById('checkbox-policy').style.outline = "";
         document.getElementById('recruit').style.outline = "";
-        document.getElementById('work').style.outline ="";
+        document.getElementById('work').style.outline = "";
         document.getElementById('other').style.outline = "";
     } else {
         let errorContainer = document.getElementById('error-container')
@@ -101,7 +104,7 @@ function goToConfirm() {
 
             requredInput[r].style.outline = "solid 2px red";
 
-        }else {
+        } else {
             requredInput[r].style.outline = "";
         }
 
@@ -122,5 +125,18 @@ function goToConfirm() {
         document.getElementById('checkbox-policy').style.outline = "";
     }
 
+        // checkbox anti eigyo
+        let checkboxAntieigyo = document.getElementById('checkbox-antieigyo');
+        if (!checkboxAntieigyo.checked) {
+            let errorContainer = document.getElementById('error-container')
+            errorContainer.style.display = "";
+            let checkboxesCheckboxAntieigyoMessage = document.createElement('p')
+            let checkboxesCheckboxAntieigyoMessageText = document.createTextNode('●営業目的の問い合わせではありません。にチェックをしてください。')
+            checkboxesCheckboxAntieigyoMessage.appendChild(checkboxesCheckboxAntieigyoMessageText)
+            errorContainer.appendChild(checkboxesCheckboxAntieigyoMessage)
+            document.getElementById('checkbox-antieigyo').style.outline = "solid 2px red";
+        } else {
+            document.getElementById('checkbox-antieigyo').style.outline = "";
+        }
 }
 
