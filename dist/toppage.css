@@ -836,7 +836,7 @@
 
                 .box-img {
                     height: 30vh;
-                    background-color: black;
+                    background-color: var(--light-gray-color);
                 }
 
                 #box-img-kensetsu {
@@ -856,7 +856,7 @@
                 #box-img-recycle {
                     background-image: url(./img/recycle.jpg);
                     background-repeat: no-repeat;
-                    background-size: 120% auto;
+                    background-size: 150% auto;
                     background-position: top center;
                 }
 
@@ -943,6 +943,13 @@
                     }
 
                 }
+
+
+                @media (min-height: 750px) {
+                .box-img {
+                    height: 25vh;
+                }
+            }
 
                 /* news container */
                 #news-container {
