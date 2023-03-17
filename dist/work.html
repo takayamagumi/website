@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="toppage.css">
-<link rel="stylesheet" href="./subpages.css">
+    <link rel="stylesheet" href="./subpages.css">
     <title>施工実績</title>
 
 
@@ -33,6 +33,7 @@
 </head>
 
 <body>
+    <script type="module" src="./work.js"></script>
     <div id="lp-container">
         <nav id="lp-nav">
             <a href="./" id="logo-wrap">
@@ -264,71 +265,51 @@
             </a>
         </div>
         <div id="construction-main-container" class="main-context-container">
-            <div class="gettingready-wrap">
-                <div class="icons-wrap">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
+            <div id="overview-top-img"></div>
+            <div class="path-links-wrap">
+                <a href="#index">HOME</a>
+                <p>/</p>
+                <a href="#work">施工実績</a>
+            </div>
+            <div class="subpage-title-wrap">
+                <div class="subpage-title-wrap-eng">
+                    <p>WO</p>
+                    <p class="green-text" id="table-title-eng-space-work">R</p>
+                    <p>K</p>
                 </div>
-                <div class="icons-wrap">
+                <p class="title-jpn" id="title-jpn-overview">施工実績</p>
+            </div>
 
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
+            <!-- wrapforSearch -->
+            <div id="serchYears-wrap">
+                <p>年度を選択</p>
+                <div id="serchYears-btn-wrap">
+                    <select name="workyears" id="workyears">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
                 </div>
-                <div class="icons-wrap">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
+            </div>
 
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
+            <!-- table wrap -->
+
+            <div class="table-wrap">
+                <div class="table-title-wrap">
+                    <img src="./img/unbo-green.png" alt="" class="icon-table">
+                    <p>令和3年度施工実績</p>
                 </div>
-                <div class="icons-wrap">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                </div>
-
-
-                <p class="text-gettingready">準備中</p>
-
-                <div class="icons-wrap">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
+<table>
+<tr>
+    <th>工事発注者</th>
+    <th>工事名</th>
+    <th>工事場所</th>
+    <th>完成年月</th>
+</tr>
 
 
-                </div>
-                <div class="icons-wrap">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                </div>
-
-                <div class="icons-wrap">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                </div>
-
-                <div class="icons-wrap">
-
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                </div>
+</table>
 
             </div>
         </div>
