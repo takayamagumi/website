@@ -1594,3 +1594,8 @@ textarea {
         height: 30px;
     }
 }
+
+/* work */
+.table-title-wrap img {
+    height: 40px;
+}
