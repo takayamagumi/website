@@ -15,7 +15,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -1596,6 +1596,47 @@ textarea {
 }
 
 /* work */
+#serchYears-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 80px;
+}
+#serchYears-dropdown-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+#jumpToYear-btn {
+    height: 30px;
+    width: 120px;
+    margin-left: 10%;
+}
+.table-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .table-title-wrap img {
     height: 40px;
+}
+
+.table-title-wrap {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--main-bg-color);
+    width: 80%;
+}
+.tableHeader {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+tr:nth-child(2n+3) {
+    background-color: var(--light-gray-color);
+}
+.table {
+    width: 80%;
 }
