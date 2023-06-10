@@ -3,6 +3,7 @@
     --dark-gray-color: #4c4c4c;
     --light-green-color: #d8e5de;
     --light-gray-color: #ebebeb;
+    --hover-green-color:#4fa476;
 }
 
 @font-face {
@@ -15,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -1599,19 +1600,38 @@ textarea {
 #serchYears-wrap {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 80px
 }
 #serchYears-dropdown-wrap {
     display: flex;
     flex-direction: column;
     margin-left: 10%;
 }
+#serchYears-dropdown-wrap select {
+    height: 40px;
+    width: 120px;
+}
 #jumpToYear-btn {
     height: 30px;
     width: 120px;
     margin-left: 10%;
+    background-color: var(--main-bg-color);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#jumpToYear-btn:hover {
+    background-color: var(--hover-green-color);
+}
+#jumpToYear-btn img {
+    height: 20px;
 }
 .table-wrap {
     display: flex;
@@ -1633,10 +1653,20 @@ textarea {
     background-color: var(--main-bg-color);
     color: white;
 }
-
+tr {
+    height: 50px;
+    text-align: center;
+    font-size: .8em;
+}
 tr:nth-child(2n+3) {
     background-color: var(--light-gray-color);
 }
 .table {
     width: 80%;
+    padding-bottom: 80px;
+}
+
+/* space for mobile */
+.spacebeforetable {
+    height: 80px;
 }

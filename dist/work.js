@@ -24,6 +24,7 @@ fetch('./work.json')
             let kojiPlace = workdatabyarraydatatd['工事場所']
             let kojiOrderer = workdatabyarraydatatd['工事発注者']
             let kojiPict = workdatabyarraydatatd['写真']
+ 
 
             if (kojiPict === "") {
                 kojiPict = "無し"
@@ -34,7 +35,7 @@ fetch('./work.json')
             let kojiPlacetextnode = document.createTextNode(kojiPlace);
             let kojiOrderertextnode = document.createTextNode(kojiOrderer);
             let kojiPicttextnode = document.createTextNode(kojiPict);
-
+            
 
             let td;
             let tr;
@@ -62,7 +63,7 @@ fetch('./work.json')
             if (kojiPict === "無し") {
                 td.appendChild(kojiPicttextnode)
             } else {
-                imglink.href = kojiPicttextnode
+                imglink.href = kojiPict
                 imglink.appendChild(kojiPicttextnode)
                 td.appendChild(imglink)
             }
@@ -93,6 +94,7 @@ fetch('./work.json')
             let kojiPlacetextnode = document.createTextNode(kojiPlace);
             let kojiOrderertextnode = document.createTextNode(kojiOrderer);
             let kojiPicttextnode = document.createTextNode(kojiPict);
+            
 
 
             let td;
@@ -141,3 +143,20 @@ fetch('./work.json')
     })
 
 
+// jumpToYear-btn function
+
+let jumpToYearBtn = document.getElementById('jumpToYear-btn')
+let workyears = document.getElementById('workyears')
+let workyearsValues = workyears.innerHTML
+
+jumpToYearBtn.addEventListener('click', ()=> GetSelectedWorkYear('workyears'))
+
+function GetSelectedWorkYear(el)
+{
+    let selectedWorkYear = document.getElementById(el);
+    let selectedWorkYearValue = selectedWorkYear.options[selectedWorkYear.selectedIndex].value
+    console.log(selectedWorkYearValue);
+
+    let selectedDivId = document.getElementById(selectedWorkYearValue)
+    selectedDivId.scrollIntoView(); 
+}
