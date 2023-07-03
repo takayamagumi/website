@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="toppage.css">
-<link rel="stylesheet" href="./subpages.css">
+    <link rel="stylesheet" href="./subpages.css">
     <title>施工実績</title>
 
 
@@ -33,6 +33,7 @@
 </head>
 
 <body>
+    <script type="module" src="./work.js"></script>
     <div id="lp-container">
         <nav id="lp-nav">
             <a href="./" id="logo-wrap">
@@ -264,72 +265,74 @@
             </a>
         </div>
         <div id="construction-main-container" class="main-context-container">
-            <div class="gettingready-wrap">
-                <div class="icons-wrap">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
+            <div id="overview-top-img"></div>
+            <div class="path-links-wrap">
+                <a href="#index">HOME</a>
+                <p>/</p>
+                <a href="#work">施工実績</a>
+            </div>
+            <div class="subpage-title-wrap">
+                <div class="subpage-title-wrap-eng">
+                    <p>WO</p>
+                    <p class="green-text" id="table-title-eng-space-work">R</p>
+                    <p>K</p>
                 </div>
-                <div class="icons-wrap">
+                <p class="title-jpn" id="title-jpn-overview">施工実績</p>
+            </div>
 
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                </div>
-                <div class="icons-wrap">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
+            <!-- wrapforSearch -->
 
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                </div>
-                <div class="icons-wrap">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
+            <div id="serchYears-wrap">
+                <div id="serchYears-dropdown-wrap">
+                    <p>年度を選択</p>
+                    <div id="serchYears-btn-wrap">
+                        <select name="workyears" id="workyears">
+                            <option value="令和3年度">令和3年度</option>
+                            <option value="令和2年度">令和2年度</option>
+                        </select>
+                    </div>
                 </div>
 
+                <button id="jumpToYear-btn">
+                    <img src="./img/unbo-white.png" alt="">
+                    表示する
+                </button>
+            </div>
 
-                <p class="text-gettingready">準備中</p>
+            <!-- table wrap -->
 
-                <div class="icons-wrap">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-
-
-                </div>
-                <div class="icons-wrap">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
+            <div class="table-wrap" id="worktable-wrap">
+                <div class="spacebeforetable" id="令和3年度"></div>
+                <div class="table-title-wrap" >
+                    <img src="./img/unbo-green.png" alt="" class="icon-table">
+                    <p>令和3年度施工実績</p>
                 </div>
 
-                <div class="icons-wrap">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
+                <table class="table" id="tableforworkr3">
+                    <tr class="tableHeader">
+                        <th>工事発注者</th>
+                        <th>工事名</th>
+                        <th>工事場所</th>
+                        <th>完成年月</th>
+                        <th>写真</th>
+                    </tr>
+                </table>
+
+                <div class="spacebeforetable" id="令和2年度"></div>
+                <div class="table-title-wrap">
+                    <img src="./img/unbo-green.png" alt="" class="icon-table">
+                    <p>令和2年度施工実績</p>
                 </div>
 
-                <div class="icons-wrap">
-
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                    <img src="./img/takayamagumi-logo-lightgreen2022.svg" alt="">
-                    <img src="./img/unbo-lightgreen.svg" alt="">
-                    <img src="./img/bulldorzer-lightgreen.svg" alt="">
-                    <img src="./img/dumpcar-lightgreen.svg" alt="">
-                </div>
-
+                <table class="table" id="tableforworkr2">
+                    <tr class="tableHeader">
+                        <th>工事発注者</th>
+                        <th>工事名</th>
+                        <th>工事場所</th>
+                        <th>完成年月</th>
+                        <th>写真</th>
+                    </tr>
+                </table>
             </div>
         </div>
 

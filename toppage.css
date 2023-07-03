@@ -3,6 +3,7 @@
                     --dark-gray-color :#4c4c4c;
                     --light-green-color: #d8e5de;
                     --light-gray-color: #ebebeb;
+                    --hover-green-color:#4fa476;
                 }
 
                 html {
@@ -583,7 +584,7 @@
                 }
 
                 #contact-btn:hover {
-                    background-color: #4fa476;
+                    background-color: var(--hover-green-color);
                 }
 
                 #contact-btn p {
