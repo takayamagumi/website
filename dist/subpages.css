@@ -676,7 +676,6 @@ iframe {
         width: 60%;
         height: 120px;
         /* margin: 1em 0; */
-
     }
 
     .item-year {
@@ -1669,4 +1668,10 @@ tr:nth-child(2n+3) {
 /* space for mobile */
 .spacebeforetable {
     height: 80px;
+}
+
+@media (max-width: 770px) {
+    .table {
+        width: 90%;
+    }
 }
