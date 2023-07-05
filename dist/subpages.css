@@ -3,7 +3,7 @@
     --dark-gray-color: #4c4c4c;
     --light-green-color: #d8e5de;
     --light-gray-color: #ebebeb;
-    --hover-green-color:#4fa476;
+    --hover-green-color: #4fa476;
 }
 
 @font-face {
@@ -1401,28 +1401,33 @@ textarea {
             font-size: .6em;
         }
     }
+
     @media (max-width: 400px) {
         .required {
             left: 50%;
         }
+
         .contact-form-label {
             width: 100%;
         }
+
         #contact-call-container>p, #contact-form-wrap>p {
             font-size: 1.2em;
         }
 
-        .contact-call-btn 
-        {
+        .contact-call-btn {
             padding: 5px 10px;
         }
+
         .contact-call-btn>a>img {
             height: 30px;
         }
+
         .contact-call-num-mobile>p {
             font-size: .9em;
         }
     }
+
     @media (max-width: 355px) {
         .required {
             left: 60%;
@@ -1431,14 +1436,16 @@ textarea {
         .contact-form-label>p, label {
             font-size: .9em;
         }
+
         #contact-form-message-wrap {
             font-size: .5em;
         }
-        
+
         #contact-call-container>p, #contact-form-wrap>p {
             font-size: 1em;
         }
     }
+
     /* contact call mobile */
     #contact-call-wrap-mobile {
         display: flex;
@@ -1596,22 +1603,28 @@ textarea {
 }
 
 /* work */
+#work-main-container {
+    padding-bottom: 80px;
+}
 #serchYears-wrap {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 100%;
+    /* width: 100%; */
     padding-bottom: 80px
 }
+
 #serchYears-dropdown-wrap {
     display: flex;
     flex-direction: column;
     margin-left: 10%;
 }
+
 #serchYears-dropdown-wrap select {
     height: 40px;
     width: 120px;
 }
+
 #jumpToYear-btn {
     height: 30px;
     width: 120px;
@@ -1626,18 +1639,22 @@ textarea {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
 #jumpToYear-btn:hover {
     background-color: var(--hover-green-color);
 }
+
 #jumpToYear-btn img {
     height: 20px;
 }
-.table-wrap {
+
+/* .table-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
+
 .table-title-wrap img {
     height: 40px;
 }
@@ -1647,22 +1664,38 @@ textarea {
     align-items: center;
     border-bottom: 3px solid var(--main-bg-color);
     width: 80%;
+    margin-left: 10%;
 }
+.table-title-wrap p{
+    padding:0 1em;
+    font-size: 1.2em;
+}
+
 .tableHeader {
     background-color: var(--main-bg-color);
     color: white;
 }
+
 tr {
     height: 50px;
     text-align: center;
     font-size: .8em;
 }
+td {
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
 tr:nth-child(2n+3) {
     background-color: var(--light-gray-color);
 }
+
 .table {
     width: 80%;
-    padding-bottom: 80px;
+    margin-left: 10%;
+}
+.noteforscrolltable {
+    display: none;
 }
 
 /* space for mobile */
@@ -1670,8 +1703,26 @@ tr:nth-child(2n+3) {
     height: 80px;
 }
 
-@media (max-width: 770px) {
-    .table {
-        width: 90%;
+@media (max-width: 880px) {
+    .scroll-table {
+        overflow-x: auto;       
+    }
+    .noteforscrolltable {
+        display: block;
+        font-size: .7em;
+        padding-left: 5%;
+    }
+
+}
+@media (max-width: 750px) {
+    .noteforscrolltable {
+        display: none;
+    }
+}
+@media (max-width: 654px) {
+    .noteforscrolltable {
+        display: block;
+        font-size: .7em;
+        padding-left: 5%;
     }
 }
