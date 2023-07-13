@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -1829,7 +1829,7 @@ tr:nth-child(2n+3) {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: aquamarine;
+    margin-top: 8%;
 }
 
 .section-title-wrap {
@@ -1839,6 +1839,7 @@ tr:nth-child(2n+3) {
     justify-content: center;
     width: 80%;
     font-size: 1.2em;
+    margin-bottom: 5%;
 }
 
 .section-title-en {
@@ -1871,25 +1872,68 @@ tr:nth-child(2n+3) {
     height: 40px;
     margin-left: auto;
 }
+
 .section-main-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .section-main-top-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
     width: 80%;
+    margin-bottom: 2%;
 }
 
 .section-main-top-wrap p {
     width: 50%;
+    margin-left: 10%;
 }
 
 .section-main-top-wrap img {
     height: 200px;
+}
+
+.section-main-btm-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.job-list-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 2px 0 2px 40%;
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    background-color: var(--dark-gray-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.job-list-wrap a {
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+    padding: .2em 1em;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+.job-list-wrap a:hover {
+    background-color: var(--hover-green-color);
+}
+#recruit-recycle-section-container {
+    margin-bottom: 10%;
 }
