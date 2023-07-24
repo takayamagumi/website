@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .construction-card-content-title, .construction-card-content-note {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -82,7 +82,7 @@
     color: var(--dark-gray-color);
 }
 
-#green-text {
+.green-text {
     color: var(--main-bg-color);
 }
 
