@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .construction-card-content-title, .construction-card-content-note {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap >p, .construction-card-content-title, .construction-card-content-note, #section-title-year , #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -49,7 +49,6 @@
 }
 
 #overview-top-img {
-    height: 45vh;
     background-image: url(./img/office-white.jpg);
     background-size: 100% auto;
     background-position: bottom;
@@ -192,15 +191,8 @@ iframe {
     }
 }
 
-@media (max-width: 927px) {
-    #overview-top-img {
-        height: 35vh;
-    }
-}
 
 @media (max-width: 790px) {
-
-
     .subpage-title-wrap-eng {
         font-size: 4em;
     }
@@ -218,29 +210,13 @@ iframe {
         margin-top: 8vh;
     }
 
-    #overview-top-img {
-        height: 40vh;
-        background-size: 100% auto;
-    }
-
     iframe {
         height: 150px;
 
     }
 }
 
-@media (max-width: 616px) {
-
-    #overview-top-img {
-        height: 35vh;
-        background-size: 100% auto;
-    }
-}
-
 @media (max-width: 580px) {
-    #overview-top-img {
-        height: 30vh;
-    }
 
     .table-row-wrap {
         padding: .9em 0;
@@ -300,19 +276,12 @@ iframe {
         margin-left: 0;
     }
 
-    #overview-top-img {
-        height: 30vh;
-    }
 }
 
 @media (max-width: 461px) {
     #note-office-wrap {
         font-size: .5em;
         flex-direction: column;
-    }
-
-    #overview-top-img {
-        height: 25vh;
     }
 
 }
@@ -328,10 +297,6 @@ iframe {
 
     #table-title-eng-space {
         margin-left: -5px;
-    }
-
-    #overview-top-img {
-        height: 20vh;
     }
 
     .table-item-name {
@@ -1754,7 +1719,6 @@ tr:nth-child(2n+3) {
 
 /* recruit */
 #recruit-top-img {
-    height: 45vh;
     background-image: url(./img/office-white.jpg);
     background-size: 100% auto;
     background-position: bottom;
@@ -1970,11 +1934,7 @@ tr:nth-child(2n+3) {
     }
 }
 
-@media (max-width: 927px) {
-    #recruit-top-img {
-        height: 35vh;
-    }
-}
+
 
 @media (max-width: 870px) {
     .recruit-jump-icons-circle {
@@ -2085,5 +2045,43 @@ tr:nth-child(2n+3) {
     }
     .job-list-wrap {
         font-size: .8em;
+    }
+}
+
+
+/* responsive subpages imgs */
+.top-imgs {
+    height: 40vh;
+}
+
+@media (max-width: 1220px) {
+    .top-imgs {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .top-imgs {
+        height: 30vh;
+    }
+}
+@media (max-width: 860px) {
+    .top-imgs {
+        height: 25vh;
+    }
+}
+@media (max-width: 590px) {
+    .top-imgs {
+        height: 20vh;
+    }
+}
+@media (max-width: 450px) {
+    .top-imgs {
+        height: 15vh;
+    }
+}
+@media (max-width: 360px) {
+    .top-imgs {
+        height: 10vh;
     }
 }
