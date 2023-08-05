@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap >p, .construction-card-content-title, .construction-card-content-note, #section-title-year , #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year , #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
