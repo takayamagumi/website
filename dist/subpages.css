@@ -1719,9 +1719,9 @@ tr:nth-child(2n+3) {
 
 /* recruit */
 #recruit-top-img {
-    background-image: url(./img/recruit-5workers.jpg);
+    background-image: url(./img/recruit-5workers-light.jpg);
     background-size: 100% auto;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
