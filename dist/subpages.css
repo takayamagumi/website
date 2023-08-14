@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year , #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note {
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year , #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note, .contact-form-input input {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -39,9 +39,9 @@
 
 
 .main-context-container {
-    width: 75vw;
+    width: 85vw;
     height: max-content;
-    margin-top: 70px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,8 +86,9 @@
 }
 
 #title-jpn-overview {
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: var(--dark-gray-color);
+    margin-top: .5%;
 }
 
 #overview-wrap {
@@ -112,12 +113,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .table-title-jpn {
     padding-left: 2em;
+    font-size: 1.2em;
 }
 
 /* overview main */
@@ -135,7 +136,7 @@
     justify-content: start;
     align-items: flex-start;
     padding: .9em 0;
-    font-size: .8em;
+    font-size: 1.2em;
     border-bottom: 1px solid var(--dark-gray-color);
     width: 100%;
 }
@@ -176,7 +177,7 @@
 
 iframe {
     width: 70%;
-    height: 300px;
+    height: 500px;
     margin-top: 60px;
     margin-left: 30%;
 }
@@ -184,7 +185,9 @@ iframe {
 #note-office-right {
     display: none;
 }
-
+#note-office-wrap-left {
+    font-size: .7em;
+}
 @media (max-width: 990px) {
     iframe {
         height: 200px;
@@ -321,17 +324,17 @@ iframe {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+z-index: 5;
 }
 
 .path-links-wrap a {
     color: var(--dark-gray-color);
     font-family: dolceVita;
     padding: .2em .5em;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
-#overview-main-context-container {
+.main-context-container {
     box-shadow: -2px -2px 7px -1px #4c4c4c4a;
 }
 
@@ -912,14 +915,14 @@ iframe {
 }
 
 #contact-title-wrap-eng {
-    font-size: 3.5em;
+    font-size: 6em;
 }
 
 #contact-form-message-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: .9em;
+    font-size: 1.2em;
 }
 
 #contact-main-container {
@@ -954,8 +957,8 @@ iframe {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: .9em;
-    height: 50px;
+    font-size: 1.2em;
+    height: 80px;
 }
 
 .contact-form-label {
@@ -989,6 +992,7 @@ iframe {
     height: 2em;
     border: none;
     outline: none;
+    font-size: 1.2em;
 }
 
 .contact-form-checkbox {
@@ -1011,10 +1015,6 @@ input[type="checkbox"] {
     outline: none;
     margin-right: .5em;
 }
-
-/* #checkbox-policy {
-    outline: 2px solid #F00;
-} */
 
 
 #contact-checkbox-wrap-purpose div {
@@ -1102,7 +1102,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 
@@ -1473,13 +1473,7 @@ textarea {
         margin: 1em 0;
     }
 
-    /* .contact-call-btn:hover {
-        background-color: var(--light-green-color);
-    }
-    .contact-call-btn:hover +
-     .contact-call-btn > p {
-        color: var(--main-bg-color);
-    } */
+
     #contact-call-wrap {
         display: none;
     }
@@ -1488,102 +1482,6 @@ textarea {
 
 
 
-/* jigyo naiyo */
-#construction-main-container {
-    height: max-content;
-}
-
-.gettingready-wrap {
-    background-color: white;
-}
-
-.icons-wrap {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    position: relative;
-    z-index: 2;
-
-}
-
-.icons-wrap>img {
-    height: 80px;
-}
-
-.text-gettingready {
-    text-align: center;
-    font-size: 3em;
-    z-index: 3;
-}
-
-@media (max-width: 1100px) {
-    .icons-wrap>img {
-        height: 60px;
-    }
-}
-
-@media (max-width: 800px) {
-    .icons-wrap {
-        height: 80px;
-    }
-}
-
-@media (max-width: 700px) {
-    .icons-wrap {
-        height: 70px;
-    }
-
-    .icons-wrap>img {
-        height: 50px;
-    }
-}
-
-@media (max-width: 500px) {
-    .icons-wrap {
-        height: 70px;
-    }
-
-    .icons-wrap>img {
-        height: 50px;
-    }
-
-    .text-gettingready {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .icons-wrap {
-        height: 70px;
-    }
-
-    .icons-wrap>img {
-        height: 40px;
-    }
-}
-
-@media (max-width: 350px) {
-
-    .icons-wrap {
-        height: 60px;
-    }
-
-    .icons-wrap>img {
-        height: 30px;
-    }
-}
-
-@media (max-width: 300px) {
-    .icons-wrap {
-        height: 60px;
-    }
-
-    .icons-wrap>img {
-        height: 30px;
-    }
-}
 
 /* work */
 #work-main-container {
@@ -1594,7 +1492,6 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    /* width: 100%; */
     padding-bottom: 80px
 }
 
@@ -1606,38 +1503,36 @@ textarea {
 
 #serchYears-dropdown-wrap select {
     height: 40px;
-    width: 120px;
+    width: fit-content;
+    padding: 5px 30px;
+    font-size: 1.2em;
 }
 
 #jumpToYear-btn {
     height: 30px;
-    width: 120px;
+    width:fit-content;
+    font-size: 1.2em;
     margin-left: 10%;
     background-color: var(--main-bg-color);
     border: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    padding: 5px 10px;
+    justify-content: space-between;
+    padding: 20px 30px;
     border-radius: 5px;
 }
 
 #jumpToYear-btn:hover {
     background-color: var(--hover-green-color);
 }
-
+#jumpToYear-btn p{
+    color: white;
+    padding-left: 10px;
+}
 #jumpToYear-btn img {
     height: 20px;
 }
-
-/* .table-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
 
 .table-title-wrap img {
     height: 40px;
@@ -1653,7 +1548,7 @@ textarea {
 
 .table-title-wrap p {
     padding: 0 1em;
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 .tableHeader {
@@ -1664,7 +1559,7 @@ textarea {
 tr {
     height: 50px;
     text-align: center;
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 td {

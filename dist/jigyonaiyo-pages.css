@@ -1,3 +1,4 @@
+
 .gigyonaiyo-recruit-link-btn {
     background-color: var(--main-bg-color);
     font-size: .9em;
@@ -786,7 +787,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 9;
+    z-index: 2;
 }
 
 .bar-circle p {
