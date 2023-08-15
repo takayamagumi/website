@@ -39,7 +39,7 @@
                 #btn-news>p,
                 .footer-menu,
                 #btn-recruit,
-                #recruit-rightbox p, .mobile-menu-names {
+                #recruit-rightbox p, .mobile-menu-names,.section-main-top-wrap p {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style: normal;
@@ -841,7 +841,7 @@
                 }
 
                 #box-img-kensetsu {
-                    background-image: url(./img/genba.jpg);
+                    background-image: url(./img/construction-genba.jpg);
                     background-repeat: no-repeat;
                     background-size: auto 120%;
                     background-position: center;

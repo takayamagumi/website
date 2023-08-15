@@ -1,4 +1,3 @@
-
 .gigyonaiyo-recruit-link-btn {
     background-color: var(--main-bg-color);
     font-size: .9em;
@@ -32,7 +31,7 @@
 
 /* gigyonaiyo-construction */
 #construction-top-img {
-    background-image: url(./img/genba.jpg);
+    background-image: url(./img/work-topimg1.jpg);
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +73,7 @@
 }
 
 .gigyonaiyo-first-section-wrap img {
-    width: 50%;
+    width: 30%;
 }
 
 .gigyonaiyo-first-section-wrap {
@@ -82,7 +81,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     width: 80%;
 }
 
@@ -95,8 +94,8 @@
 }
 
 .gigyonaiyo-first-section-wrap>.paragragh-wrap p {
-    font-size: .9em;
-    line-height: 1.3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
 
 }
 
@@ -104,10 +103,10 @@
 /* second section */
 
 #construction-circle {
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     border-radius: 50%;
-    border: 60px solid var(--light-green-color);
+    border: 70px solid var(--light-green-color);
     background-color: white;
     z-index: 0;
     position: absolute;
@@ -123,9 +122,10 @@
     align-items: center;
     margin: 2em 0;
     position: relative;
-    top: 40%;
-    width: 120%;
-    margin-left: -10%;
+    top: 43%;
+    width: 113%;
+    margin-left: -7%;
+
 }
 
 #triangle-up {
@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 80%;
+    width: 50%;
     position: relative;
 }
 
@@ -169,18 +169,16 @@
 
 .construction-card {
     border: 3px var(--main-bg-color) solid;
-    width: min-content;
+    width: 230px;
     background-color: white;
     z-index: 2;
-    height: 300px;
+    height: 350px;
 }
 
-#card-recycle-title {
-    font-size: 1em;
-}
+
 
 .construction-card-content img {
-    height: 100px;
+    height: 120px;
     z-index: 2;
     padding: 0 1em;
 }
@@ -210,8 +208,8 @@
 
 .construction-card-content-note {
     width: 80%;
-    font-size: .8em;
-    line-height: 1em;
+    font-size: 1em;
+    line-height: 1.1em;
     padding: 1em 0;
     z-index: 2;
 }
@@ -226,7 +224,7 @@
 
 /* before after */
 #construction-third-section-wrap {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +269,7 @@
 }
 
 .beforeafter-imgs-wrap img {
-    height: 230px;
+    height: 300px;
 }
 
 .arrow {
@@ -585,6 +583,8 @@
 }
 
 
+
+
 /* distribution */
 
 #distribution-chart-wrap {
@@ -594,7 +594,7 @@
 }
 
 #distribution-top-img {
-    background-image: url(./img/dumpcar-linedup-light.jpg);
+    background-image: url(./img/dumpcar-linedup-light2.jpg);
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -602,7 +602,7 @@
 }
 
 #distribution-chart-wrap img {
-    width: 70%;
+    width: 40%;
 }
 
 .gigyonaiyo-worker-intro-section {
@@ -621,11 +621,11 @@
 }
 
 .worker-intro-top-wrap img {
-    width: 40%;
+    width: 30%;
 }
 
 .worker-intro-info-wrap {
-    width: 40%;
+    width: 30%;
 }
 
 .worker-info-wrap {
@@ -647,25 +647,31 @@
 }
 
 .worker-info-jpn {
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
-/* .worker-experience >.worker-info-wrap > .worker-info-jpn {
-    letter-spacing: .5em;
-} */
+
 .worker-info-jpn-sub {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .worker-name-age-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+}
+
+.worker-age {
+    margin-left: 5em;
 }
 
 .worker-info-eng {
     font-family: dolceVita;
+    font-size: 1.2em;
+}
+
+.worker-experience {
+    margin-top: 5%;
 }
 
 .worker-intro-botton-wrap {
@@ -673,12 +679,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
 .worker-comment-wrap {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -686,16 +692,16 @@
 }
 
 .worker-intro-botton-wrap img {
-    width: 40%;
+    width: 30%;
 }
 
 .worker-comment {
     line-height: 1.4em;
-    font-size: .9em;
+    font-size: 1.2em;
 }
 
 .worker-comment-title-wrap {
-    font-size: 1.3em;
+    font-size: 1.8em;
     letter-spacing: .1em;
     display: flex;
     flex-direction: column;
@@ -703,7 +709,16 @@
     margin-bottom: 5%;
 }
 
+#distribution-third-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
 
+#distribution-third-wrap img {
+    width: 30%;
+}
 
 @media (max-width: 900px) {
     #distribution-title-wrap-eng {
@@ -746,6 +761,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+    margin-bottom: 5%;
 }
 
 #recycle-top-img {
@@ -753,7 +769,6 @@
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 #rc-making-section-title-wrap {
@@ -764,10 +779,8 @@
 .making-rc-wrap {
     display: flex;
     flex-direction: row;
-    /* align-items     : center; */
-    /* justify-content : space-between; */
     margin-top: -30px;
-    width: 100%;
+    width: 70%;
 }
 
 .making-rc-sidebar-wrap {
@@ -778,8 +791,8 @@
 }
 
 .bar-circle {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: var(--main-bg-color);
     display: flex;
@@ -804,7 +817,7 @@
 .side-bar {
     background-color: var(--light-gray-color);
     height: 250px;
-    width: 40px;
+    width: 50px;
     z-index: 0;
     margin-top: -10px;
     padding-bottom: 20px;
@@ -842,7 +855,7 @@
 }
 
 .making-rc-img-note-wrap img {
-    width: 40%;
+    width: 30%;
 }
 
 .making-rc-note-wrap {
@@ -856,15 +869,65 @@
 
 .making-rc-title {
     color: var(--main-bg-color);
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin-bottom: 5%;
 }
 
 .making-rc-note {
-    font-size: .9em;
+    font-size: 1.2em;
     letter-spacing: .1em;
-    line-height: 1.2em;
+    line-height: 1.5em;
+}
 
+
+/* how to use  */
+
+#recycle-third-section-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.recycle-guide-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.num-guide .num{
+    font-family: dolceVita;
+    font-size: 3em;
+color: var(--main-bg-color);
+    line-height: .8em;
+}
+.num-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.5em
+}
+.num-guide .guide-explanation {
+    font-size: 1.2em
+}
+.num-img-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.num-img-wrap img {
+    width: 600px;
+}
+
+.recycle-guide-item .detail-explanation {
+    width: 40%;
+    font-size: 1.2em;
 }
 
 @media (max-width: 900px) {
