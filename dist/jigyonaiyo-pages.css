@@ -991,7 +991,9 @@
         width: 75%;
     }
 }
+@media (max-width: 1200px) {
 
+}
 @media (max-width: 900px) {
     #rc-making-section-title-wrap {
         margin-bottom: 10%;
