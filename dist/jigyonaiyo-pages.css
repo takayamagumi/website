@@ -899,8 +899,27 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-    margin-bottom: 10%;
-    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-top: 3%;
+}
+
+#forwhouserecycleplant {
+    background-color: var(--light-green-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    padding: 2em;
+}
+#forwhouserecycleplant >div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forwhouserecycleplant >div> img {
+    height: 1em;
 }
 
 .recycle-guide-item {
@@ -970,17 +989,19 @@
     .num-img-wrap img {
         width: 350px;
     }
+
     .num-guide .num {
         font-size: 2.5em;
     }
-    
+
     .num-guide {
         font-size: 1.2em
     }
-    
+
     .num-guide .guide-explanation {
         font-size: 1em
     }
+
     .recycle-guide-item .detail-explanation {
         font-size: 1em;
     }
@@ -991,9 +1012,9 @@
         width: 75%;
     }
 }
-@media (max-width: 1200px) {
 
-}
+@media (max-width: 1200px) {}
+
 @media (max-width: 900px) {
     #rc-making-section-title-wrap {
         margin-bottom: 10%;
