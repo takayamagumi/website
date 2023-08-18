@@ -1,24 +1,26 @@
 .gigyonaiyo-recruit-link-btn {
     background-color: var(--main-bg-color);
-    font-size: .9em;
-    writing-mode: vertical-rl;
-    line-height: 1.1em;
+    display: flex;
+    flex-direction: row;
     width: fit-content;
     border: none;
-    padding: 1.5em .2em;
-    letter-spacing: .3em;
+    padding: 1.5em .5em;
     position: fixed;
     top: 50vh;
     right: 0;
 }
-
-#recycle-main-container .gigyonaiyo-recruit-link-btn {
-    padding: 1.3em .2em;
-    letter-spacing: .2em;
+.recruit-link-text-wrap {
+    display: flex;
+    flex-direction: column;
 }
+
 
 .gigyonaiyo-recruit-link-btn a {
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .gigyonaiyo-recruit-link-btn:hover {
@@ -27,6 +29,9 @@
 
 .gigyonaiyo-recruit-link-btn p {
     color: white;
+    font-size: 1.5em;
+    margin: -.4em 0 -.4em 0
+
 }
 
 /* gigyonaiyo-construction */
@@ -887,7 +892,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     margin-bottom: 10%;
     margin-top: 5%;
 }
@@ -896,16 +901,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 3%;
 }
 
-.num-guide .num{
+.num-guide .num {
     font-family: dolceVita;
     font-size: 3em;
-color: var(--main-bg-color);
+    color: var(--main-bg-color);
     line-height: .8em;
 }
+
 .num-guide {
     display: flex;
     flex-direction: row;
@@ -913,9 +919,11 @@ color: var(--main-bg-color);
     justify-content: start;
     font-size: 1.5em
 }
+
 .num-guide .guide-explanation {
     font-size: 1.2em
 }
+
 .num-img-wrap {
     display: flex;
     flex-direction: column;

@@ -39,7 +39,7 @@
                 #btn-news>p,
                 .footer-menu,
                 #btn-recruit,
-                #recruit-rightbox p, .mobile-menu-names,.section-main-top-wrap p {
+                #recruit-rightbox p, .mobile-menu-names, .section-main-top-wrap p {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style: normal;
@@ -108,22 +108,21 @@
                 }
 
                 #menu-wrap {
-                    padding-top: 10px;
                     letter-spacing: .1rem;
                     padding-top: 50px;
+                    width: 12vw;
                 }
 
                 .menu-link {
                     text-decoration: none;
                     display: flex;
                     flex-direction: row;
-                    max-width: 220px;
-                    margin: 2% 0 2% 10%;
+                    margin: 2% 0 2% 20%;
                 }
 
                 .menu-names {
                     color: white;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                 }
 
                 .menu-link:hover {
@@ -362,6 +361,9 @@
                     padding-left: 10%;
                 }
 
+                #menu-recycle p {
+                    letter-spacing: -.01em;
+                }
 
                 .mobile-menu-select {
                     display: flex;
@@ -787,12 +789,11 @@
                     line-height: .8em;
                     position: absolute;
                     top: 0;
-                    left: 0;
                     z-index: 3;
                 }
 
                 #bg-text-left {
-                    margin-right: auto;
+                    left: 0;
                     color: white;
                 }
 
@@ -960,8 +961,7 @@
 
                 #bg-text-right {
                     color: var(--light-gray-color);
-                    margin-left: auto;
-
+                    right: 0;
                 }
 
                 #news-content-wrap {
