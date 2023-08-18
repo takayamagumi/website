@@ -152,6 +152,40 @@
                     display: none;
                 }
 
+                @media (max-width: 2100px) {
+                    #menu-recycle p {
+                        font-size: 1em;
+                    }
+                }
+
+
+                @media (max-width: 1900px) {
+                    .menu-names {
+                        font-size: 1em;
+                    }
+
+                    #menu-recycle p {
+                        font-size: .9em;
+                    }
+                }
+
+
+                @media (max-width: 1610px) {
+
+                    #logo-wrap>p {
+                        color: white;
+                        font-size: .7em;
+                    }
+
+                    #logo-wrap>h3 {
+                        font-size: 1.5em;
+                    }
+
+                    #logo-wrap img {
+                        width: 40px;
+                    }
+
+                }
 
                 @media (max-width: 750px) {
                     #lp-container, #lp-main-container, #header-contact {
@@ -521,6 +555,34 @@
                     font-size: 1.8em;
                 }
 
+                @media (max-width: 1900px) {
+                    .location-names {
+                        font-size: 1em;
+                    }
+
+                    .img-phone-nums-wrap img {
+                        height: 30px;
+                    }
+
+                    .img-phone-nums-wrap p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                @media (max-width: 1610px) {
+                    .location-names {
+                        font-size: .8em;
+                    }
+
+                    .img-phone-nums-wrap img {
+                        height: 25px;
+                    }
+
+                    .img-phone-nums-wrap p {
+                        font-size: 1.2em;
+                    }
+                }
+
                 @media (max-width: 990px) {
                     .img-phone-nums-wrap img {
                         height: 20px;
@@ -587,6 +649,12 @@
 
                 #contact-btn img {
                     height: 40px;
+                }
+
+                @media (max-width: 1800px) {
+                    #lp-main-container {
+                        width: 80vw;
+                    }
                 }
 
                 /* main img for lp */

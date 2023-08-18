@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year, #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note, .contact-form-input input ,.recycle-guide-item .detail-explanation{
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year, #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note, .contact-form-input input, .recycle-guide-item .detail-explanation {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -30,7 +30,7 @@
 }
 
 
-#phone-num-wrap a, .contact-call-num-p, .bar-circle-jpn, .making-rc-title,.num-guide .guide-explanation {
+#phone-num-wrap a, .contact-call-num-p, .bar-circle-jpn, .making-rc-title, .num-guide .guide-explanation {
     font-family: ta-marugo-gf-02, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -1814,9 +1814,11 @@ tr:nth-child(2n+3) {
     display: inline-block;
     margin-right: 2%;
 }
+
 .job-title {
     font-size: 1.2em;
 }
+
 .job-list-wrap a {
     background-color: var(--main-bg-color);
     text-decoration: none;
@@ -1833,6 +1835,12 @@ tr:nth-child(2n+3) {
 
 #recruit-recycle-section-container {
     margin-bottom: 10%;
+}
+
+@media (max-width: 1650px) {
+    .section-title-wrap {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 1050px) {

@@ -9,6 +9,7 @@
     top: 50vh;
     right: 0;
 }
+
 .recruit-link-text-wrap {
     display: flex;
     flex-direction: column;
@@ -31,7 +32,6 @@
     color: white;
     font-size: 1.5em;
     margin: -.4em 0 -.4em 0
-
 }
 
 /* gigyonaiyo-construction */
@@ -294,14 +294,20 @@
     margin-bottom: 10%;
 }
 
+@media (max-width: 2500px) {
+    .gigyonaiyo-first-section-wrap {
+
+        width: 90%;
+    }
+
+}
+
 @media (max-width: 1360px) {
     .beforeafter-imgs-wrap img {
         height: 200px;
     }
 
 }
-
-
 
 
 
@@ -936,6 +942,54 @@
 .recycle-guide-item .detail-explanation {
     width: 40%;
     font-size: 1.2em;
+}
+
+@media (max-width: 2100px) {
+    #recycle-third-section-wrap {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1900px) {
+    .num-img-wrap img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .num-img-wrap img {
+        width: 400px;
+    }
+
+    .recycle-guide-item .detail-explanation {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .num-img-wrap img {
+        width: 350px;
+    }
+    .num-guide .num {
+        font-size: 2.5em;
+    }
+    
+    .num-guide {
+        font-size: 1.2em
+    }
+    
+    .num-guide .guide-explanation {
+        font-size: 1em
+    }
+    .recycle-guide-item .detail-explanation {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1300px) {
+    #recycle-third-section-wrap {
+        width: 75%;
+    }
 }
 
 @media (max-width: 900px) {
