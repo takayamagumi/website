@@ -891,6 +891,110 @@
 }
 
 
+/* business hours and date */
+#recycle-business-hour-section-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recycle-business-hour-table {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green-color);
+    font-size: 1.2em;
+}
+
+.recycle-business-date-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    border-bottom: white 2px solid;
+}
+
+.business-date, .business-date-kinds-wrap, .business-date-hours-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.business-date-kinds .btm-line {
+    /* border-bottom: white 2px solid; */
+    background-color: antiquewhite;
+}
+
+.business-date-kinds-wrap {
+    border-left: white 2px solid;
+    height: 50%;
+    width: 20%;
+    border-right: white 2px solid;
+}
+.business-date-kinds-wrap p {
+margin: auto 0;
+padding: 20px 0;
+}
+.business-date-hours-wrap {
+    width: 40%;
+    height: 50%;
+}
+.business-date-hours-wrap p {
+    margin: auto 0;
+    padding: 20px 0;
+    }
+.business-date-kinds-wrap .business-date-kinds-rc, .business-date-hours-rc {
+    width: 100%;
+    border-bottom: white 2px dashed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+
+.recycle-business-date-wrap #red-text {
+    color: red;
+}
+
+/* note for plant user */
+#noteforplantusers {
+    width: 60%;
+    font-size: 1.1em;
+    margin-bottom: 5%;
+}
+
+#noteforplantusers .red-text {
+    color: red;
+    font-size: 1.4em
+}
+
+#noteforplantusers .underline {
+    text-decoration: underline 2px var(--dark-gray-color) solid;
+}
+
+#noteforplantusers>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
 /* how to use  */
 
 #recycle-third-section-wrap {
@@ -912,13 +1016,14 @@
     font-size: 1.2em;
     padding: 2em;
 }
-#forwhouserecycleplant >div {
+
+#forwhouserecycleplant>div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#forwhouserecycleplant >div> img {
+#forwhouserecycleplant>div>img {
     height: 1em;
 }
 
@@ -976,6 +1081,13 @@
 }
 
 @media (max-width: 1650px) {
+    #recycle-second-section-wrap {
+        width: 90%;
+    }
+    .making-rc-wrap {
+    
+        width: 80%;
+    }
     .num-img-wrap img {
         width: 400px;
     }
@@ -983,6 +1095,7 @@
     .recycle-guide-item .detail-explanation {
         width: 50%;
     }
+
 }
 
 @media (max-width: 1550px) {
@@ -1005,11 +1118,27 @@
     .recycle-guide-item .detail-explanation {
         font-size: 1em;
     }
+    .making-rc-title {
+        font-size: 1.5em;
+    }
+    
+    .making-rc-note {
+        font-size: 1em;
+        letter-spacing: .1em;
+        line-height: 1.2em;
+    }
 }
 
 @media (max-width: 1300px) {
     #recycle-third-section-wrap {
         width: 75%;
+    }
+    #noteforplantusers {
+        width: 75%;
+        font-size: 1em;
+    }
+    #noteforplantusers .red-text {
+        font-size: 1.2em
     }
 }
 
