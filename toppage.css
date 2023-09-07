@@ -909,11 +909,11 @@
                     }
                 }
 
-                @media (max-width: 1580px) {
+                 @media (max-width: 1580px) {
                     #lp-mainimg {
-                        background-size: auto 100%;
+                        background-size:  100% auto;
                     }
-                }
+                } 
 
                 @media (max-width: 1400px) {
                     .main-message-wrap {
@@ -939,7 +939,9 @@
                     .main-message-wrap {
                         margin-left: 25%;
                     }
-
+                    #lp-mainimg {
+                        background-size: auto 100%;
+                    }
                     .sub-message {
                         margin-left: 25%;
                     }
