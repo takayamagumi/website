@@ -296,7 +296,6 @@
 
 @media (max-width: 2500px) {
     .gigyonaiyo-first-section-wrap {
-
         width: 90%;
     }
 
@@ -328,6 +327,12 @@
     .construction-card-content img {
         height: 90px;
         padding: 0 .9em;
+    }
+
+    .gigyonaiyo-first-section-wrap>.paragragh-wrap {
+        font-size: 1em;
+        margin-right: 5%;
+        width: 50%;
     }
 }
 
@@ -369,6 +374,10 @@
 
     #card-recycle-title {
         font-size: .8em;
+    }
+
+    .gigyonaiyo-first-section-wrap>.paragragh-wrap {
+        font-size: .9em;
     }
 }
 
@@ -440,8 +449,29 @@
     }
 }
 
+@media (max-width: 900px) {
+    .gigyonaiyo-first-section-wrap>.paragragh-wrap {
+        width: 50%;
+        margin-right: 3%;
+    }
+}
 
+@media (max-width: 800px) {
+    .gigyonaiyo-first-section-wrap {
+        flex-direction: column;
+        width: 80%;
+    }
 
+    .gigyonaiyo-first-section-wrap>.paragragh-wrap {
+        width: 80%;
+        margin-right: 0%;
+    }
+
+    .gigyonaiyo-first-section-wrap img {
+        width: 70%;
+        margin-top: 5%;
+    }
+}
 
 @media (max-width: 750px) {
     #construction-title-wrap-eng {
@@ -632,11 +662,11 @@
 }
 
 .worker-intro-top-wrap img {
-    width: 30%;
+    width: 40%;
 }
 
 .worker-intro-info-wrap {
-    width: 30%;
+    width: 40%;
 }
 
 .worker-info-wrap {
@@ -691,11 +721,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .worker-comment-wrap {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -703,7 +732,7 @@
 }
 
 .worker-intro-botton-wrap img {
-    width: 30%;
+    width: 40%;
 }
 
 .worker-comment {
@@ -731,9 +760,70 @@
     width: 30%;
 }
 
+@media (max-width: 1700px) {
+    .worker-comment-title-wrap {
+        font-size: 1.5em;
+    }
+
+    .worker-comment {
+        line-height: 1.3em;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 1400px) {
+    .worker-comment-title-wrap {
+        letter-spacing: 0em;
+    }
+}
+
+@media (max-width: 1300px) {
+    .worker-comment-title-wrap {
+        font-size: 1.3em;
+    }
+
+    .worker-comment {
+        line-height: 1.2em;
+        font-size: 1em;
+    }
+
+    .worker-info-jpn {
+        font-size: 1.5em;
+    }
+
+    .worker-age {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .worker-info-jpn {
+        font-size: 1.4em;
+    }
+
+    .gigyonaiyo-worker-intro-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .worker-comment-title-wrap {
+        font-size: 1.2em;
+    }
+
+    .worker-comment {
+        line-height: 1.3em;
+        font-size: .9em;
+    }
+}
+
 @media (max-width: 900px) {
     #distribution-title-wrap-eng {
         font-size: 4em;
+    }
+
+    .worker-age {
+        margin-left: auto;
     }
 
     .worker-intro-top-wrap {
@@ -746,11 +836,11 @@
 
     .worker-intro-botton-wrap img,
     .worker-intro-top-wrap img {
-        width: 90%;
+        width: 80%;
     }
 
     .worker-comment-wrap {
-        width: 90%;
+        width: 80%;
         margin-top: 3%;
     }
 
@@ -759,11 +849,74 @@
         margin-top: 3%;
     }
 
+    .worker-comment-title-wrap {
+        font-size: 1.5em;
+    }
+
+    .worker-comment {
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+
     #distribution-chart-wrap img {
+        width: 70%;
+    }
+
+    #distribution-third-wrap {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    #distribution-third-wrap img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .worker-comment-title-wrap {
+        font-size: 1.3em;
+    }
+
+    .worker-comment {
+        line-height: 1.2em;
+        font-size: .9em;
+    }
+
+    #distribution-third-wrap img {
         width: 80%;
     }
 }
 
+@media (max-width: 450px) {
+    .worker-info-jpn {
+        font-size: 1.2em;
+    }
+
+    .worker-comment-title-wrap {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 380px) {
+    .worker-info-eng {
+        font-size: 1em;
+    }
+
+    .worker-info-jpn {
+        font-size: 1.1em;
+    }
+
+    .worker-comment-title-wrap {
+        font-size: 1em;
+    }
+
+    .worker-comment {
+        line-height: 1.2em;
+        font-size: .8em;
+    }
+}
 
 /* recycle */
 #recycle-second-section-wrap {
@@ -791,7 +944,7 @@
     display: flex;
     flex-direction: row;
     margin-top: -30px;
-    width: 70%;
+    width: 80%;
 }
 
 .making-rc-sidebar-wrap {
@@ -870,24 +1023,24 @@
 }
 
 .making-rc-note-wrap {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .making-rc-title {
     color: var(--main-bg-color);
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 5%;
 }
 
 .making-rc-note {
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: .1em;
     line-height: 1.5em;
+    width: 100%;
 }
 
 
@@ -945,18 +1098,22 @@
     width: 20%;
     border-right: white 2px solid;
 }
+
 .business-date-kinds-wrap p {
-margin: auto 0;
-padding: 20px 0;
+    margin: auto 0;
+    padding: 20px 0;
 }
+
 .business-date-hours-wrap {
     width: 40%;
     height: 50%;
 }
+
 .business-date-hours-wrap p {
     margin: auto 0;
     padding: 20px 0;
-    }
+}
+
 .business-date-kinds-wrap .business-date-kinds-rc, .business-date-hours-rc {
     width: 100%;
     border-bottom: white 2px dashed;
@@ -977,6 +1134,10 @@ padding: 20px 0;
     width: 60%;
     font-size: 1.1em;
     margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
 
 #noteforplantusers .red-text {
@@ -988,11 +1149,21 @@ padding: 20px 0;
     text-decoration: underline 2px var(--dark-gray-color) solid;
 }
 
-#noteforplantusers>div {
+.noteforplantusers-lists {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
+}
+
+#noteforplantusers-lists-lp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#noteforplantusers-lists-mobile {
+    display: none;
 }
 
 /* how to use  */
@@ -1007,6 +1178,13 @@ padding: 20px 0;
     margin-top: 3%;
 }
 
+#noteforplantuser-insite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #forwhouserecycleplant {
     background-color: var(--light-green-color);
     display: flex;
@@ -1015,15 +1193,21 @@ padding: 20px 0;
     justify-content: center;
     font-size: 1.2em;
     padding: 2em;
+    width: 90%;
 }
 
-#forwhouserecycleplant>div {
+#forwhouserecycleplant-second {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#forwhouserecycleplant>div>img {
+#forwhouserecycleplant-second {
+    display: flex;
+    flex-direction: row;
+}
+
+#forwhouserecycleplant>div>div>img {
     height: 1em;
 }
 
@@ -1084,10 +1268,11 @@ padding: 20px 0;
     #recycle-second-section-wrap {
         width: 90%;
     }
+
     .making-rc-wrap {
-    
         width: 80%;
     }
+
     .num-img-wrap img {
         width: 400px;
     }
@@ -1118,14 +1303,23 @@ padding: 20px 0;
     .recycle-guide-item .detail-explanation {
         font-size: 1em;
     }
+
     .making-rc-title {
         font-size: 1.5em;
     }
-    
+
     .making-rc-note {
         font-size: 1em;
         letter-spacing: .1em;
         line-height: 1.2em;
+    }
+
+    #noteforplantusers {
+        width: 70%;
+    }
+
+    #forwhouserecycleplant {
+        font-size: 1em;
     }
 }
 
@@ -1133,26 +1327,115 @@ padding: 20px 0;
     #recycle-third-section-wrap {
         width: 75%;
     }
-    #noteforplantusers {
-        width: 75%;
+
+    #forwhouserecycleplant {
         font-size: 1em;
     }
-    #noteforplantusers .red-text {
-        font-size: 1.2em
+
+    .making-rc-img-note-wrap img {
+        width: 40%;
+    }
+
+    .making-rc-title {
+        font-size: 1.3em;
+    }
+
+    .num-img-wrap img {
+        width: 330px;
+    }
+
+    #noteforplantusers {
+        font-size: 1em;
     }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .recycle-guide-item .detail-explanation {
+        font-size: .9em;
+        width: 40%;
+    }
+
+    #noteforplantusers {
+        font-size: .9em;
+    }
+
+    .num-img-wrap img {
+        width: 300px;
+    }
+
+    .bar-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .side-bar {
+        height: 230px;
+        width: 40px;
+    }
+
+    .bar-circle-num {
+        font-size: 1.5em;
+    }
+
+    .bar-circle-jpn {
+        font-size: 1.1em;
+    }
+
+    .side-bar-arrow {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--dark-gray-color);
+    }
+
+    .business-date-kinds-wrap p {
+        padding: 10px 0;
+    }
+
+    .business-date-hours-wrap p {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    #noteforplantusers {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .business-date-kinds-wrap, .business-date-hours-wrap {
+        font-size: .9em;
+    }
+
+    .recycle-guide-item .detail-explanation {
+        font-size: .8em;
+    }
+
+    #noteforplantusers {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    #noteforplantusers-lists-lp {
+        display: none;
+    }
+
+    #noteforplantusers-lists-mobile {
+        display: flex;
+    }
+
+}
 
 @media (max-width: 900px) {
     #rc-making-section-title-wrap {
         margin-bottom: 10%;
-
     }
 
     .making-rc-img-note-wrap {
         flex-direction: column-reverse;
-
     }
 
     .making-rc-img-note-wrap img {
@@ -1172,23 +1455,134 @@ padding: 20px 0;
     .making-rc-img-note-wrap img {
         width: 80%;
     }
+
+    .num-img-wrap img {
+        width: 80%;
+    }
+
+    #noteforplantusers {
+        width: 60%;
+    }
+
+    .recycle-guide-item {
+        flex-direction: column;
+    }
+
+    .num-guide {
+        font-size: 1.3em;
+        margin-right: auto;
+    }
+
+    .num-guide .guide-explanation {
+        font-size: 1.1em;
+    }
+
+    .num-img-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .recycle-guide-item .detail-explanation {
+        width: 80%;
+        font-size: .8em;
+    }
+
+}
+
+@media (max-width:700px) {
+    .num-guide .num {
+        font-size: 2.3em;
+    }
+
+    .num-guide {
+        font-size: 1.3em
+    }
+
+    #noteforplantusers {
+        font-size: .9em;
+    }
+
+    .business-date {
+        font-size: .9em;
+    }
+
+    #forwhouserecycleplant {
+        font-size: .9em;
+    }
+
+    #forwhouserecycleplant-lp {
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
     .side-bar {
         height: 400px;
     }
+
+    .num-guide .num {
+        font-size: 2em;
+    }
+
+    .num-guide {
+        font-size: 1.1em
+    }
+
+    #noteforplantusers {
+        font-size: .8em;
+    }
+
+    .business-date-kinds-wrap p, .business-date-hours-wrap p {
+        padding: 0;
+        font-size: .9em;
+    }
+
 }
 
 @media (max-width: 600px) {
     .side-bar {
         height: 350px;
     }
+
+    .making-rc-wrap {
+        width: 90%;
+    }
+
+    #forwhouserecycleplant {
+        font-size: .8em;
+    }
 }
 
 @media (max-width: 550px) {
+    .making-rc-title {
+        font-size: 1.1em;
+    }
+
+    .making-rc-note {
+        font-size: .8em;
+    }
+
     .side-bar {
-        height: 300px;
+        height: 250px;
+    }
+
+    #noteforplantusers {
+        font-size: .7em;
+    }
+
+    .business-date-kinds-wrap p {
+        font-size: .6em;
+        padding: 5px 0;
+    }
+
+    #forwhouserecycleplant {
+        font-size: .7em;
+    }
+
+    .recycle-guide-item .detail-explanation {
+        font-size: .7em;
     }
 }
 
@@ -1220,7 +1614,47 @@ padding: 20px 0;
     }
 
     #recycle-second-section-wrap {
-
         width: 90%;
+    }
+
+    #noteforplantusers {
+        font-size: .6em;
+        width: 70%;
+    }
+
+    #forwhouserecycleplant {
+        font-size: .6em;
+    }
+
+    .business-date {
+        width: 30%;
+        font-size: .8em;
+    }
+
+    .business-date-hours-wrap {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+#forwhouserecycleplant {
+    font-size: .5em;
+}
+.num-guide .num {
+    font-size: 1.8em;
+}
+
+.num-guide {
+    font-size: 1em
+}
+}
+@media (max-width: 350px) {
+    #noteforplantusers {
+        font-size: .5em;
+    }
+
+    .business-date-kinds-wrap p {
+        font-size: .5em;
+        padding: 8px 0;
     }
 }
