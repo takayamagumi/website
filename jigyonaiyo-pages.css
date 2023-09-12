@@ -119,6 +119,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 #construction-triangle-wrap {
@@ -157,6 +158,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
+    margin-top: 5%;
     position: relative;
 }
 
@@ -298,35 +300,72 @@
     .gigyonaiyo-first-section-wrap {
         width: 90%;
     }
+    #construction-second-section-wrap {
+        width: 60%;
+    }
+    .construction-beforeafter-wrap {
 
+        width: 90%;
+    
+    }
+}
+@media (max-width: 2000px) {
+
+    #construction-second-section-wrap {
+        width:70%;
+    }
+}
+@media (max-width: 1700px) {
+
+    #construction-second-section-wrap {
+        width:80%;
+    }
 }
 
+@media (max-width: 1500px) {
+    .construction-card {
+        width: 210px;
+        height: 340px;
+    }
+        
+    .construction-card-content img {
+        height: 110px;
+        padding: 0 .5em;
+    }
+}
+@media (max-width: 1400px) {
+    .construction-card {
+        width: 200px;
+        height: 350px;
+    }
+        
+    .construction-card-content img {
+        height: 110px;
+        padding: 0 .5em;
+    }
+}
 @media (max-width: 1360px) {
     .beforeafter-imgs-wrap img {
         height: 200px;
     }
-
-}
-
-
-
-
-@media (max-width: 1250px) {
-    .beforeafter-imgs-wrap img {
-        height: 180px;
+    #construction-circle {
+        height: 650px;
+        width: 650px;    
     }
-
     .construction-card-content-num {
         font-size: 4em;
     }
 
     .construction-card-content-title {
-        font-size: 1em;
+        font-size: 1.2em;
     }
-
+    .construction-card {
+        width: 190px;
+        height: 360px;
+    }
     .construction-card-content img {
-        height: 90px;
-        padding: 0 .9em;
+        height: 110px;
+        padding: 0 ;
     }
 
     .gigyonaiyo-first-section-wrap>.paragragh-wrap {
@@ -334,6 +373,34 @@
         margin-right: 5%;
         width: 50%;
     }
+
+}
+
+
+@media (max-width: 1250px) {
+    .beforeafter-imgs-wrap img {
+        height: 180px;
+    }
+    .construction-card {
+        width: 190px;
+        height: 370px;
+    }
+    /* #construction-second-section-wrap {
+        overflow-x: scroll;
+        background-color: beige;
+        height: fit-content;
+        width: fit-content;
+    }
+    #construction-4cards-wrap>.construction-card {
+        margin: 0 2%;
+    } */
+    
+    .gigyonaiyo-first-section-wrap>.paragragh-wrap {
+        font-size: 1em;
+        margin-right: 5%;
+        width: 50%;
+    }
+
 }
 
 
@@ -587,6 +654,20 @@
     #before-after-after {
         padding: .2em 1.2em;
         font-size: 1em;
+    }
+
+    .gigyonaiyo-recruit-link-btn {
+        padding: 1.3em .3em;
+        top: 50vh;
+    }
+
+    #gigyonaiyo-recycle-recruit-link-btn p {
+        margin: -.4em 0 -.4em 0
+    }
+
+    .gigyonaiyo-recruit-link-btn p {
+        font-size: 1.2em;
+        margin: -.2em 0 -.2em 0
     }
 }
 
@@ -1329,7 +1410,7 @@
     }
 
     #forwhouserecycleplant {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .making-rc-img-note-wrap img {
@@ -1461,7 +1542,11 @@
     }
 
     #noteforplantusers {
-        width: 60%;
+        width: 65%;
+    }
+
+    #forwhouserecycleplant {
+        font-size: 1.1em;
     }
 
     .recycle-guide-item {
@@ -1500,16 +1585,13 @@
         font-size: 1.3em
     }
 
-    #noteforplantusers {
-        font-size: .9em;
-    }
 
     .business-date {
         font-size: .9em;
     }
 
     #forwhouserecycleplant {
-        font-size: .9em;
+        font-size: 1em;
     }
 
     #forwhouserecycleplant-lp {
@@ -1531,7 +1613,11 @@
     }
 
     #noteforplantusers {
-        font-size: .8em;
+        font-size: .9em;
+    }
+
+    #forwhouserecycleplant {
+        font-size: .9em;
     }
 
     .business-date-kinds-wrap p, .business-date-hours-wrap p {
@@ -1551,8 +1637,10 @@
     }
 
     #forwhouserecycleplant {
-        font-size: .8em;
+        font-size: .7em;
+        padding: 1em;
     }
+
 }
 
 @media (max-width: 550px) {
@@ -1569,7 +1657,7 @@
     }
 
     #noteforplantusers {
-        font-size: .7em;
+        width: 70%;
     }
 
     .business-date-kinds-wrap p {
@@ -1578,11 +1666,22 @@
     }
 
     #forwhouserecycleplant {
-        font-size: .7em;
+        width: 98%;
+        font-size: .75em;
+        padding: .5em;
+    }
+
+    .recycle-business-hour-table {
+        width: 75%;
     }
 
     .recycle-guide-item .detail-explanation {
         font-size: .7em;
+    }
+
+    #noteforplantusers {
+        font-size: .8em;
+        width: 70%;
     }
 }
 
@@ -1618,12 +1717,12 @@
     }
 
     #noteforplantusers {
-        font-size: .6em;
-        width: 70%;
+        width: 75%;
+        font-size: .7em;
     }
 
     #forwhouserecycleplant {
-        font-size: .6em;
+        font-size: .7em;
     }
 
     .business-date {
@@ -1636,21 +1735,26 @@
     }
 }
 
-@media (max-width: 400px) {
-#forwhouserecycleplant {
-    font-size: .5em;
-}
-.num-guide .num {
-    font-size: 1.8em;
+@media (max-width: 420px) {
+    #forwhouserecycleplant {
+        font-size: .68em;
+        padding: 1em .2em;
+        width: 100%;
+
+    }
+
+    .num-guide .num {
+        font-size: 1.8em;
+    }
+
+    .num-guide {
+        font-size: 1em
+    }
 }
 
-.num-guide {
-    font-size: 1em
-}
-}
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     #noteforplantusers {
-        font-size: .5em;
+        font-size: .6em;
     }
 
     .business-date-kinds-wrap p {
