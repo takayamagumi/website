@@ -304,9 +304,7 @@
         width: 60%;
     }
     .construction-beforeafter-wrap {
-
         width: 90%;
-    
     }
 }
 @media (max-width: 2000px) {
@@ -315,10 +313,18 @@
         width:70%;
     }
 }
+@media (max-width: 1860px) {
+    #construction-third-section-wrap {
+        width: 70%;
+    }
+}
 @media (max-width: 1700px) {
 
     #construction-second-section-wrap {
         width:80%;
+    }
+    .beforeafter-imgs-wrap img {
+        height: 280px;
     }
 }
 
@@ -331,6 +337,9 @@
     .construction-card-content img {
         height: 110px;
         padding: 0 .5em;
+    }
+    .beforeafter-imgs-wrap img {
+        height: 250px;
     }
 }
 @media (max-width: 1400px) {
@@ -521,6 +530,9 @@
         width: 50%;
         margin-right: 3%;
     }
+    #construction-third-section-wrap {
+        width: 70%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -538,6 +550,7 @@
         width: 70%;
         margin-top: 5%;
     }
+
 }
 
 @media (max-width: 750px) {
@@ -563,6 +576,9 @@
 
     #noteforscrollcircle {
         display: none;
+    }
+    #construction-third-section-wrap {
+        width: 75%;
     }
 }
 
@@ -593,7 +609,7 @@
     }
 
     .beforeafter-imgs-wrap img {
-        height: 140px;
+        height: 130px;
     }
 }
 
@@ -635,19 +651,19 @@
 
 @media (max-width: 570px) {
     .beforeafter-imgs-wrap img {
-        height: 130px;
+        height: 120px;
     }
 }
 
 @media (max-width: 540px) {
     .beforeafter-imgs-wrap img {
-        height: 120px;
+        height: 110px;
     }
 }
 
 @media (max-width: 500px) {
     .beforeafter-imgs-wrap img {
-        height: 110px;
+        height: 100px;
     }
 
     #before-after-before,
@@ -678,9 +694,9 @@
 }
 
 @media (max-width: 450px) {
-    /* #construction-first-section-wrap img {
-        height: 200px;
-    } */
+    #construction-title-wrap-eng {
+        font-size: 3em;
+    }
 
     .beforeafter-imgs-wrap img {
         height: 100px;
@@ -698,12 +714,24 @@
 }
 
 @media (max-width: 390px) {
-
+    .beforeafter-imgs-wrap img {
+        height: 80px;
+    }
+    #construction-title-wrap-eng {
+        font-size: 2.8em;
+    }
     #section-title-year {
         font-size: .4em;
     }
 }
-
+@media (max-width: 350px) {
+    #construction-title-wrap-eng {
+        font-size: 2.5em;
+    }
+    .beforeafter-imgs-wrap img {
+        height: 70px;
+    }
+}
 
 
 
@@ -971,6 +999,9 @@
 }
 
 @media (max-width: 450px) {
+    #distribution-title-wrap-eng {
+        font-size: 3.5em;
+    }
     .worker-info-jpn {
         font-size: 1.2em;
     }
