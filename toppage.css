@@ -620,6 +620,7 @@
                     }
 
                 }
+
                 @media (max-width: 600px) {
                     #goToTopBtn {
                         padding: 13px;
@@ -629,6 +630,7 @@
                     }
 
                 }
+
                 /* lp wrap for locations and phone nums in nav */
                 #phone-num-wrap {
                     height: max-content;
@@ -857,6 +859,10 @@
                     margin-bottom: .5em;
                 }
 
+                #sub-message-wrap-mb {
+                    display: none;
+                }
+
                 .sub-message {
                     font-size: 1.4em;
                     line-height: 1.2em;
@@ -922,11 +928,11 @@
                     }
                 }
 
-                 @media (max-width: 1580px) {
+                @media (max-width: 1580px) {
                     #lp-mainimg {
-                        background-size:  100% auto;
+                        background-size: 100% auto;
                     }
-                } 
+                }
 
                 @media (max-width: 1400px) {
                     .main-message-wrap {
@@ -952,9 +958,11 @@
                     .main-message-wrap {
                         margin-left: 25%;
                     }
+
                     #lp-mainimg {
                         background-size: auto 100%;
                     }
+
                     .sub-message {
                         margin-left: 25%;
                     }
@@ -972,42 +980,7 @@
 
                 }
 
-                /* @media (max-width: 900px) {
-                    .main-context-container {
-                        width: 75vw;
 
-                    }
-                    #contact-btn p {
-                        font-size: .9em;
-                    }
-                    .main-message-wrap {
-                        font-size: 2.1em;
-                    }
-
-                    .sub-message {
-                        font-size: .9em;
-                    }
-                    .main-message-wrap, .sub-message {
-                        margin-left: 10%;
-                    }
-
-                }
-
-                @media (max-width: 850px) {
-                    .main-message-wrap, .sub-message {
-                        margin-left: 10%;
-                    }
-                }
-
-                @media (max-width: 810px) {
-                    .main-message-wrap {
-                        font-size: 2em;
-                    }
-
-                    .sub-message {
-                        font-size: .7em;
-                    }
-                } */
 
                 @media (max-width: 900px) {
 
@@ -1081,13 +1054,23 @@
 
                 @media (max-width: 450px) {
                     .main-message-wrap {
-                        font-size: 1.5em;
+                        font-size: 1.8em;
                         line-height: 30px;
-                        padding: 2px 5px;
+                        padding: 4px 7px;
                     }
 
-                    .sub-message {
-                        font-size: .6em;
+                    #sub-message-wrap-lp {
+                        display: none;
+                    }
+
+                    #sub-message-wrap-mb {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    #sub-message-wrap-mb p {
+                        font-size: .8em;
+                        letter-spacing: .05em;
                     }
                 }
 
@@ -1097,47 +1080,49 @@
                         height: 90vh;
                     }
                     .main-message-wrap {
-                        font-size: 1.2em;
+                        font-size: 1.6em;
                     }
 
-                    .sub-message {
-                        font-size: .5em;
-                    }
                 }
 
                 @media (max-width: 380px) {
                     #lp-mainimg {
                         background-size: auto 100%;
-                        height: 90vh;
+
                     }
                 }
 
                 @media (max-width: 360px) {
                     .main-message-wrap {
-                        font-size: 1em;
+                        font-size: 1.4em;
                     }
-
-                    .sub-message {
-                        font-size: .4em;
+                    #sub-message-wrap-mb p {
+                        font-size: .7em;
                     }
                 }
 
                 @media (max-width: 320px) {
                     .main-message-wrap {
-                        font-size: .9em;
+                        font-size: 1.2em;
                         letter-spacing: 1px;
                         line-height: 30px;
                         padding: 0 10px;
                     }
-
-                    .sub-message {
-                        font-size: .4em;
-                        padding-top: 1px;
+                    #sub-message-wrap-mb p {
+                        font-size: .6em;
                     }
 
                 }
 
+                @media (max-width: 300px) {
+                    .main-message-wrap {
+                        font-size: 1em;
+                    }
+                    #sub-message-wrap-mb p {
+                        font-size: .6em;
+                    }
 
+                }
 
 
 
@@ -1356,6 +1341,10 @@
                     .title-wrap {
                         padding-top: 50px;
                     }
+
+                    #service-message-wrap {
+                        font-size: .9em;
+                    }
                 }
 
                 @media (max-width: 450px) {
@@ -1377,11 +1366,13 @@
                         font-size: 1em;
                         width: 100px;
                     }
-                }
 
-                @media (max-width: 450px) {
                     .bg-text {
                         font-size: 7em;
+                    }
+
+                    #service-message-wrap {
+                        font-size: .8em;
                     }
                 }
 
@@ -1389,16 +1380,18 @@
                     .bg-text {
                         font-size: 6em;
                     }
-                    
-                .title-eng {
-                    font-size: 3em;
+
+                    .title-eng {
+                        font-size: 3em;
+                    }
                 }
-                }
+
                 @media (max-width: 300px) {
                     .bg-text {
                         font-size: 5em;
                     }
                 }
+
                 /* news container */
                 #news-container {
                     background-color: white;
@@ -1650,6 +1643,7 @@
                         padding: 3px 10px;
                         margin-left: 40%;
                     }
+
                     .createDivForNew {
                         width: 60px;
                         font-size: .5em;

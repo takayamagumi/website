@@ -254,6 +254,11 @@
     padding: 1.5% 5%;
     width: 80%;
     margin: 3% 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #before-after-before,
@@ -264,9 +269,7 @@
     font-size: 1.2em;
 }
 
-#before-after-after {
-    margin-left: auto
-}
+
 
 .beforeafter-imgs-wrap {
     display: flex;
@@ -274,9 +277,14 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.before-after-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45%;
+}
 .beforeafter-imgs-wrap img {
-    height: 300px;
+    width: 100%;
 }
 
 .arrow {
@@ -287,10 +295,18 @@
     border-right: solid 5px var(--main-bg-color);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin-right: 10px;
+    margin:3%;
 
 }
-
+#before-after-wrap-before {
+    margin-bottom: 40px;
+}
+#before-after-wrap-after {
+    margin-top: 40px;
+}
+#before-after-after {
+    margin-left: auto
+}
 
 #construction-forth-section-wrap {
     margin-bottom: 10%;
@@ -300,31 +316,38 @@
     .gigyonaiyo-first-section-wrap {
         width: 90%;
     }
+
     #construction-second-section-wrap {
         width: 60%;
     }
+
     .construction-beforeafter-wrap {
         width: 90%;
     }
+
+    #before-after-before,
+    #before-after-after {
+        font-size: 1.5em;
+    }
 }
+
 @media (max-width: 2000px) {
 
     #construction-second-section-wrap {
-        width:70%;
+        width: 70%;
     }
 }
+
 @media (max-width: 1860px) {
     #construction-third-section-wrap {
         width: 70%;
     }
 }
+
 @media (max-width: 1700px) {
 
     #construction-second-section-wrap {
-        width:80%;
-    }
-    .beforeafter-imgs-wrap img {
-        height: 280px;
+        width: 80%;
     }
 }
 
@@ -333,34 +356,32 @@
         width: 210px;
         height: 340px;
     }
-        
+
     .construction-card-content img {
         height: 110px;
         padding: 0 .5em;
     }
-    .beforeafter-imgs-wrap img {
-        height: 250px;
-    }
 }
+
 @media (max-width: 1400px) {
     .construction-card {
         width: 200px;
         height: 350px;
     }
-        
+
     .construction-card-content img {
         height: 110px;
         padding: 0 .5em;
     }
 }
+
 @media (max-width: 1360px) {
-    .beforeafter-imgs-wrap img {
-        height: 200px;
-    }
+
     #construction-circle {
         height: 650px;
-        width: 650px;    
+        width: 650px;
     }
+
     .construction-card-content-num {
         font-size: 4em;
     }
@@ -368,13 +389,15 @@
     .construction-card-content-title {
         font-size: 1.2em;
     }
+
     .construction-card {
         width: 190px;
         height: 360px;
     }
+
     .construction-card-content img {
         height: 110px;
-        padding: 0 ;
+        padding: 0;
     }
 
     .gigyonaiyo-first-section-wrap>.paragragh-wrap {
@@ -382,28 +405,26 @@
         margin-right: 5%;
         width: 50%;
     }
-
+    #before-after-wrap-before {
+        margin-bottom: 35px;
+    }
+    #before-after-wrap-after {
+        margin-top: 35px;
+    }
+    #before-after-before,
+    #before-after-after {
+        font-size: 1.2em;
+    }
 }
 
 
 @media (max-width: 1250px) {
-    .beforeafter-imgs-wrap img {
-        height: 180px;
-    }
+
     .construction-card {
         width: 190px;
         height: 370px;
     }
-    /* #construction-second-section-wrap {
-        overflow-x: scroll;
-        background-color: beige;
-        height: fit-content;
-        width: fit-content;
-    }
-    #construction-4cards-wrap>.construction-card {
-        margin: 0 2%;
-    } */
-    
+
     .gigyonaiyo-first-section-wrap>.paragragh-wrap {
         font-size: 1em;
         margin-right: 5%;
@@ -419,10 +440,6 @@
 @media (max-width: 1100px) {
     .construction-card {
         height: 240px;
-    }
-
-    .beforeafter-imgs-wrap img {
-        height: 160px;
     }
 
     .construction-card-content-num {
@@ -488,6 +505,12 @@
         padding: .3em 1.5em;
         font-size: 1em;
     }
+    #before-after-wrap-before {
+        margin-bottom: 28px;
+    }
+    #before-after-wrap-after {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -523,6 +546,7 @@
     #construction-3cards-wrap {
         width: 630px;
     }
+
 }
 
 @media (max-width: 900px) {
@@ -530,9 +554,11 @@
         width: 50%;
         margin-right: 3%;
     }
+
     #construction-third-section-wrap {
         width: 70%;
     }
+
 }
 
 @media (max-width: 800px) {
@@ -577,6 +603,7 @@
     #noteforscrollcircle {
         display: none;
     }
+
     #construction-third-section-wrap {
         width: 75%;
     }
@@ -608,9 +635,7 @@
         width: 630px;
     }
 
-    .beforeafter-imgs-wrap img {
-        height: 130px;
-    }
+
 }
 
 
@@ -641,31 +666,40 @@
         width: 15px;
         height: 15px;
     }
+
 }
 
 @media (max-width: 650px) {
     .construction-beforeafter-wrap {
         width: 90%;
     }
+    .beforeafter-imgs-wrap {
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .beforeafter-imgs-wrap img {
+        width: 100%;
+    }
+    .before-after-wrap {
+        width: 90%;
+    }
+    .arrow {
+        margin: 3% 0 5% 0;
+        transform: rotate(135deg);
+    }
+    #before-after-wrap-before {
+        margin-bottom: 0;
+    }
+    #before-after-wrap-after {
+        margin-top: 0;
+    }
+
 }
 
-@media (max-width: 570px) {
-    .beforeafter-imgs-wrap img {
-        height: 120px;
-    }
-}
-
-@media (max-width: 540px) {
-    .beforeafter-imgs-wrap img {
-        height: 110px;
-    }
-}
 
 @media (max-width: 500px) {
-    .beforeafter-imgs-wrap img {
-        height: 100px;
-    }
-
     #before-after-before,
     #before-after-after {
         padding: .2em 1.2em;
@@ -698,39 +732,29 @@
         font-size: 3em;
     }
 
-    .beforeafter-imgs-wrap img {
-        height: 100px;
-    }
 }
 
 @media (max-width: 430px) {
-    .beforeafter-imgs-wrap img {
-        height: 90px;
-    }
-
     #section-title-year {
         font-size: .5em;
     }
 }
 
 @media (max-width: 390px) {
-    .beforeafter-imgs-wrap img {
-        height: 80px;
-    }
     #construction-title-wrap-eng {
         font-size: 2.8em;
     }
+
     #section-title-year {
         font-size: .4em;
     }
 }
+
 @media (max-width: 350px) {
     #construction-title-wrap-eng {
         font-size: 2.5em;
     }
-    .beforeafter-imgs-wrap img {
-        height: 70px;
-    }
+
 }
 
 
@@ -1002,6 +1026,7 @@
     #distribution-title-wrap-eng {
         font-size: 3.5em;
     }
+
     .worker-info-jpn {
         font-size: 1.2em;
     }
@@ -1329,6 +1354,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3%;
+    width: 100%;
 }
 
 .num-guide .num {
