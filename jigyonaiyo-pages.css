@@ -108,7 +108,11 @@
 
 /* second section */
 
-#construction-circle {
+#construction-second-section-wrap img {
+    width: 100%;
+}
+
+/* #construction-circle {
     height: 700px;
     width: 700px;
     border-radius: 50%;
@@ -226,11 +230,11 @@
     margin-left: auto;
     margin-right: 10%;
     display: none;
-}
+} */
 
 
 /* before after */
-#construction-third-section-wrap {
+/* #construction-third-section-wrap {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -310,7 +314,7 @@
 
 #construction-forth-section-wrap {
     margin-bottom: 10%;
-}
+} */
 
 @media (max-width: 2500px) {
     .gigyonaiyo-first-section-wrap {
@@ -348,6 +352,8 @@
 
     #construction-second-section-wrap {
         width: 80%;
+        /* height: 100%;
+        background-color: aqua; */
     }
 }
 
@@ -405,12 +411,15 @@
         margin-right: 5%;
         width: 50%;
     }
+
     #before-after-wrap-before {
         margin-bottom: 35px;
     }
+
     #before-after-wrap-after {
         margin-top: 35px;
     }
+
     #before-after-before,
     #before-after-after {
         font-size: 1.2em;
@@ -465,6 +474,11 @@
         padding-top: 30px;
     }
 
+    #construction-circle {
+        height: 500px;
+        width: 500px;
+    }
+
     #card-recycle-title {
         font-size: .8em;
     }
@@ -493,8 +507,8 @@
     }
 
     #construction-circle {
-        height: 400px;
-        width: 400px;
+        height: 500px;
+        width: 500px;
         border-radius: 50%;
     }
 
@@ -505,9 +519,11 @@
         padding: .3em 1.5em;
         font-size: 1em;
     }
+
     #before-after-wrap-before {
         margin-bottom: 28px;
     }
+
     #before-after-wrap-after {
         margin-top: 30px;
     }
@@ -523,7 +539,7 @@
     }
 
     #construction-second-section-wrap {
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 
     #construction-4cards-wrap>.construction-card {
@@ -673,25 +689,31 @@
     .construction-beforeafter-wrap {
         width: 90%;
     }
+
     .beforeafter-imgs-wrap {
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px 0;
     }
+
     .beforeafter-imgs-wrap img {
         width: 100%;
     }
+
     .before-after-wrap {
         width: 90%;
     }
+
     .arrow {
         margin: 3% 0 5% 0;
         transform: rotate(135deg);
     }
+
     #before-after-wrap-before {
         margin-bottom: 0;
     }
+
     #before-after-wrap-after {
         margin-top: 0;
     }
@@ -700,6 +722,7 @@
 
 
 @media (max-width: 500px) {
+
     #before-after-before,
     #before-after-after {
         padding: .2em 1.2em;
@@ -1130,7 +1153,7 @@
 }
 
 .bar-circle-num {
-    font-family: dolceVita;
+    /* font-family: dolceVita; */
     font-size: 1.5em;
     letter-spacing: .1em;
 }
@@ -1226,7 +1249,6 @@
 }
 
 .business-date-kinds .btm-line {
-    /* border-bottom: white 2px solid; */
     background-color: antiquewhite;
 }
 
@@ -1269,8 +1291,8 @@
 
 /* note for plant user */
 #noteforplantusers {
-    width: 60%;
-    font-size: 1.1em;
+    width: 70%;
+    font-size: 1.4em;
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
@@ -1280,29 +1302,22 @@
 
 #noteforplantusers .red-text {
     color: red;
-    font-size: 1.4em
 }
 
 #noteforplantusers .underline {
     text-decoration: underline 2px var(--dark-gray-color) solid;
 }
 
-.noteforplantusers-lists {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
+#noteforplantusers span {
+    width: auto;
 }
 
-#noteforplantusers-lists-lp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#noteforplantusers div {
+    inline-size: auto;
+    overflow-wrap: break-word;
 }
 
-#noteforplantusers-lists-mobile {
-    display: none;
-}
+
 
 /* how to use  */
 
@@ -1316,52 +1331,49 @@
     margin-top: 3%;
 }
 
-#noteforplantuser-insite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-#forwhouserecycleplant {
+#forusersforrecycleplant {
     background-color: var(--light-green-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     font-size: 1.2em;
     padding: 2em;
     width: 90%;
 }
 
-#forwhouserecycleplant-second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#forwhouserecycleplant-second {
-    display: flex;
-    flex-direction: row;
-}
-
-#forwhouserecycleplant>div>div>img {
+#forusersforrecycleplant img {
     height: 1em;
 }
+
+#forusersforrecycleplant span {
+    width: auto;
+}
+
+#forusersforrecycleplant div {
+    inline-size: auto;
+    overflow-wrap: break-word;
+}
+
 
 .recycle-guide-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     width: 100%;
 }
 
+.num {
+    margin-right: 1em;
+}
+
 .num-guide .num {
-    font-family: dolceVita;
     font-size: 3em;
-    color: var(--main-bg-color);
+    color: var(--light-green-color);
     line-height: .8em;
 }
 
@@ -1380,11 +1392,9 @@
 .num-img-wrap {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
-.num-img-wrap img {
-    width: 600px;
-}
 
 .recycle-guide-item .detail-explanation {
     width: 40%;
@@ -1397,11 +1407,7 @@
     }
 }
 
-@media (max-width: 1900px) {
-    .num-img-wrap img {
-        width: 500px;
-    }
-}
+
 
 @media (max-width: 1650px) {
     #recycle-second-section-wrap {
@@ -1412,20 +1418,10 @@
         width: 80%;
     }
 
-    .num-img-wrap img {
-        width: 400px;
-    }
-
-    .recycle-guide-item .detail-explanation {
-        width: 50%;
-    }
-
 }
 
 @media (max-width: 1550px) {
-    .num-img-wrap img {
-        width: 350px;
-    }
+
 
     .num-guide .num {
         font-size: 2.5em;
@@ -1454,12 +1450,9 @@
     }
 
     #noteforplantusers {
-        width: 70%;
+        font-size: 1.2em;
     }
 
-    #forwhouserecycleplant {
-        font-size: 1em;
-    }
 }
 
 @media (max-width: 1300px) {
@@ -1467,9 +1460,6 @@
         width: 75%;
     }
 
-    #forwhouserecycleplant {
-        font-size: 1.2em;
-    }
 
     .making-rc-img-note-wrap img {
         width: 40%;
@@ -1479,27 +1469,12 @@
         font-size: 1.3em;
     }
 
-    .num-img-wrap img {
-        width: 330px;
-    }
-
-    #noteforplantusers {
-        font-size: 1em;
-    }
 }
 
 @media (max-width: 1200px) {
     .recycle-guide-item .detail-explanation {
         font-size: .9em;
         width: 40%;
-    }
-
-    #noteforplantusers {
-        font-size: .9em;
-    }
-
-    .num-img-wrap img {
-        width: 300px;
     }
 
     .bar-circle {
@@ -1536,13 +1511,14 @@
     .business-date-hours-wrap p {
         padding: 10px 0;
     }
-}
 
-@media (max-width: 1100px) {
-    #noteforplantusers {
-        font-size: .8em;
+    #forusersforrecycleplant {
+        font-size: 1em;
     }
 }
+
+@media (max-width: 1100px) {}
+
 
 @media (max-width: 1000px) {
     .business-date-kinds-wrap, .business-date-hours-wrap {
@@ -1552,20 +1528,6 @@
     .recycle-guide-item .detail-explanation {
         font-size: .8em;
     }
-
-    #noteforplantusers {
-        font-size: 1em;
-        width: 50%;
-    }
-
-    #noteforplantusers-lists-lp {
-        display: none;
-    }
-
-    #noteforplantusers-lists-mobile {
-        display: flex;
-    }
-
 }
 
 @media (max-width: 900px) {
@@ -1592,20 +1554,14 @@
 
 @media (max-width: 800px) {
     .making-rc-img-note-wrap img {
-        width: 80%;
+        width: 70%;
     }
 
-    .num-img-wrap img {
-        width: 80%;
-    }
 
     #noteforplantusers {
-        width: 65%;
+        font-size: 1em;
     }
 
-    #forwhouserecycleplant {
-        font-size: 1.1em;
-    }
 
     .recycle-guide-item {
         flex-direction: column;
@@ -1616,20 +1572,15 @@
         margin-right: auto;
     }
 
-    .num-guide .guide-explanation {
-        font-size: 1.1em;
-    }
 
     .num-img-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
+        width: 80%;
+        margin-top: 10%;
     }
 
     .recycle-guide-item .detail-explanation {
         width: 80%;
-        font-size: .8em;
+        font-size: 1em;
     }
 
 }
@@ -1639,22 +1590,18 @@
         font-size: 2.3em;
     }
 
+    .num-guide .guide-explanation {
+        font-size: 1.2em;
+    }
+
     .num-guide {
         font-size: 1.3em
     }
-
 
     .business-date {
         font-size: .9em;
     }
 
-    #forwhouserecycleplant {
-        font-size: 1em;
-    }
-
-    #forwhouserecycleplant-lp {
-        display: none;
-    }
 }
 
 @media (max-width: 650px) {
@@ -1666,16 +1613,8 @@
         font-size: 2em;
     }
 
-    .num-guide {
-        font-size: 1.1em
-    }
-
-    #noteforplantusers {
-        font-size: .9em;
-    }
-
-    #forwhouserecycleplant {
-        font-size: .9em;
+    .num-guide .guide-explanation {
+        font-size: 1em;
     }
 
     .business-date-kinds-wrap p, .business-date-hours-wrap p {
@@ -1683,6 +1622,14 @@
         font-size: .9em;
     }
 
+    .recycle-guide-item {
+        width: 100%;
+    }
+
+    .num-img-wrap .detail-explanation {
+        width: 90%;
+        background-color: aquamarine;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1694,10 +1641,6 @@
         width: 90%;
     }
 
-    #forwhouserecycleplant {
-        font-size: .7em;
-        padding: 1em;
-    }
 
 }
 
@@ -1714,19 +1657,16 @@
         height: 250px;
     }
 
-    #noteforplantusers {
-        width: 70%;
-    }
-
     .business-date-kinds-wrap p {
         font-size: .6em;
         padding: 5px 0;
     }
+    .num-guide .guide-explanation {
+        font-size: .9em;
+    }
 
-    #forwhouserecycleplant {
-        width: 98%;
-        font-size: .75em;
-        padding: .5em;
+    #forusersforrecycleplant, #noteforplantusers {
+        font-size: smaller;
     }
 
     .recycle-business-hour-table {
@@ -1734,13 +1674,13 @@
     }
 
     .recycle-guide-item .detail-explanation {
-        font-size: .7em;
+        font-size: smaller;
     }
 
-    #noteforplantusers {
-        font-size: .8em;
-        width: 70%;
+    .num {
+        margin-right: .5em;
     }
+
 }
 
 @media (max-width: 460px) {
@@ -1774,10 +1714,6 @@
         width: 90%;
     }
 
-    #noteforplantusers {
-        width: 75%;
-        font-size: .7em;
-    }
 
     #forwhouserecycleplant {
         font-size: .7em;
@@ -1798,21 +1734,23 @@
         font-size: .68em;
         padding: 1em .2em;
         width: 100%;
-
     }
-
+    .num-guide {
+        flex-direction: column;
+        align-items: start;
+    }
     .num-guide .num {
         font-size: 1.8em;
     }
-
-    .num-guide {
-        font-size: 1em
+    .num {
+        margin-right: 0;
     }
+
 }
 
 @media (max-width: 360px) {
-    #noteforplantusers {
-        font-size: .6em;
+    .num-guide .num {
+        font-size: 1.5em;
     }
 
     .business-date-kinds-wrap p {
