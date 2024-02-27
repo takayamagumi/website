@@ -75,6 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10%;
 }
 
 .gigyonaiyo-first-section-wrap img {
@@ -112,7 +113,6 @@
     width: 700px;
     border-radius: 50%;
     border: 70px solid var(--light-green-color);
-    background-color: white;
     z-index: 0;
     position: absolute;
     left: 0;
@@ -1056,6 +1056,12 @@
 }
 
 /* recycle */
+.comingsoon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
 #recycle-second-section-wrap {
     display: flex;
     flex-direction: column;
