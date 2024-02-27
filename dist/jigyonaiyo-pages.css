@@ -1056,12 +1056,7 @@
 }
 
 /* recycle */
-.comingsoon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-}
+
 #recycle-second-section-wrap {
     display: flex;
     flex-direction: column;
