@@ -1166,7 +1166,7 @@ textarea {
 /* error container */
 #error-container {
     border: solid 2px red;
-    font-size: .6em;
+    font-size: .8em;
     margin-bottom: 30px;
     background-color: white;
     color: red;
@@ -1174,6 +1174,7 @@ textarea {
 
 #error-container p {
     color: red;
+    padding: 3px 0;
 }
 
 @media (max-width: 1050px) {

@@ -48,7 +48,7 @@
                 #logo-wrap,
                 #footer-logo-wrap p,
                 .address-wrap p,
-                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi {
+                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi, #gototopWrap {
                     font-family: 'Kosugi Maru', sans-serif;
                     /* font-family: fot-seurat-pron, sans-serif; */
                     font-weight: 600;
@@ -78,11 +78,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    color: white;
-                    height: 120px;
-                    width: 15vw;
+                    width: fit-content;
                     text-decoration: none;
                     margin-top: 3%;
+                    margin-left: 5%;
                 }
 
                 #logo-wrap>p {
@@ -561,11 +560,10 @@
                     border: none;
                     outline: none;
                     background-color: rgba(59, 123, 88, .6);
-                    color: white;
                     cursor: pointer;
-                    padding: 20px;
+                    padding: 10px 15px;
                     border-radius: 50%;
-                    font-size: 1em;
+                    font-size: .8em;
                     -moz-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
                     -webkit-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
                     -ms-box-shadow: -4px 5px 23px -4px rgba(255, 255, 255, 0.45);
@@ -577,10 +575,19 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    letter-spacing: .1em;
+                }
+
+                #gototopWrap p {
+                    color: white;
+                    padding-top: 5px;
                 }
 
                 #gototopWrap>img {
-                    width: 30px;
+                    width: auto;
+                    height: 20px;
+                    padding: 5px 0px;
+
                 }
 
                 #goToTopBtn:hover {
@@ -737,13 +744,6 @@
                     }
                 }
 
-                /* 
-                @media (max-width: 860px) {
-                    #phone-num-wrap a {
-                        font-size: 1em;
-                        letter-spacing: 1em;
-                    }
-                } */
 
                 /* lp, the right side of nav, main page*/
 
@@ -759,10 +759,10 @@
                     top: 0;
                     right: 0;
                     height: 100px;
-                    width: 100vw;
                     position: fixed;
                     text-decoration: none;
-                    z-index: 4;
+                    z-index: 10;
+                    background-color: aqua;
                 }
 
                 #header-contact a {
@@ -1079,6 +1079,7 @@
                         background-size: auto 100%;
                         height: 90vh;
                     }
+
                     .main-message-wrap {
                         font-size: 1.6em;
                     }
@@ -1096,6 +1097,7 @@
                     .main-message-wrap {
                         font-size: 1.4em;
                     }
+
                     #sub-message-wrap-mb p {
                         font-size: .7em;
                     }
@@ -1108,6 +1110,7 @@
                         line-height: 30px;
                         padding: 0 10px;
                     }
+
                     #sub-message-wrap-mb p {
                         font-size: .6em;
                     }
@@ -1118,6 +1121,7 @@
                     .main-message-wrap {
                         font-size: 1em;
                     }
+
                     #sub-message-wrap-mb p {
                         font-size: .6em;
                     }
@@ -1150,9 +1154,34 @@
                     z-index: 3;
                 }
 
-                #bg-text-left {
+                .bg-text.left {
                     left: 0;
-                    color: white;
+                }
+
+                .mainpg-container>.bg-text.left {
+                    color: hwb(0 100% 0% / 0.2);
+                    background-clip: text;
+                    background-image: linear-gradient(90deg, white, white);
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    animation: bg-text linear forwards;
+                    animation-timeline: scroll();
+                }
+
+                .mainpg-container>.bg-text.right {
+                    color: hwb(0 100% 0% / 0.2);
+                    background-clip: text;
+                    background-image: linear-gradient(90deg, var(--light-gray-color), var(--light-gray-color));
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    animation: bg-text linear forwards;
+                    animation-timeline: scroll();
+                }
+
+                @keyframes bg-text {
+                    to {
+                        background-size: 100% 100%;
+                    }
                 }
 
                 .title-wrap {
@@ -1402,8 +1431,8 @@
                     position: relative;
                 }
 
-                #bg-text-right {
-                    color: var(--light-gray-color);
+                .bg-text.right {
+                    /* color: var(--light-gray-color); */
                     right: 0;
                 }
 
@@ -1459,7 +1488,6 @@
                     flex-direction: row;
                     align-items: center;
                     margin-left: 10%;
-
                 }
 
                 .createDivForDateLabelWrap {
@@ -1498,6 +1526,7 @@
                     color: black;
                     margin-left: 5%;
                     font-size: 1.2em;
+                    /* width: 60%; */
                 }
 
                 @media (max-width: 1600px) {
