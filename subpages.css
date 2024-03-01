@@ -1785,7 +1785,7 @@ tr:nth-child(2n+3) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     font-size: 1.5em;
     margin-bottom: 2%;
 }
@@ -1915,11 +1915,12 @@ tr:nth-child(2n+3) {
 
 }
 
-@media (max-width: 1650px) {
+/* @media (max-width: 1650px) {
     .section-title-wrap {
         font-size: 1.2em;
+        width: 70%;
     }
-}
+} */
 
 .section-main-top-wrap {
     width: 85%;
@@ -2017,9 +2018,9 @@ tr:nth-child(2n+3) {
         font-size: .8em;
     }
 
-    .section-title-jpn {
+    /* .section-title-jpn {
         font-size: 1.3em;
-    }
+    } */
 }
 
 @media (max-width: 700px) {
@@ -2095,9 +2096,9 @@ tr:nth-child(2n+3) {
         margin-left: 30%;
     }
 
-    .section-title-jpn {
+    /* .section-title-jpn {
         font-size: 1.2em;
-    }
+    } */
 }
 
 @media (max-width: 510px) {
