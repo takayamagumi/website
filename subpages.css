@@ -16,7 +16,7 @@
 #contact-form-message-wrap,
 #contact-main-container,
 #contact-call-container,
-#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year, #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note, .contact-form-input input, .recycle-guide-item .detail-explanation, #forusersforrecycleplant, .recycle-business-hour-table, #noteforplantusers, .comingsoon, .num-guide .num,  .num-guide .guide-explanation, .path-links-jp{
+#contact-btn-tosend, .table-wrap, #serchYears-wrap, select, #jumpToYear-btn, .recruit-jump-icons-circle-title-jpn, .section-title-jpn, .job-list-wrap, .gigyonaiyo-first-section-wrap>.paragragh-wrap p, .construction-card-content-title, .construction-card-content-note, #section-title-year, #noteforscrollcircle, .gigyonaiyo-recruit-link-btn, .worker-info-jpn, .worker-info-jpn-sub, .worker-comment-wrap p, .making-rc-note, .contact-form-input input, .recycle-guide-item .detail-explanation, #forusersforrecycleplant, .recycle-business-hour-table, #noteforplantusers, .comingsoon, .num-guide .num, .num-guide .guide-explanation, .path-links-jp {
     font-family: toppan-bunkyu-midashi-min-st, serif;
     font-weight: 900;
     font-style: normal;
@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
+
 }
 
 .subpage-title-wrap-eng {
@@ -120,6 +121,7 @@
     padding-left: 2em;
     font-size: 1.2em;
 }
+
 .comingsoon {
     display: flex;
     flex-direction: column;
@@ -350,11 +352,13 @@ iframe {
     align-items: center;
     z-index: 5;
 }
+
 .path-links-wrap a {
     color: var(--dark-gray-color);
     padding: .2em .5em;
     font-size: 1.2em;
 }
+
 .path-links-en {
     font-family: dolceVita;
 }
@@ -1788,6 +1792,12 @@ tr:nth-child(2n+3) {
 
 .section-title-jpn {
     font-size: 1.5em;
+
+
+    background: -webkit-linear-gradient(var(--dark-gray-color),  var(--light-gray-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
 }
 
 .section-title-en {
@@ -2025,32 +2035,33 @@ tr:nth-child(2n+3) {
 }
 
 @media (max-width: 600px) {
-.recruit-jump-icons-circle {
-    height: 120px;
-    width: 120px;
-    background-size: 40% auto;
+    .recruit-jump-icons-circle {
+        height: 120px;
+        width: 120px;
+        background-size: 40% auto;
+    }
+
+    #recruit-jump-icons-circle-title-jpn-recycle {
+        font-size: .7em;
+        line-height: 30px;
+    }
+
+    #recruit-jump-icons-circle-title-en-recycle {
+        font-size: .8em;
+
+    }
+
+    .recruit-jump-icons-circle-title-en {
+        font-size: .8em;
+
+    }
+
+    .recruit-jump-icons-circle-title-jpn {
+        font-size: 1.2em;
+        line-height: 30px;
+    }
 }
 
-#recruit-jump-icons-circle-title-jpn-recycle {
-    font-size: .7em;
-    line-height: 30px;
-}
-
-#recruit-jump-icons-circle-title-en-recycle {
-    font-size: .8em;
-
-}
-
-.recruit-jump-icons-circle-title-en {
-    font-size: .8em;
-
-}
-
-.recruit-jump-icons-circle-title-jpn {
-    font-size: 1.2em;
-    line-height: 30px;
-}
-}
 @media (max-width: 580px) {
     .recruit-jump-icons-circle {
         height: 100px;
@@ -2061,10 +2072,12 @@ tr:nth-child(2n+3) {
         font-size: .6em;
 
     }
+
     #recruit-jump-icons-circle-title-en-recycle {
         font-size: .6em;
-    
+
     }
+
     .recruit-jump-icons-circle-title-en {
         font-size: .7em;
     }
@@ -2157,10 +2170,12 @@ tr:nth-child(2n+3) {
         font-size: .5em;
         line-height: 1.5em;
     }
+
     #recruit-jump-icons-circle-title-en-recycle {
         font-size: .5em;
-    
+
     }
+
     .recruit-jump-icons-circle-title-en {
         font-size: .5em;
     }
