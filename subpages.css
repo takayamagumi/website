@@ -1684,6 +1684,11 @@ tr:nth-child(2n+3) {
 }
 
 /* recruit */
+#recruit-main-container .subpage-wrap {
+    width: 60%;
+    margin: 0 auto;
+}
+
 #recruit-top-img {
     background-image: url(./img/recruit-5workers-light.jpg);
     background-size: 100% auto;
@@ -1696,9 +1701,8 @@ tr:nth-child(2n+3) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 250px;
-    width: 250px;
-
+    height: 200px;
+    width: 200px;
     background-size: 50% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -1706,9 +1710,39 @@ tr:nth-child(2n+3) {
     border-radius: 50%;
     position: relative;
 }
+/* .recruit-jump-icons-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid var(--main-bg-color);
+    border-top-color: transparent;
+    background-color: #4c4c4c;
+    transform: rotate(45deg);
+    position: relative;
+  }
+  .recruit-jump-icons-circle:after, .recruit-jump-icons-circle:before {
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    content: ' ';
+  }
+  .recruit-jump-icons-circle:after {
+    right: 21px;
+    top: 21px;
+  }
+  .recruit-jump-icons-circle:before {
+    left: 21px;
+    top:21px;
+  } */
 
 #recruit-jump-icons-circle-forconstruction {
     background-image: url(./img/unbo-lightgreen.svg);
+}
+
+#recruit-jump-icons-circle-forconstruction:hover {
+    background-color: var(--light-gray-color);
 }
 
 #recruit-jump-icons-circle-fordistribution {
@@ -1724,7 +1758,7 @@ tr:nth-child(2n+3) {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
 }
 
@@ -1738,7 +1772,6 @@ tr:nth-child(2n+3) {
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
-
 }
 
 .recruit-jump-icons-circle-title-jpn {
@@ -1748,15 +1781,22 @@ tr:nth-child(2n+3) {
 
 .recruit-jump-icons-circle-title-en {
     font-family: dolceVita;
-    font-size: 1.5em;
+    font-size: 1em;
 
 }
 
-#recruit-jump-icons-circle-title-jpn-recycle {
-    font-size: 1.5em;
-    line-height: 60px;
+#recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-jpn {
+    font-size: 1.7em;
+    line-height: 30px;
+    text-align: center;
+    margin-top: .5em;
 }
 
+#recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-en {
+    text-align: center;
+    font-size: 1em;
+    line-height: 15px;
+}
 
 .recruit-jump-icons-circle-more-wrap {
     display: flex;
@@ -1785,16 +1825,14 @@ tr:nth-child(2n+3) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     font-size: 1.5em;
     margin-bottom: 2%;
 }
 
 .section-title-jpn {
     font-size: 1.5em;
-
-
-    background: -webkit-linear-gradient(var(--dark-gray-color),  var(--light-gray-color));
+    background: -webkit-linear-gradient(var(--dark-gray-color), var(--light-gray-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
@@ -1843,7 +1881,7 @@ tr:nth-child(2n+3) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    /* width: 80%; */
     margin-bottom: 2%;
 }
 
@@ -1862,6 +1900,11 @@ tr:nth-child(2n+3) {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.comingsoon {
+    font-size: 1.2em;
+    margin-top: 5%;
 }
 
 .job-list-wrap {
