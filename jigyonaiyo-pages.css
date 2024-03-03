@@ -503,13 +503,16 @@
 }
 
 .worker-comment-title-wrap {
-    font-size: 1.8em;
+    font-size: 1.5vw;
+    width: 100%;
     letter-spacing: .1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
 }
+
+
 
 #distribution-third-wrap {
     display: flex;
@@ -523,26 +526,14 @@
 }
 
 @media (max-width: 1700px) {
-    .worker-comment-title-wrap {
-        font-size: 1.5em;
-    }
-
     .worker-comment {
         line-height: 1.3em;
         font-size: 1.1em;
     }
 }
 
-@media (max-width: 1400px) {
-    .worker-comment-title-wrap {
-        letter-spacing: 0em;
-    }
-}
 
 @media (max-width: 1300px) {
-    .worker-comment-title-wrap {
-        font-size: 1.3em;
-    }
 
     .worker-comment {
         line-height: 1.2em;
@@ -566,9 +557,7 @@
 }
 
 @media (max-width: 1000px) {
-    .worker-comment-title-wrap {
-        font-size: 1.2em;
-    }
+
 
     .worker-comment {
         line-height: 1.3em;
@@ -602,14 +591,13 @@
         width: 80%;
         margin-top: 3%;
     }
+    .worker-comment-title-wrap {
+        font-size: 3.5vw;
+    }
 
     .worker-intro-info-wrap {
         width: 70%;
         margin-top: 3%;
-    }
-
-    .worker-comment-title-wrap {
-        font-size: 1.5em;
     }
 
     .worker-comment {
@@ -638,16 +626,21 @@
         width: 90%;
         margin-bottom: 10%;
     }
+    .worker-comment-title-wrap {
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 500px) {
-    .worker-comment-title-wrap {
-        font-size: 1.3em;
+
+    .worker-intro-info-wrap {
+        width: 80%;
+        margin-top: 3%;
     }
 
     .worker-comment {
         line-height: 1.2em;
-        font-size: .9em;
+        font-size: 1em;
     }
 
     #distribution-third-wrap img {
@@ -660,33 +653,20 @@
         font-size: 3.5em;
     }
 
-    .worker-info-jpn {
-        font-size: 1.2em;
-    }
-
-    .worker-comment-title-wrap {
-        font-size: 1.2em;
-    }
 }
 
 @media (max-width: 380px) {
-    .worker-info-eng {
+    /* .worker-info-eng {
         font-size: 1em;
     }
 
     .worker-info-jpn {
         font-size: 1.1em;
-    }
+    } */
 
-    .worker-comment-title-wrap {
-        font-size: 1em;
-    }
-
-    .worker-comment {
-        line-height: 1.2em;
-        font-size: .8em;
-    }
 }
+
+
 
 /* recycle */
 
@@ -1263,6 +1243,7 @@
     .making-rc-img-note-wrap img {
         width: 90%;
     }
+
     .making-rc-title {
         font-size: 1.1em;
     }
