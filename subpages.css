@@ -1710,32 +1710,8 @@ tr:nth-child(2n+3) {
     border-radius: 50%;
     position: relative;
 }
-/* .recruit-jump-icons-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 10px solid var(--main-bg-color);
-    border-top-color: transparent;
-    background-color: #4c4c4c;
-    transform: rotate(45deg);
-    position: relative;
-  }
-  .recruit-jump-icons-circle:after, .recruit-jump-icons-circle:before {
-    position: absolute;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    content: ' ';
-  }
-  .recruit-jump-icons-circle:after {
-    right: 21px;
-    top: 21px;
-  }
-  .recruit-jump-icons-circle:before {
-    left: 21px;
-    top:21px;
-  } */
+
+
 
 #recruit-jump-icons-circle-forconstruction {
     background-image: url(./img/unbo-lightgreen.svg);
@@ -1743,14 +1719,38 @@ tr:nth-child(2n+3) {
 
 #recruit-jump-icons-circle-forconstruction:hover {
     background-color: var(--light-gray-color);
+    border: 5px solid transparent;
 }
+
+#recruit-jump-icons-circle-forconstruction:hover>#recruit-jump-icons-circle-more-forconstruction {
+    background-color: transparent;
+}
+
 
 #recruit-jump-icons-circle-fordistribution {
     background-image: url(./img/dumpcar-lightgreen.svg);
 }
 
+#recruit-jump-icons-circle-fordistribution:hover {
+    background-color: var(--light-gray-color);
+    border: 5px solid transparent;
+}
+
+#recruit-jump-icons-circle-fordistribution:hover>#recruit-jump-icons-circle-more-fordistribution {
+    background-color: transparent;
+}
+
 #recruit-jump-icons-circle-forrecycle {
     background-image: url(./img/factory_icon-lightgreen.svg);
+}
+
+#recruit-jump-icons-circle-forrecycle:hover {
+    background-color: var(--light-gray-color);
+    border: 5px solid transparent;
+}
+
+#recruit-jump-icons-circle-forrecycle:hover>#recruit-jump-icons-circle-more-forrecycle {
+    background-color: transparent;
 }
 
 #recruit-jump-icons-wrap {
@@ -1841,6 +1841,7 @@ tr:nth-child(2n+3) {
 .section-title-en {
     font-family: dolceVita;
     padding-left: 1em;
+    font-size: 1em;
 }
 
 .line-bold, .line-thin {
@@ -1892,7 +1893,7 @@ tr:nth-child(2n+3) {
 }
 
 .section-main-top-wrap img {
-    width: 30%;
+    width: 40%;
 }
 
 .section-main-btm-wrap {
@@ -1947,10 +1948,11 @@ tr:nth-child(2n+3) {
 }
 
 @media (max-width: 1800px) {
-    #recruit-jump-icons-wrap {
-        justify-content: space-around;
-        width: 80%;
+    .recruit-jump-icons-circle {
+        height: 180px;
+        width: 180px;
     }
+
 
     .job-list-wrap {
         margin: 1em 0 0 35%;
@@ -1958,66 +1960,58 @@ tr:nth-child(2n+3) {
 
 }
 
-/* @media (max-width: 1650px) {
-    .section-title-wrap {
-        font-size: 1.2em;
+@media (max-width: 1650px) {
+    #recruit-main-container .subpage-wrap {
         width: 70%;
     }
-} */
-
-.section-main-top-wrap {
-    width: 85%;
 }
+
+@media (max-width: 1500px) {
+    #recruit-main-container .subpage-wrap {
+        width: 85%;
+    }
+}
+
+
 
 @media (max-width: 1200px) {
     .recruit-jump-icons-circle {
-        height: 220px;
-        width: 220px;
+        height: 170px;
+        width: 170px;
         border: 4px solid var(--main-bg-color);
-    }
-
-    #recruit-jump-icons-circle-title-jpn-recycle {
-        font-size: 1.3em;
-        line-height: 60px;
-    }
-
-    #recruit-jump-icons-circle-title-en-recycle {
-        font-family: dolceVita;
-        font-size: 1.3em;
-
     }
 
     .job-list-wrap {
         margin: 1em 0 0 30%;
     }
+
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-jpn {
+        font-size: 1.5em;
+        line-height: 25px;
+        margin-top: .3em;
+    }
+
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-en {
+        font-size: .8em;
+        line-height: 15px;
+    }
 }
 
 @media (max-width: 1050px) {
-    .recruit-jump-icons-circle {
-        height: 180px;
-        width: 180px;
-        border: 3px solid var(--main-bg-color);
-        background-size: 50% auto;
-    }
+
 
     .job-list-wrap {
         margin: 1em 0 0 20%;
     }
 
-    #recruit-jump-icons-circle-title-jpn-recycle {
-        font-size: 1em;
-    }
 }
 
 
 
 @media (max-width: 900px) {
-    .recruit-jump-icons-circle {
-        height: 150px;
-        width: 150px;
-        background-size: 50% auto;
+    #recruit-jump-icons-wrap {
+margin-bottom: 10%;
     }
-
     .job-title, .job-list-wrap a {
         font-size: 1em;
     }
@@ -2031,68 +2025,64 @@ tr:nth-child(2n+3) {
     }
 
     .section-main-top-wrap img {
-        width: 65%;
+        width: 80%;
     }
 
     .section-main-top-wrap p {
         font-size: 1em;
-        width: 65%;
+        width: 80%;
         margin: 0;
     }
 
-    #recruit-jump-icons-circle-title-jpn-recycle {
-        font-size: .9em;
+    #recycle-section-title-jpn {
+        font-size: 1.2em;
     }
 
-    #recruit-jump-icons-circle-title-en-recycle {
-        font-size: 1em;
-
-    }
-
-    .recruit-jump-icons-circle-title-en {
-        font-size: 1em;
-    }
-
-    .recruit-jump-icons-circle-title-jpn {
-        font-size: 1.3em;
+    #recycle-section-title-eng {
+        font-size: .8em;
     }
 
     .recruit-jump-icons-circle-more-wrap {
         font-size: .8em;
     }
 
-    /* .section-title-jpn {
-        font-size: 1.3em;
-    } */
 }
 
 @media (max-width: 700px) {
-
-    .section-main-top-wrap img {
-        width: 70%;
+    .recruit-jump-icons-circle {
+        height: 150px;
+        width: 150px;
     }
 
     .section-main-top-wrap p {
         font-size: .9em;
-        width: 70%;
+
+    }
+    .recruit-jump-icons-circle-title-en {
+        font-size: .9em;
+    }
+
+    .recruit-jump-icons-circle-title-jpn {
+        font-size: 1.5em;
     }
 }
 
 @media (max-width: 600px) {
     .recruit-jump-icons-circle {
-        height: 120px;
-        width: 120px;
+        height: 130px;
+        width: 130px;
         background-size: 40% auto;
+        border: 3px solid var(--main-bg-color);
     }
 
-    #recruit-jump-icons-circle-title-jpn-recycle {
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-jpn {
+        font-size: 1.2em;
+        line-height: 18px;
+    }
+
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-en {
         font-size: .7em;
-        line-height: 30px;
-    }
-
-    #recruit-jump-icons-circle-title-en-recycle {
-        font-size: .8em;
-
+        line-height: 10px;
     }
 
     .recruit-jump-icons-circle-title-en {
@@ -2104,22 +2094,33 @@ tr:nth-child(2n+3) {
         font-size: 1.2em;
         line-height: 30px;
     }
+    #recycle-section-title-jpn {
+        font-size: 1em;
+        letter-spacing: -.1em;
+    }
+
+    #recycle-section-title-eng {
+        font-size: .7em;
+    }
 }
 
 @media (max-width: 580px) {
+    .comingsoon {
+        font-size: 1em;
+    }
     .recruit-jump-icons-circle {
-        height: 100px;
-        width: 100px;
+        height: 110px;
+        width: 110px;
     }
 
-    #recruit-jump-icons-circle-title-jpn-recycle {
-        font-size: .6em;
-
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-jpn {
+        font-size: .9em;
+        line-height: 15px;
     }
 
-    #recruit-jump-icons-circle-title-en-recycle {
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-en {
         font-size: .6em;
-
+        line-height: 8px;
     }
 
     .recruit-jump-icons-circle-title-en {
@@ -2138,13 +2139,14 @@ tr:nth-child(2n+3) {
     .job-list-wrap a {
         margin-left: 30%;
     }
-
-    /* .section-title-jpn {
-        font-size: 1.2em;
-    } */
 }
 
 @media (max-width: 510px) {
+
+    .section-title-wrap img {
+        height: 40px;
+    }
+
     .section-main-top-wrap {
         flex-direction: column;
     }
@@ -2155,15 +2157,23 @@ tr:nth-child(2n+3) {
         padding: 3% 0 3% 0;
     }
 
+    .section-title-en {
+        font-size: .7em;
+    }
+
     .section-title-jpn {
         font-size: 1.1em;
+    }
+    #recycle-section-title-jpn {
+        font-size: .9em;
+    }
+
+    #recycle-section-title-eng {
+        font-size: .6em;
     }
 }
 
 @media (max-width: 460px) {
-    #recycle-section-title-jpn {
-        letter-spacing: -.1em;
-    }
 
     .section-title-jpn {
         font-size: 1em;
@@ -2171,6 +2181,10 @@ tr:nth-child(2n+3) {
 }
 
 @media (max-width: 430px) {
+    .section-title-wrap img {
+        height: 30px;
+    }
+
     .section-title-jpn {
         letter-spacing: -.05em;
         font-size: .9em;
@@ -2181,26 +2195,23 @@ tr:nth-child(2n+3) {
         width: 100px;
     }
 
-    #recruit-jump-icons-circle-title-jpn-recycle {
-        font-size: .6em;
-        line-height: 2em;
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-jpn {
+        font-size: .8em;
+        line-height: 12px;
     }
 
-    .recruit-jump-icons-circle-title-en {
-        font-size: .7em;
-    }
-
-
-    .recruit-jump-icons-circle-more-wrap {
-        font-size: .6em;
+    #recruit-jump-icons-circle-forrecycle .recruit-jump-icons-circle-title-en {
+        font-size: .5em;
+        line-height: 6px;
     }
 
     #recycle-section-title-jpn {
         font-size: .8em;
+        letter-spacing: -.2em;
     }
 
     #recycle-section-title-eng {
-        font-size: .9em;
+        font-size: .5em;
     }
 }
 
@@ -2237,7 +2248,8 @@ tr:nth-child(2n+3) {
 
 @media (max-width: 380px) {
     #recycle-section-title-jpn {
-        font-size: .8em;
+        font-size: .7em;
+
     }
 
     .section-title-jpn {
@@ -2245,7 +2257,7 @@ tr:nth-child(2n+3) {
     }
 
     #recycle-section-title-eng {
-        font-size: .7em;
+        font-size: .3em;
     }
 
     .job-list-wrap {

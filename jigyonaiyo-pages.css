@@ -147,7 +147,7 @@
     }
 
     .giyonaiyo-section-container {
-        width: 80%;
+        width: 85%;
     }
 }
 
@@ -503,7 +503,7 @@
 }
 
 .worker-comment-title-wrap {
-    font-size: 1.5vw;
+    font-size: 1.8em;
     width: 100%;
     letter-spacing: .1em;
     display: flex;
@@ -532,9 +532,15 @@
     }
 }
 
-
+@media (max-width: 1400px) {
+    .worker-comment-title-wrap {
+        font-size: 1.6em;
+    }
+}
 @media (max-width: 1300px) {
-
+    .worker-comment-title-wrap {
+        font-size: 1.4em;
+    }
     .worker-comment {
         line-height: 1.2em;
         font-size: 1em;
@@ -592,7 +598,7 @@
         margin-top: 3%;
     }
     .worker-comment-title-wrap {
-        font-size: 3.5vw;
+        font-size: 1.8em;
     }
 
     .worker-intro-info-wrap {
@@ -627,7 +633,7 @@
         margin-bottom: 10%;
     }
     .worker-comment-title-wrap {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
 
@@ -691,11 +697,13 @@
 
 }
 
+
+
 .making-rc-wrap {
     display: flex;
     flex-direction: row;
     margin-top: -30px;
-    width: 90%;
+    width: 100%;
 }
 
 .making-rc-sidebar-wrap {
@@ -1107,7 +1115,6 @@
     }
 }
 
-@media (max-width: 1100px) {}
 
 
 @media (max-width: 1000px) {
@@ -1130,7 +1137,7 @@
     }
 
     .making-rc-img-note-wrap img {
-        width: 70%;
+        width: 60%;
     }
 
     .making-rc-note-wrap {
@@ -1144,9 +1151,11 @@
 
 @media (max-width: 800px) {
     .making-rc-img-note-wrap img {
-        width: 80%;
+        width: 65%;
     }
-
+    #recycle-section-title-jpn {
+        font-size: 1.3em;
+}
 
     #noteforplantusers {
         font-size: 1em;
@@ -1176,6 +1185,9 @@
 }
 
 @media (max-width:700px) {
+    #recycle-section-title-jpn {
+        font-size: 1.2em;
+}
     .num-img-wrap {
         width: 90%;
         /* margisn-top: 10%; */
@@ -1232,16 +1244,19 @@
         height: 350px;
     }
 
-    .making-rc-wrap {
+    /* .making-rc-wrap {
         width: 90%;
-    }
+    } */
 
 
 }
 
 @media (max-width: 550px) {
+    #recycle-section-title-jpn {
+        font-size: 1em;
+}
     .making-rc-img-note-wrap img {
-        width: 90%;
+        width: 80%;
     }
 
     .making-rc-title {
@@ -1348,6 +1363,9 @@
 }
 
 @media (max-width: 360px) {
+    #recycle-section-title-jpn {
+        font-size: smaller;
+}
     .num-guide .num {
         font-size: 1.5em;
     }
