@@ -2,7 +2,6 @@
 .gigyonaiyo-recruit-link-btn {
     background-color: var(--main-bg-color);
     display: flex;
-    flex-direction: row;
     width: fit-content;
     border: none;
     padding: 1.5em .5em;
