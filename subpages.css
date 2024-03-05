@@ -39,7 +39,6 @@
 
 
 .main-context-container {
-    width: 85vw;
     height: max-content;
     margin-top: 120px;
     display: flex;
@@ -131,7 +130,7 @@
 
 /* overview main */
 .overview-table-main-wrap {
-    width: 80%;
+    /* width: 80%; */
     font-size: 1em;
 }
 
