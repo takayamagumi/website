@@ -39,7 +39,7 @@
                 #btn-news>p,
                 .footer-menu,
                 #btn-recruit,
-                #recruit-rightbox p, .mobile-menu-names, .section-main-top-wrap p {
+                #recruit-rightbox p, .mobile-menu-names, .section-main-top-wrap p, .call-btn-text-wrap {
                     font-family: toppan-bunkyu-midashi-min-st, serif;
                     font-weight: 900;
                     font-style: normal;
@@ -48,7 +48,7 @@
                 #logo-wrap,
                 #footer-logo-wrap p,
                 .address-wrap p,
-                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi, #gototopWrap {
+                #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi, #gototopWrap, .mobile-phonenums {
                     font-family: 'Kosugi Maru', sans-serif;
                     /* font-family: fot-seurat-pron, sans-serif; */
                     font-weight: 600;
@@ -465,7 +465,6 @@
                     align-items: center;
                     justify-content: center;
                     padding-bottom: 20px;
-
                 }
 
                 .call-btn {
@@ -488,29 +487,28 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    font-size: 1em;
+                    line-height: 15px;
+                    letter-spacing: -.1em;
                 }
 
                 .call-btn-text-wrap p {
-                    font-size: .6em;
                     color: var(--main-bg-color);
                     padding-left: 5px;
-
                 }
 
                 .mobile-phonenums {
-                    letter-spacing: 2px;
-                    font-size: .7em;
+                    letter-spacing: .03em;
+                    font-size: 1.2em;
                 }
 
-                @media (max-width: 320px) {
-                    .call-btn>img {
-                        height: 20px;
+                @media (max-width: 450px) {
+                    #call-btns-wrap {
+                        flex-direction: column;
                     }
 
-                    .call-btn-text-wrap p {
-                        font-size: .5em;
-                        padding-left: 3px;
-
+                    .call-btn {
+                        margin-bottom: 10px;
                     }
                 }
 
@@ -635,7 +633,6 @@
                 .img-phone-nums-wrap {
                     display: flex;
                     flex-direction: row;
-                    /* padding-left: 8%; */
                     justify-content: start;
                     align-items: center;
 
@@ -672,7 +669,7 @@
                     }
 
                     .img-phone-nums-wrap img {
-                        height: 35px;
+                        height: 30px;
                     }
 
                     .img-phone-nums-wrap p {
