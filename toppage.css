@@ -502,7 +502,7 @@
                 .mobile-phonenums {
                     letter-spacing: .03em;
                     font-size: 1.2em;
-                    margin-top: .1em;
+                    margin-top: .3em;
                 }
 
                 @media (max-width: 450px) {
