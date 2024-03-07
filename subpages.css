@@ -1650,13 +1650,15 @@ tr:nth-child(2n+3) {
 
         font-size: 1em;
     }
-
-}
-
-@media (max-width: 880px) {
-    .scroll-table {
+ .scroll-table {
         overflow-x: auto;
     }
+} 
+
+@media (max-width: 880px) {
+    /* .scroll-table {
+        overflow-x: auto;
+    } */
 
     .table-title-wrap p {
         padding: 0 .8em;
