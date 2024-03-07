@@ -50,7 +50,6 @@
                 .address-wrap p,
                 #licencedWrap p, #hambuger-wrap p, #mobile-logo-wrap p, .nav-icon-text, .call-btn, #footer-shozaichi, #gototopWrap, .mobile-phonenums {
                     font-family: 'Kosugi Maru', sans-serif;
-                    /* font-family: fot-seurat-pron, sans-serif; */
                     font-weight: 600;
                     font-style: normal;
                 }
