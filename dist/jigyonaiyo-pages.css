@@ -134,7 +134,11 @@
     }
 }
 
-
+@media (max-width: 1600px) {
+    .giyonaiyo-section-container {
+        width: 85%;
+    }
+}
 
 @media (max-width: 1500px) {
     .gigyonaiyo-first-section-wrap>.paragragh-wrap p {
@@ -142,9 +146,6 @@
 
     }
 
-    .giyonaiyo-section-container {
-        width: 85%;
-    }
 }
 
 
@@ -448,7 +449,9 @@
 .worker-info-jpn {
     font-size: 2.3em;
 }
-
+#nakagawasan {
+    font-size: 2.1em;
+}
 
 .worker-info-jpn-sub {
     font-size: 1em;
@@ -461,7 +464,7 @@
 }
 
 .worker-age {
-    margin-left: 5em;
+    margin-left: auto;
 }
 
 .worker-info-eng {
@@ -526,11 +529,20 @@
         line-height: 1.3em;
         font-size: 1.1em;
     }
+    .worker-comment-title-wrap {
+        letter-spacing: 0em;
+    }
 }
 
 @media (max-width: 1400px) {
     .worker-comment-title-wrap {
-        font-size: 1.6em;
+        font-size: 1.4em;
+    }
+    #nakagawasan {
+        font-size: 1.8em;
+    }
+    .worker-info-jpn {
+        font-size: 1.4em;
     }
 }
 @media (max-width: 1300px) {
@@ -546,20 +558,28 @@
         font-size: 1.5em;
     }
 
-    .worker-age {
+    /* .worker-age {
         margin-left: auto;
-    }
+    } */
 }
 
 @media (max-width: 1100px) {
     .worker-info-jpn {
         font-size: 1.4em;
     }
-
+    .worker-comment-title-wrap {
+        font-size: 1.3em;
+        letter-spacing: -.01em;
+    }
+    #nakagawasan {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 1000px) {
-
+    .worker-comment-title-wrap {
+        font-size: 1.2em;
+    }
 
     .worker-comment {
         line-height: 1.3em;
@@ -1121,6 +1141,9 @@
     .recycle-guide-item .detail-explanation {
         font-size: .8em;
     }
+    #recycle-section-title-jpn {
+        font-size: 1.1em;
+}
 }
 
 @media (max-width: 900px) {
